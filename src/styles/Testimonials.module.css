@@ -1,0 +1,123 @@
+.testimonialsSection {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+  gap: 2rem;
+  padding: 2rem 0;
+  background: linear-gradient(to bottom, #ffffff, #f0f0f5);
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.mainContainer {
+  height: 100%;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: #4b0406;
+  font-weight: bold;
+  letter-spacing: 0.05rem;
+  text-align: center;
+}
+
+.carouselContainer {
+  height: 100%;
+  width: 100%;
+  max-width: 1200px;
+  overflow: hidden;
+}
+
+.carouselItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%; /* Ensuring it takes full height */
+  width: 100%;
+}
+
+.testimonialCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 400px; /* Optional: max width of the card */
+  height: 100%; /* Ensure the card takes full height */
+  margin: auto;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.descriptionContainer {
+  flex-grow: 1;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.description {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.authorInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  flex-shrink: 0;
+  height: 35%; /* Explicit height for author info */
+}
+
+.cardImage {
+  flex-shrink: 0;
+}
+
+.cardImage img {
+  width: 100%;
+  height: 100%;
+  max-width: 120px;
+  max-height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ddd;
+}
+
+.authorDetails {
+  margin-left: 15px;
+  text-align: left;
+}
+
+.authorName {
+  font-weight: bold;
+  color: #333;
+}
+
+.authorDesignation {
+  font-size: 0.9rem;
+  color: #777;
+}

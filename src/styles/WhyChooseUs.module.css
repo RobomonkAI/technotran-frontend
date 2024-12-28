@@ -1,0 +1,82 @@
+.whyChooseUsContainer {
+  height: 92vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  background: linear-gradient(to bottom, #f5f5f5, #ececec);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.whyChooseUsTitle {
+  font-size: 2.5rem;
+  color: #4b0406;
+  font-weight: bold;
+  letter-spacing: 0.05rem;
+  text-align: center;
+}
+
+.cardMainContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  height: 100%;
+  width: 100%;
+  max-width: 80rem /* 1280px */;
+}
+
+.cardContainer {
+  width: 32%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cardContainer:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.cardImg {
+  height: 60%;
+  width: 100%;
+  object-fit: fill;
+}
+
+.cardSubContainer {
+  height: 40%;
+  width: 100%;
+  padding: 1rem;
+  background-color: #4b0406;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: white;
+}
+
+.cardTxt {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.03rem;
+  text-align: left;
+  color: #f5f5f5;
+  font-weight: 500;
+}
+
+.cardTxt:hover {
+  text-shadow: 0px 0px 1px #fff;
+}

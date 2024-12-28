@@ -1,0 +1,131 @@
+/* Basic Reset */
+.navbar {
+  height: 10vh;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background-color: white;
+  color: white;
+}
+
+.logoImg {
+  height: 70px;
+  width: 200px;
+}
+
+/* Navigation Links */
+.navLinks {
+  height: 100%;
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 1rem;
+}
+
+.navLinks li {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.navLinks li h2 {
+  font-family: "Quicksand", sans-serif;
+  color: #333;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color font-size 0.3s ease;
+  color: #333;
+  letter-spacing: 0.05rem;
+  text-align: center;
+}
+
+.navLinks li h2:hover {
+  color: #4b0406;
+  font-size: 1.1rem;
+}
+
+.activeNavItem {
+  border-bottom: 2px solid #4b0406;
+  padding-bottom: 5px;
+}
+
+.navLinksTxt {
+  text-decoration: none;
+}
+
+.arrows {
+  font-size: 1.2rem;
+  color: #4b0406;
+  margin-left: 7px;
+}
+
+.subMenu {
+  padding-left: 1.5rem;
+  background-color: #f9f9f9;
+  margin-top: -0.5rem;
+}
+.subMenuItem {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 0.3rem;
+}
+
+.hamburger .bar {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  border-radius: 5px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .logoImg {
+    height: 70px;
+    width: 220px;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .navLinks {
+    position: absolute;
+    top: 120px;
+    right: 0;
+    background-color: transparent;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 1rem 2rem;
+    width: 200px;
+    height: auto;
+    box-shadow: -2px 4px 6px rgba(0, 0, 0, 0.3);
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    width: 100%;
+  }
+
+  .navLinksActive {
+    transform: translateX(0);
+  }
+
+  .navLinks li {
+    width: 100%;
+    justify-content: flex-start;
+    margin-bottom: 1rem;
+  }
+}

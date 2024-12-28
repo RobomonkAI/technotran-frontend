@@ -1,0 +1,112 @@
+.industriesWeServeSection {
+  position: relative;
+  height: 67vh;
+  overflow: hidden;
+  color: white;
+  background-image: url("https://github.com/CVSCharan/Technotran_Assets/blob/main/pattern1.jpg?raw=true");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Parallax effect with background-attachment */
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Dark overlay */
+  z-index: 0;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white !important;
+}
+
+.contentContainer {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  max-width: 80rem;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.carouselContainer {
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+.carouselItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px;
+}
+
+.carouselImage {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.carouselContent {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.carouselTitle {
+  font-size: 1rem;
+  font-weight: bold;
+  color: whitesmoke;
+}
+
+.slick-arrow {
+  background-color: rgba(255, 255, 255, 0.8); /* Initial white background */
+  color: #fff; /* Initial white arrow color */
+  border-radius: 50%;
+  z-index: 10;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.slick-prev::before,
+.slick-next::before {
+  color: #fff; /* Initial white arrow icon */
+  transition: color 0.3s ease; /* Smooth transition for arrow color */
+}
+
+.slick-arrow:hover {
+  background-color: royalblue; /* Change background to royal blue on hover */
+  color: #fff; /* Keep arrow icon white */
+}
+
+.slick-arrow:hover::before {
+  color: #fff; /* Keep arrow icon white on hover */
+}
+
+.slick-prev {
+  left: -35px;
+}
+
+.slick-next {
+  right: -35px;
+}

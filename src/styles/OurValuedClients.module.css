@@ -1,0 +1,92 @@
+.ourValuedClientsContainer {
+  width: 100%;
+  min-height: 100vh;
+  padding: 50px 20px;
+  background: linear-gradient(
+    to bottom,
+    #ffffff,
+    #f8f9fa
+  ); /* Softer gradient */
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Classic shadow */
+  border-radius: 10px; /* Rounded corners */
+}
+
+.ourValuedClientsSubContainer {
+  max-width: 80rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem; /* Increased spacing for balance */
+}
+
+.ourValuedClientsContentContainer {
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; /* Centered alignment */
+  align-items: center;
+  gap: 2.5rem; /* More spacing between cards */
+}
+
+.title {
+  font-size: 2.5rem; /* Larger and more elegant */
+  font-weight: 700;
+  color: #4b0406 !important;
+  letter-spacing: 0.03rem; /* Subtle spacing for sophistication */
+  margin: 2rem 0;
+}
+
+.cardContainer {
+  width: 270px; /* Defined size for consistency */
+  height: 270px;
+  border: 1px solid #ddd; /* Light border for structure */
+  border-radius: 10px; /* Rounded corners for a modern feel */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  background-color: #ffffff; /* Clean white background */
+  overflow: hidden; /* Prevent content overflow */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.cardImg {
+  height: 120px;
+  width: 120px;
+  object-fit: cover; /* Ensures images are not distorted */
+  margin-bottom: 10px;
+}
+
+.cardImgContainer {
+  height: 55%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.cardSubContainer {
+  text-align: center; /* Center-align text */
+  height: 45%;
+  width: 100%;
+  background-color: #4b0406;
+  padding: 0.5rem;
+}
+
+.cardTxt {
+  font-size: 1rem; /* Slightly larger text */
+  font-weight: 600; /* Bold text */
+  color: white; /* Neutral dark color */
+  margin-top: 10px;
+}
