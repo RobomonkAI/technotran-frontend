@@ -9,7 +9,6 @@ import { Menu, MenuItem, IconButton } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import KeyboardArrowDown from "@mui/icons-material/KeyboardArrowDown";
 import KeyboardArrowUp from "@mui/icons-material/KeyboardArrowUp";
-import { headContainerAnimation, headContentAnimation } from "../utils/motion";
 import NavBanner from "./NavBanner";
 
 const NavBar = () => {

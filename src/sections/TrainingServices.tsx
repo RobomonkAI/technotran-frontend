@@ -5,7 +5,6 @@ import styles from "../styles/TrainingServices.module.css";
 import { trainingServicesData } from "@/utils/helpers";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { headContentAnimation } from "@/utils/motion";
 
 const TrainingServices = () => {
   // Fade-In animation for the entire section

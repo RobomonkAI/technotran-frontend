@@ -3,7 +3,6 @@ import React from "react";
 import { Fab } from "@mui/material";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import { motion } from "framer-motion";
-import zIndex from "@mui/material/styles/zIndex";
 
 const WhatsAppBtn = () => {
   const handleWhatsAppClick = () => {

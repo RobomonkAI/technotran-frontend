@@ -60,11 +60,11 @@ const DesignServices = () => {
           Explore Our Design Services
         </motion.h2>
         <p className={styles.description}>
-          Discover the power of creativity with our state-of-the-art design
+          {`Discover the power of creativity with our state-of-the-art design
           services. Leveraging advanced CNC machines, laser cutting technology,
           3D printing capabilities, and expert PCB design, we offer
           comprehensive solutions for your prototyping and manufacturing needs.
-          From concept to creation, we're here to turn your vision into reality.
+          From concept to creation, we're here to turn your vision into reality.`}
         </p>
         <a href="#explore-more" className={styles.exploreLink}>
           Explore more
