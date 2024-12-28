@@ -12,7 +12,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 2rem 0;
+  margin: 3rem 0;
 }
 
 .overlay {
@@ -80,33 +80,46 @@
   color: whitesmoke;
 }
 
-.slick-arrow {
-  background-color: rgba(255, 255, 255, 0.8); /* Initial white background */
-  color: #fff; /* Initial white arrow color */
+.customControls {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.prevButton,
+.nextButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark background */
+  color: #fff;
+  font-size: 2rem;
+  width: 50px;
+  height: 50px;
+  border: none;
   border-radius: 50%;
-  z-index: 10;
-  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.slick-prev::before,
-.slick-next::before {
-  color: #fff; /* Initial white arrow icon */
-  transition: color 0.3s ease; /* Smooth transition for arrow color */
+.prevButton:hover,
+.nextButton:hover {
+  background-color: #4b0406; /* Blue background on hover */
 }
 
-.slick-arrow:hover {
-  background-color: royalblue; /* Change background to royal blue on hover */
-  color: #fff; /* Keep arrow icon white */
+.prevButton svg,
+.nextButton svg {
+  font-size: 1.5rem; /* Icon size */
+  fill: white;
 }
 
-.slick-arrow:hover::before {
-  color: #fff; /* Keep arrow icon white on hover */
+.prevButton {
+  margin-right: 20px; /* Space between the buttons */
 }
 
-.slick-prev {
-  left: -35px;
-}
-
-.slick-next {
-  right: -35px;
+.nextButton {
+  margin-left: 20px; /* Space between the buttons */
 }

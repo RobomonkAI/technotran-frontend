@@ -21,6 +21,7 @@ const NavBar = () => {
   const [activeNavItem, setActiveNavItem] = useState<string>("home");
 
   const toggleMenu = () => {
+    console.log("clicked");
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
@@ -125,6 +126,8 @@ const NavBar = () => {
                 anchorEl={anchorEl}
                 open={Boolean(anchorEl)}
                 onClose={handleDropdownClose}
+                transformOrigin={{ vertical: "top", horizontal: "right" }}
+                anchorOrigin={{ vertical: "bottom", horizontal: "right" }}
               >
                 <MenuItem onClick={handleDropdownClose}>
                   <Link className={styles.navLinksTxt} href="/">

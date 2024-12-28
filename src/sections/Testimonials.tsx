@@ -1,13 +1,18 @@
 "use client";
 
-import React from "react";
+import React, { useRef } from "react";
 import { motion } from "framer-motion";
 import { Carousel } from "antd";
 import styles from "../styles/Testimonials.module.css";
 import { testimonialsCarouselData } from "@/utils/helpers";
 import Image from "next/image";
+import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 
 const Testimonials = () => {
+  // Create refs for carousel controls
+  const carouselRef = useRef<any>(null); // Ref for the Carousel component
+
   const headingVariants = {
     hidden: { opacity: 0, y: -20 },
     visible: {
@@ -30,6 +35,16 @@ const Testimonials = () => {
         ease: "easeInOut",
       },
     },
+  };
+
+  // Function to go to the previous slide
+  const goToPrev = () => {
+    carouselRef.current.prev();
+  };
+
+  // Function to go to the next slide
+  const goToNext = () => {
+    carouselRef.current.next();
   };
 
   return (
@@ -59,8 +74,9 @@ const Testimonials = () => {
           className={styles.carouselContainer}
         >
           <Carousel
+            ref={carouselRef} // Attach the ref to the Carousel component
             style={{ height: "100%", width: "100%" }}
-            arrows
+            arrows={false} // Disable default arrows
             autoplay
             autoplaySpeed={2500}
             dots={false}
@@ -114,6 +130,16 @@ const Testimonials = () => {
             ))}
           </Carousel>
         </motion.div>
+
+        {/* Custom Buttons */}
+        <div className={styles.customControls}>
+          <button className={styles.prevButton} onClick={goToPrev}>
+            <ArrowBackIosNewIcon />
+          </button>
+          <button className={styles.nextButton} onClick={goToNext}>
+            <ArrowForwardIosIcon />
+          </button>
+        </div>
       </motion.div>
     </motion.section>
   );

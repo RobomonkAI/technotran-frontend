@@ -8,6 +8,8 @@ import styles from "../styles/IndustriesWeServe.module.css";
 import { motion } from "framer-motion";
 import { industriesWeServeCarouselData } from "@/utils/helpers";
 import Image from "next/image";
+import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 
 const IndustriesWeServe = () => {
   const [{ y }, set] = useSpring(() => ({ y: 0 }));
@@ -27,6 +29,21 @@ const IndustriesWeServe = () => {
       },
     },
   };
+
+  // Custom functions to control the carousel
+  const goToPrev = () => {
+    if (carouselRef.current) {
+      carouselRef.current.prev();
+    }
+  };
+
+  const goToNext = () => {
+    if (carouselRef.current) {
+      carouselRef.current.next();
+    }
+  };
+
+  const carouselRef = React.useRef<any>(null); // Ref for the Carousel component
 
   return (
     <section className={styles.industriesWeServeSection} {...bind()}>
@@ -67,11 +84,12 @@ const IndustriesWeServe = () => {
         {/* Carousel */}
         <div className={styles.carouselContainer}>
           <Carousel
-            arrows
+            ref={carouselRef} // Attach the ref to the Carousel component
+            arrows={false} // Disable the default arrows
             autoplay
             autoplaySpeed={2500}
             dots={false}
-            slidesToShow={4} // Show 3 slides at a time
+            slidesToShow={4} // Show 4 slides at a time
             slidesToScroll={1} // Scroll one slide at a time
           >
             {industriesWeServeCarouselData.map((item, index) => (
@@ -92,6 +110,16 @@ const IndustriesWeServe = () => {
               </div>
             ))}
           </Carousel>
+        </div>
+
+        {/* Custom Arrows with MUI Icons */}
+        <div className={styles.customControls}>
+          <button className={styles.prevButton} onClick={goToPrev}>
+            <ArrowBackIosNewIcon />
+          </button>
+          <button className={styles.nextButton} onClick={goToNext}>
+            <ArrowForwardIosIcon />
+          </button>
         </div>
       </motion.div>
     </section>

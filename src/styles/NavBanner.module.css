@@ -52,16 +52,16 @@
 
 .contactIcons {
   font-size: 0.9rem;
-  fill: white;
+  fill: white !important;
 }
 
 .socialMediaIcons {
-  fill: white;
+  fill: white !important;
   cursor: pointer;
   font-size: 1.5rem;
 }
 
 .socialMediaIcons:hover {
-  fill: royalblue;
+  fill: royalblue !important;
   font-size: 1.7rem;
 }
