@@ -21,17 +21,17 @@ const TrainingServices = () => {
   };
 
   // Fade-In animation for each card with delay
-  const cardVariants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.3,
-        ease: "easeInOut",
-      },
-    },
-  };
+//   const cardVariants = {
+//     hidden: { opacity: 0, y: 50 },
+//     visible: {
+//       opacity: 1,
+//       y: 0,
+//       transition: {
+//         duration: 0.3,
+//         ease: "easeInOut",
+//       },
+//     },
+//   };
 
   return (
     <motion.section
