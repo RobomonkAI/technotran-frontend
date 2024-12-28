@@ -77,6 +77,7 @@ const IndustriesWeServe = () => {
             {industriesWeServeCarouselData.map((item, index) => (
               <div key={index} className={styles.carouselItem}>
                 <Image
+                  priority
                   height={200}
                   width={200}
                   src={item.imgSrc}

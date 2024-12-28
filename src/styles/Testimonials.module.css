@@ -1,11 +1,12 @@
 .testimonialsSection {
-  height: 80vh;
+  max-height: 90vh;
+  height: auto;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 2rem 0;
+  margin: 3rem 0;
   gap: 2rem;
   padding: 2rem 0;
   background: linear-gradient(to bottom, #ffffff, #f0f0f5);
@@ -46,6 +47,7 @@
   text-align: center;
   height: 100%; /* Ensuring it takes full height */
   width: 100%;
+  padding: 1rem 0;
 }
 
 .testimonialCard {
@@ -57,9 +59,10 @@
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   width: 90%;
-  max-width: 400px; /* Optional: max width of the card */
+  max-width: 500px; /* Optional: max width of the card */
   height: 100%; /* Ensure the card takes full height */
   margin: auto;
+  border: 2px solid #4b0406;
 }
 
 .cardContent {
@@ -70,45 +73,50 @@
 }
 
 .descriptionContainer {
-  flex-grow: 1;
-  flex-shrink: 0;
+  height: 60%;
+  padding: 1rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  margin-bottom: 2rem;
 }
 
 .description {
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #555;
+  font-weight: 500;
   line-height: 1.5;
-  text-align: center;
+  text-align: justify;
+  letter-spacing: 0.03rem;
 }
 
 .authorInfo {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
+  gap: 1.5rem;
   margin-top: 10px;
   flex-shrink: 0;
-  height: 35%; /* Explicit height for author info */
+  padding: 0 1rem;
 }
 
 .cardImage {
   flex-shrink: 0;
 }
 
-.cardImage img {
-  width: 100%;
-  height: 100%;
+.cardImg {
+  width: 100px;
+  height: 100px;
   max-width: 120px;
   max-height: 120px;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid #ddd;
+  padding: 0.5rem;
+  border: 2px solid #4b0406;
 }
 
 .authorDetails {
-  margin-left: 15px;
   text-align: left;
 }
 
@@ -118,6 +126,67 @@
 }
 
 .authorDesignation {
-  font-size: 0.9rem;
-  color: #777;
+  font-size: 0.85rem;
+  color: #4b0406;
+  font-weight: 500;
+}
+
+.quoteIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem; /* Space between the quote and description */
+}
+
+.quoteIcon svg {
+  width: 3rem; /* Adjust size for better appearance */
+  height: 3rem; /* Keeps it proportional */
+  fill: #4b0406; /* Matches your theme color */
+}
+
+.slick-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%; /* Centers the arrows vertically */
+  transform: translateY(-50%);
+  z-index: 10; /* Ensures visibility above all other elements */
+  width: 50px; /* Adjust size */
+  height: 50px;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.8
+  ); /* Solid black background for contrast */
+  color: #fff; /* White arrow icon for contrast */
+  border-radius: 50%; /* Rounded buttons */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for prominence */
+  cursor: pointer;
+  opacity: 1; /* Full visibility */
+  border: 2px solid #fff; /* White border for better distinction */
+}
+
+.slick-prev {
+  left: -60px; /* Positions the left arrow outside the carousel */
+}
+
+.slick-next {
+  right: -60px; /* Positions the right arrow outside the carousel */
+}
+
+.slick-prev::before,
+.slick-next::before {
+  font-size: 20px; /* Adjust the size of the arrow icon */
+  color: #fff; /* Bright white arrow icons */
+  opacity: 1 !important; /* Force full opacity */
+  content: ""; /* Optional: Ensure no default icon content */
+}
+
+.slick-arrow:hover {
+  background-color: #4b0406; /* Dark red on hover */
+  color: #fff; /* White icon on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Enhanced shadow for hover effect */
+  opacity: 1; /* Maintain full opacity */
 }

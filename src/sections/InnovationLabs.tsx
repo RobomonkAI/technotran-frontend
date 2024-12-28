@@ -45,11 +45,12 @@ const InnovationLabsSection = () => {
           variants={imageVariant}
         >
           <Image
-            src="/Images/innovation-labs.png"
+            src="https://github.com/CVSCharan/Technotran_Assets/blob/main/innovation-labs.png?raw=true"
             alt="Innovation Labs Img"
             className={styles.innovationLabsImg}
             height={700}
             width={700}
+            priority
           />
         </motion.div>
         <motion.div
