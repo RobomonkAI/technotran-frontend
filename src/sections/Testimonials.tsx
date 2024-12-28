@@ -10,7 +10,6 @@ import { testimonialsCarouselData } from "@/utils/helpers";
 import Image from "next/image";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
-import type { CarouselRef } from "antd/es/carousel";
 
 const Testimonials = () => {
   // Create refs for carousel controls
