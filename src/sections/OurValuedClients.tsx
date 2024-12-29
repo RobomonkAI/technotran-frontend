@@ -63,6 +63,7 @@ const OurValuedClients = () => {
             >
               <div className={styles.cardImgContainer}>
                 <Image
+                  priority
                   src={item.imgSrc}
                   height={300}
                   width={300}

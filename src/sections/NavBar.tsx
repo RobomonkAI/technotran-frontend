@@ -77,6 +77,7 @@ const NavBar = () => {
               className={styles.logoImg}
               height={100}
               width={200}
+              priority
             />
           </Link>
         </motion.div>

@@ -56,6 +56,7 @@ const WhyChooseUs = () => {
             viewport={{ once: false, amount: 0.3 }} // Triggers each card animation in the viewport
           >
             <Image
+              priority
               src={item.imgSrc}
               alt={`why-choose-us-img${index}`}
               height={300}

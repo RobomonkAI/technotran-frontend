@@ -48,6 +48,7 @@ const FooterMainCarousel = () => {
               height={200}
               width={200}
               className={styles.carouselImage}
+              priority
             />
           </div>
         ))}
