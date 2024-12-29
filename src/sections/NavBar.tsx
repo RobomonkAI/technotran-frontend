@@ -5,7 +5,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 // import Logo from "/images/Technotran-logo.png";
 import styles from "../styles/NavBar.module.css";
-import { Menu, MenuItem, IconButton } from "@mui/material";
+import { Menu, MenuItem } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import KeyboardArrowDown from "@mui/icons-material/KeyboardArrowDown";
 import KeyboardArrowUp from "@mui/icons-material/KeyboardArrowUp";
