@@ -57,7 +57,7 @@ const Testimonials = () => {
       id="Testimonials"
       className={styles.testimonialsSection}
     >
-      <motion.div className={styles.mainContainer}>
+      <div className={styles.mainContainer}>
         <motion.h2
           initial="hidden"
           whileInView="visible"
@@ -141,7 +141,7 @@ const Testimonials = () => {
             <ArrowForwardIosIcon />
           </button>
         </div>
-      </motion.div>
+      </div>
     </motion.section>
   );
 };

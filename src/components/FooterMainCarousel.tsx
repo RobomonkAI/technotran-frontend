@@ -4,8 +4,6 @@
 import React, { useRef } from "react";
 import { motion } from "framer-motion";
 import { Carousel } from "antd";
-import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
-import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import styles from "../styles/FooterMain.module.css";
 import Image from "next/image";
 import { footerMainCarouselData } from "@/utils/helpers";
@@ -13,21 +11,26 @@ import { footerMainCarouselData } from "@/utils/helpers";
 const FooterMainCarousel = () => {
   const carouselRef = useRef<any>(null); // Ref for the Carousel component
 
-  // Custom functions to control the carousel
-  const goToPrev = () => {
-    if (carouselRef.current) {
-      carouselRef.current.prev();
-    }
-  };
-
-  const goToNext = () => {
-    if (carouselRef.current) {
-      carouselRef.current.next();
-    }
+  const cardVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.3,
+        ease: "easeInOut",
+      },
+    },
   };
 
   return (
-    <div className={styles.carouselContainer}>
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: false, amount: 0.4 }}
+      variants={cardVariants}
+      className={styles.carouselContainer}
+    >
       <Carousel
         ref={carouselRef}
         arrows={false}
@@ -49,7 +52,7 @@ const FooterMainCarousel = () => {
           </div>
         ))}
       </Carousel>
-    </div>
+    </motion.div>
   );
 };
 
