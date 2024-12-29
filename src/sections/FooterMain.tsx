@@ -112,7 +112,7 @@ const FooterMain = () => {
                     "https://www.facebook.com/technotran?mibextid=ZbWKwL"
                   )
                 }
-                className={styles.socialMediaIcons}
+                className={styles.followUsSocialMediaIcons}
               />
               <InstagramIcon
                 style={{ fill: "#cd486b" }}
@@ -121,7 +121,7 @@ const FooterMain = () => {
                     "https://www.instagram.com/technotran/?igshid=OGQ5ZDc2ODk2ZA%3D%3D"
                   )
                 }
-                className={styles.socialMediaIcons}
+                className={styles.followUsSocialMediaIcons}
               />
               <LinkedInIcon
                 style={{ fill: "#0077B5" }}
@@ -130,14 +130,14 @@ const FooterMain = () => {
                     "https://www.linkedin.com/company/technotran/"
                   )
                 }
-                className={styles.socialMediaIcons}
+                className={styles.followUsSocialMediaIcons}
               />
               <YouTubeIcon
                 style={{ fill: "#FF0000" }}
                 onClick={() =>
                   handleSocialIconsClick("https://www.youtube.com/@TechnoTran")
                 }
-                className={styles.socialMediaIcons}
+                className={styles.followUsSocialMediaIcons}
               />
             </div>
           </div>

@@ -179,12 +179,12 @@
   align-items: center;
 }
 
-.socialMediaIcons {
+.followUsSocialMediaIcons {
   cursor: pointer;
   font-size: 3.5rem;
 }
 
-.socialMediaIcons:hover {
+.followUsSocialMediaIcons:hover {
   fill: #333 !important;
   font-size: 3.7rem;
 }
