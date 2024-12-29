@@ -8,6 +8,7 @@ import DesignServices from "@/sections/DesignServices";
 import IndustriesWeServe from "@/sections/IndustriesWeServe";
 import OurValuedClients from "@/sections/OurValuedClients";
 import Testimonials from "@/sections/Testimonials";
+import FooterMain from "@/sections/FooterMain";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
         <OurValuedClients />
         <Testimonials />
       </div>
+      <FooterMain />
     </main>
   );
 }

@@ -1,0 +1,190 @@
+.footerMainSection {
+  height: 65vh;
+  width: 100%;
+  background-color: #4b0406;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerCarouselSection {
+  height: 35%;
+  width: 100%;
+  max-width: 80rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerSubSection {
+  height: 65%;
+  width: 100%;
+  max-width: 80rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  gap: 0.2rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 500;
+}
+
+.footerSubContainer {
+  width: 67%;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.footerSubContainerOne {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.quickLinksSection {
+  height: 100%;
+  width: 30%;
+}
+
+.reachUsSection {
+  height: 100%;
+  width: 100%;
+}
+
+.contactInfoSection {
+  height: 100%;
+  width: 100%;
+}
+
+.quickLinksItem {
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.quickLinksTxt {
+  font-size: 0.9rem;
+  color: white;
+  letter-spacing: 0.03rem;
+  font-weight: 500;
+}
+
+.quickLinksSubSection {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding: 0.5rem;
+}
+
+.reachUsSubSection {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0.5rem;
+  gap: 0.5rem;
+  padding-top: 0.8rem;
+  margin-bottom: 0.7rem;
+}
+
+.reachUsTxt {
+  font-size: 0.8rem;
+  color: white;
+  letter-spacing: 0.03rem;
+  font-weight: 500;
+  text-align: left;
+}
+
+.carouselContainer {
+  height: 100%;
+  width: 80%;
+  max-width: 80rem;
+  top: 50%;
+  overflow: hidden;
+  padding: 2rem 0;
+}
+
+.carouselItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.carouselImage {
+  width: 120px;
+  height: 120px;
+  object-fit: fill;
+  border-radius: 8px;
+  align-self: center;
+}
+
+.contactInfoSubSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0.5rem;
+  padding-top: 0.8rem;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.contactInfoItems {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.contactIcons {
+  font-size: 1rem;
+  fill: white !important;
+}
+
+.contactInfoTxt {
+  font-size: 0.8rem;
+  color: white;
+  letter-spacing: 0.03rem;
+}
+
+.followUsSection {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.followUsIconsContainer {
+  height: 40%;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.socialMediaIcons {
+  cursor: pointer;
+  font-size: 3.5rem;
+}
+
+.socialMediaIcons:hover {
+  fill: #333 !important;
+  font-size: 3.7rem;
+}

@@ -28,6 +28,10 @@
   gap: 1rem;
 }
 
+.navLinksActive {
+  transform: translateX(0); /* Slide in */
+}
+
 .navLinks li {
   height: 100%;
   width: 100%;
@@ -42,7 +46,6 @@
   text-decoration: none;
   font-size: 1rem;
   transition: color font-size 0.3s ease;
-  color: #333;
   letter-spacing: 0.05rem;
   text-align: center;
 }
@@ -108,18 +111,17 @@
 
   .navLinks {
     position: absolute;
-    top: 120px;
+    top: 60px; /* Adjust the top position to ensure it doesn't overlap with the logo */
     right: 0;
-    background-color: transparent;
+    background-color: white;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-start; /* Align items to the left for a clean mobile look */
     padding: 1rem 2rem;
-    width: 200px;
+    width: 100%; /* Make it full width */
     height: auto;
     box-shadow: -2px 4px 6px rgba(0, 0, 0, 0.3);
     transform: translateX(100%);
     transition: transform 0.3s ease-in-out;
-    width: 100%;
   }
 
   .navLinksActive {
@@ -130,5 +132,27 @@
     width: 100%;
     justify-content: flex-start;
     margin-bottom: 1rem;
+  }
+
+  .navLinks li h2 {
+    font-size: 1.1rem; /* Adjust the font size for better readability */
+  }
+
+  .subMenu {
+    padding-left: 1rem;
+    background-color: #f9f9f9;
+    margin-top: 0.5rem;
+    z-index: 1000;
+  }
+
+  .subMenuItem {
+    font-size: 0.9rem;
+    color: #555;
+    padding-left: 1.5rem; /* Add padding to submenus for better alignment */
+  }
+
+  /* Styling for dropdown arrows */
+  .arrows {
+    font-size: 1rem;
   }
 }

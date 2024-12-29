@@ -1,4 +1,5 @@
 import {
+  FooterMainCarouselDataItem,
   IndustriesWeServeCarouselDataItem,
   TestimonialsCarouselDataItem,
   TrainingServicesItem,
@@ -253,5 +254,28 @@ export const testimonialsCarouselData: TestimonialsCarouselDataItem[] = [
       "https://github.com/CVSCharan/Technotran_Assets/blob/main/Picture11.png?raw=true",
     name: "Prof.P. Srinivasulu Reddy",
     designation: "HOD, NEC, Gudur",
+  },
+];
+
+export const footerMainCarouselData: FooterMainCarouselDataItem[] = [
+  {
+    id: 1,
+    imgSrc:
+      "https://github.com/CVSCharan/Technotran_Assets/blob/main/photo_1.jpg?raw=true",
+  },
+  {
+    id: 2,
+    imgSrc:
+      "https://github.com/CVSCharan/Technotran_Assets/blob/main/photo_2.jpg?raw=true",
+  },
+  {
+    id: 3,
+    imgSrc:
+      "https://github.com/CVSCharan/Technotran_Assets/blob/main/photo_3.jpg?raw=true",
+  },
+  {
+    id: 4,
+    imgSrc:
+      "https://github.com/CVSCharan/Technotran_Assets/blob/main/photo_4.jpg?raw=true",
   },
 ];

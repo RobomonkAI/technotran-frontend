@@ -21,7 +21,7 @@ const NavBar = () => {
   const [activeNavItem, setActiveNavItem] = useState<string>("home");
 
   const toggleMenu = () => {
-    console.log("clicked");
+    console.log("clicked", isMobileMenuOpen);
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
@@ -80,15 +80,15 @@ const NavBar = () => {
             />
           </Link>
         </motion.div>
-        <div className={styles.hamburger}>
-          <IconButton onClick={toggleMenu}>
-            <MenuIcon />
-          </IconButton>
+        <div className={styles.hamburger} onClick={toggleMenu}>
+          <MenuIcon aria-label="Toggle Menu" />
         </div>
         <motion.ul
           variants={containerVariant}
           initial="hidden"
           animate="visible"
+          role="menu"
+          aria-hidden={!isMobileMenuOpen}
           className={`${styles.navLinks} ${
             isMobileMenuOpen ? styles.navLinksActive : ""
           }`}

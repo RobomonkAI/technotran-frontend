@@ -77,7 +77,6 @@ const Testimonials = () => {
         >
           <Carousel
             ref={carouselRef} // Attach the ref to the Carousel component
-            style={{ height: "100%", width: "100%" }}
             arrows={false} // Disable default arrows
             autoplay
             autoplaySpeed={2500}

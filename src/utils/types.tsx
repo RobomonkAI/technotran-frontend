@@ -30,3 +30,8 @@ export interface TestimonialsCarouselDataItem {
   name: string;
   designation: string;
 }
+
+export interface FooterMainCarouselDataItem {
+  id: number;
+  imgSrc: string;
+}
