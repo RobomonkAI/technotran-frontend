@@ -25,17 +25,17 @@ const WorkshopsPage = () => {
     },
   };
 
-  const cardVariants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.3,
-        ease: "easeInOut",
-      },
-    },
-  };
+//   const cardVariants = {
+//     hidden: { opacity: 0, y: 50 },
+//     visible: {
+//       opacity: 1,
+//       y: 0,
+//       transition: {
+//         duration: 0.3,
+//         ease: "easeInOut",
+//       },
+//     },
+//   };
 
   return (
     <main id="Workshops Page" className={styles.mainBody}>

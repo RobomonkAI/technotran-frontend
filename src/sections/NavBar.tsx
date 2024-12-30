@@ -10,7 +10,6 @@ import MenuIcon from "@mui/icons-material/Menu";
 import KeyboardArrowDown from "@mui/icons-material/KeyboardArrowDown";
 import KeyboardArrowUp from "@mui/icons-material/KeyboardArrowUp";
 import NavBanner from "@/sections/NavBanner";
-import { MenuRounded } from "@mui/icons-material";
 
 const NavBar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
