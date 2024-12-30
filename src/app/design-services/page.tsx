@@ -96,12 +96,12 @@ const DesignServicesPage = () => {
             style={{ color: "white" }}
             className={`${styles.sectionTxt} quicksand-text`}
           >
-            We specialize in electronic hardware design, prototyping, and
+            {` We specialize in electronic hardware design, prototyping, and
             development services customized to our clients' needs. Whether
             you're an expert with detailed specifications or a non-technical
             customer, we have the expertise to translate your requirements into
             functional designs. Our services cover the entire spectrum of
-            electronic hardware design, bringing your ideas to life efficiently.
+            electronic hardware design, bringing your ideas to life efficiently.`}
           </motion.h3>
         </div>
         <div className={styles.sectionThree}>
