@@ -5,6 +5,7 @@ import { useSpring, animated } from "@react-spring/web";
 import { useScroll } from "react-use-gesture";
 import { motion } from "framer-motion";
 import styles from "../styles/DesignServices.module.css";
+import Link from "next/link";
 
 const DesignServices = () => {
   // Scroll listener and animation
@@ -66,9 +67,9 @@ const DesignServices = () => {
           comprehensive solutions for your prototyping and manufacturing needs.
           From concept to creation, we're here to turn your vision into reality.`}
         </p>
-        <a href="#explore-more" className={styles.exploreLink}>
+        <Link href="/design-services" className={styles.exploreLink}>
           Explore more
-        </a>
+        </Link>
       </motion.div>
     </section>
   );

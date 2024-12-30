@@ -7,6 +7,7 @@ export interface WhyChooseUsItem {
 
 export interface TrainingServicesItem {
   id: number;
+  type: string;
   imgSrc: string;
   desc: string;
 }

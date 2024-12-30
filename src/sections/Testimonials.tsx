@@ -49,6 +49,28 @@ const Testimonials = () => {
     carouselRef.current.next();
   };
 
+  // Settings for the carousel responsiveness
+  const settings = {
+    autoplay: true,
+    autoplaySpeed: 2500,
+    dots: false,
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 1200, // Large screens
+        settings: { slidesToShow: 2, slidesToScroll: 1 },
+      },
+      {
+        breakpoint: 768, // Tablets
+        settings: { slidesToShow: 1, slidesToScroll: 1 },
+      },
+      {
+        breakpoint: 480, // Mobile devices
+        settings: { slidesToShow: 1, slidesToScroll: 1 },
+      },
+    ],
+  };
+
   return (
     <motion.section
       initial="hidden"
@@ -77,12 +99,7 @@ const Testimonials = () => {
         >
           <Carousel
             ref={carouselRef} // Attach the ref to the Carousel component
-            arrows={false} // Disable default arrows
-            autoplay
-            autoplaySpeed={2500}
-            dots={false}
-            slidesToShow={2}
-            slidesToScroll={1}
+            {...settings}
           >
             {testimonialsCarouselData.map((item) => (
               <div key={item.id} className={styles.carouselItem}>

@@ -106,7 +106,7 @@ const FooterMain = () => {
             {/* Social Media Icons Section */}
             <div className={styles.followUsIconsContainer}>
               <FacebookIcon
-                style={{ fill: "#1877F2", fontSize: "3.5rem" }}
+                style={{ fill: "#1877F2", fontSize: "3rem" }}
                 onClick={() =>
                   handleSocialIconsClick(
                     "https://www.facebook.com/technotran?mibextid=ZbWKwL"
@@ -115,7 +115,7 @@ const FooterMain = () => {
                 className={styles.followUsSocialMediaIcons}
               />
               <InstagramIcon
-                style={{ fill: "#cd486b", fontSize: "3.5rem" }}
+                style={{ fill: "#cd486b", fontSize: "3rem" }}
                 onClick={() =>
                   handleSocialIconsClick(
                     "https://www.instagram.com/technotran/?igshid=OGQ5ZDc2ODk2ZA%3D%3D"
@@ -124,7 +124,7 @@ const FooterMain = () => {
                 className={styles.followUsSocialMediaIcons}
               />
               <LinkedInIcon
-                style={{ fill: "#0077B5", fontSize: "3.5rem" }}
+                style={{ fill: "#0077B5", fontSize: "3rem" }}
                 onClick={() =>
                   handleSocialIconsClick(
                     "https://www.linkedin.com/company/technotran/"
@@ -133,7 +133,7 @@ const FooterMain = () => {
                 className={styles.followUsSocialMediaIcons}
               />
               <YouTubeIcon
-                style={{ fill: "#FF0000", fontSize: "3.5rem" }}
+                style={{ fill: "#FF0000", fontSize: "3rem" }}
                 onClick={() =>
                   handleSocialIconsClick("https://www.youtube.com/@TechnoTran")
                 }

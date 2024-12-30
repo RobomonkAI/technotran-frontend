@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
 import React, { useRef } from "react";
@@ -23,6 +22,28 @@ const FooterMainCarousel = () => {
     },
   };
 
+  // Settings for the carousel responsiveness
+  const settings = {
+    autoplay: true,
+    autoplaySpeed: 2500,
+    dots: false,
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 1200, // Large screens
+        settings: { slidesToShow: 4, slidesToScroll: 1 },
+      },
+      {
+        breakpoint: 768, // Tablets
+        settings: { slidesToShow: 4, slidesToScroll: 1 },
+      },
+      {
+        breakpoint: 480, // Mobile devices
+        settings: { slidesToShow: 2, slidesToScroll: 1 },
+      },
+    ],
+  };
+
   return (
     <motion.div
       initial="hidden"
@@ -31,15 +52,7 @@ const FooterMainCarousel = () => {
       variants={cardVariants}
       className={styles.carouselContainer}
     >
-      <Carousel
-        ref={carouselRef}
-        arrows={false}
-        autoplay
-        autoplaySpeed={2500}
-        dots={false}
-        slidesToShow={4}
-        slidesToScroll={1}
-      >
+      <Carousel {...settings} ref={carouselRef}>
         {footerMainCarouselData.map((item, index) => (
           <div key={index} className={styles.carouselItem}>
             <Image

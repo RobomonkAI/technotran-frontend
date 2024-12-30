@@ -5,8 +5,11 @@ import styles from "../styles/TrainingServices.module.css";
 import { trainingServicesData } from "@/utils/helpers";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { useRouter } from "next/navigation";
 
 const TrainingServices = () => {
+  const router = useRouter();
+
   // Fade-In animation for the entire section
   const sectionVariants = {
     hidden: { opacity: 0, y: 50 },
@@ -32,6 +35,15 @@ const TrainingServices = () => {
   //       },
   //     },
   //   };
+
+  const handleOnClick = (type: string) => {
+    if (type === "Internships") {
+      // Opens the URL in a new tab
+      window.open("https://internships.technotran.in/", "_blank");
+    } else if (type === "Workshops") {
+      router.push("/workshops");
+    }
+  };
 
   return (
     <motion.section
@@ -67,7 +79,11 @@ const TrainingServices = () => {
 
       <div className={styles.cardsMainContainer}>
         {trainingServicesData.map((item, index) => (
-          <div key={index} className={styles.cardContainer}>
+          <div
+            onClick={() => handleOnClick(item.type)}
+            key={index}
+            className={styles.cardContainer}
+          >
             <Image
               priority
               src={item.imgSrc}

@@ -1,0 +1,225 @@
+.mainBody {
+  /* max-width: 80rem; 1280px; */
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: hidden;
+  position: relative;
+  color: white;
+}
+
+.designServicesMainContainer {
+  height: 85vh;
+  width: 100vw;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.designServicesLandingImg {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+}
+
+.designServicesMainContainer {
+  position: relative;
+  height: 85vh;
+  width: 100vw;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+  overflow: hidden;
+}
+
+.contentSection {
+  padding: 2rem 5%;
+  background-color: #fdfdfd;
+}
+
+.sectionOne {
+  min-height: 10vh;
+  width: 100%;
+  margin-bottom: 3rem;
+  padding: 3rem;
+  background-color: #f9f9f9; /* Soft background */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sectionTxt {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  letter-spacing: 0.03rem;
+  font-weight: 500;
+  max-width: 80rem;
+  text-align: justify;
+}
+
+.sectionTwo {
+  min-height: 10vh;
+  width: 100%;
+  margin-bottom: 3rem;
+  padding: 3rem;
+  background-color: #4b0406;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sectionThree {
+  min-height: 20vh;
+  width: 100%;
+  margin-bottom: 3rem;
+  padding: 3rem;
+  background-color: #f9f9f9; /* Soft background */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.subTitle {
+  font-size: 2rem;
+  color: #4b0406;
+  margin-bottom: 1rem;
+  letter-spacing: 0.04rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+.list {
+  padding: 1rem;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.list li {
+  max-width: 80rem;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: left;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1.5px solid #4b0406;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Modern shadow */
+}
+
+@media (max-width: 768px) {
+  .subTitle {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contentSection {
+    padding: 1rem 2%;
+  }
+
+  .sectionOne,
+  .sectionTwo,
+  .sectionThree {
+    padding: 1rem;
+  }
+}
+
+.contentMainContainer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentMainContainerOdd {
+  max-width: 80rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 5%;
+  margin-bottom: 3rem;
+  background-color: #4b0406;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Modern shadow */
+}
+
+.contentMainContainerEven {
+  max-width: 80rem;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 5%;
+  margin-bottom: 3rem;
+  background-color: #f9f9f9; /* Soft background */
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Modern shadow */
+}
+
+/* Even section reversed layout */
+.contentMainContainerEven {
+  flex-direction: row-reverse;
+}
+
+/* Content container */
+.contentSubContainer {
+  flex: 1;
+  padding: 1rem 2rem;
+}
+
+.contentSubContainer h2 {
+  font-size: 2rem;
+  color: #333; /* Classic dark text */
+  font-weight: bold;
+  letter-spacing: 0.04rem;
+  margin-bottom: 1rem;
+}
+
+.contentSubContainer h3 {
+  font-size: 1.2rem;
+  color: #555; /* Softer text for descriptions */
+  line-height: 1.6;
+  text-align: justify;
+  font-weight: 500;
+  letter-spacing: 0.03rem;
+}
+
+/* Image styling */
+.contentImg {
+  max-width: 400px;
+  height: 300px;
+  border-radius: 10px;
+  object-fit: cover; /* Maintain aspect ratio */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Modern image shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contentImg:hover {
+  transform: scale(1.05); /* Subtle zoom effect */
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.enquiryContainer {
+  min-height: 30vh;
+  width: 100%;
+  background-color: #f9f9f9; /* Soft background */
+  padding: 1rem 0;
+}

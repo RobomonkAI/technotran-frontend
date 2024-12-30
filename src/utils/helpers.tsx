@@ -31,18 +31,21 @@ export const whyChooseUsData: WhyChooseUsItem[] = [
 export const trainingServicesData: TrainingServicesItem[] = [
   {
     id: 1,
+    type: "Workshops",
     imgSrc:
       "https://github.com/CVSCharan/Technotran_Assets/blob/main/workshops-1.png?raw=true",
     desc: "Unlock Your Potential with Hands-On Workshops at Technotran",
   },
   {
     id: 2,
+    type: "Internships",
     imgSrc:
       "https://github.com/CVSCharan/Technotran_Assets/blob/main/Internships.png?raw=true",
     desc: "Gain Valuable Experience with Technotran's Internship Programs",
   },
   {
     id: 3,
+    type: "Job-Oriented-Courses",
     imgSrc:
       "https://github.com/CVSCharan/Technotran_Assets/blob/main/job-oriented-courses.png?raw=true",
     desc: "Launch Your Career with Industry-Ready Skills from Technotran",

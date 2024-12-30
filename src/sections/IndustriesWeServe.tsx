@@ -47,6 +47,28 @@ const IndustriesWeServe = () => {
 
   const carouselRef = React.useRef<any>(null); // Ref for the Carousel component
 
+  // Settings for the carousel responsiveness
+  const settings = {
+    autoplay: true,
+    autoplaySpeed: 2500,
+    dots: false,
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 1200, // Large screens
+        settings: { slidesToShow: 4, slidesToScroll: 1 },
+      },
+      {
+        breakpoint: 768, // Tablets
+        settings: { slidesToShow: 3, slidesToScroll: 1 },
+      },
+      {
+        breakpoint: 480, // Mobile devices
+        settings: { slidesToShow: 2, slidesToScroll: 1 },
+      },
+    ],
+  };
+
   return (
     <section className={styles.industriesWeServeSection} {...bind()}>
       {/* Parallax Background */}
@@ -87,12 +109,7 @@ const IndustriesWeServe = () => {
         <div className={styles.carouselContainer}>
           <Carousel
             ref={carouselRef} // Attach the ref to the Carousel component
-            arrows={false} // Disable the default arrows
-            autoplay
-            autoplaySpeed={2500}
-            dots={false}
-            slidesToShow={4} // Show 4 slides at a time
-            slidesToScroll={1} // Scroll one slide at a time
+            {...settings}
           >
             {industriesWeServeCarouselData.map((item, index) => (
               <div key={index} className={styles.carouselItem}>

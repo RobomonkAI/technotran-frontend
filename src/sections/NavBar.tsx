@@ -9,7 +9,8 @@ import { Menu, MenuItem } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import KeyboardArrowDown from "@mui/icons-material/KeyboardArrowDown";
 import KeyboardArrowUp from "@mui/icons-material/KeyboardArrowUp";
-import NavBanner from "./NavBanner";
+import NavBanner from "@/sections/NavBanner";
+import { MenuRounded } from "@mui/icons-material";
 
 const NavBar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -21,7 +22,6 @@ const NavBar = () => {
   const [activeNavItem, setActiveNavItem] = useState<string>("home");
 
   const toggleMenu = () => {
-    console.log("clicked", isMobileMenuOpen);
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
@@ -46,6 +46,7 @@ const NavBar = () => {
   const handleNavItemClick = (item: string) => {
     setActiveNavItem(item);
     handleDropdownClose();
+    setIsMobileMenuOpen(false); // Close mobile menu on any nav item click
   };
 
   const containerVariant = {
@@ -149,7 +150,7 @@ const NavBar = () => {
             )}
           </li>
           <li>
-            <Link className={styles.navLinksTxt} href="/">
+            <Link className={styles.navLinksTxt} href="/design-services">
               <h2
                 className={
                   activeNavItem === "design-services"
@@ -211,7 +212,7 @@ const NavBar = () => {
                       onClick={handleDropdownClose}
                     >
                       <Link className={styles.navLinksTxt} href="/">
-                        STEM Programs
+                        School Robotics Lab
                       </Link>
                     </MenuItem>
                     <MenuItem
@@ -219,7 +220,15 @@ const NavBar = () => {
                       onClick={handleDropdownClose}
                     >
                       <Link className={styles.navLinksTxt} href="/">
-                        Science Exhibitions
+                        ATAL Tinkering Lab
+                      </Link>
+                    </MenuItem>
+                    <MenuItem
+                      className={styles.subMenuItem}
+                      onClick={handleDropdownClose}
+                    >
+                      <Link className={styles.navLinksTxt} href="/">
+                        AR / VR Lab
                       </Link>
                     </MenuItem>
                   </div>
@@ -247,12 +256,22 @@ const NavBar = () => {
                   <div style={{ paddingLeft: "1rem", marginTop: "-0.5rem" }}>
                     <MenuItem onClick={handleDropdownClose}>
                       <Link className={styles.navLinksTxt} href="/">
-                        Research Labs
+                        IOT Lab
                       </Link>
                     </MenuItem>
                     <MenuItem onClick={handleDropdownClose}>
                       <Link className={styles.navLinksTxt} href="/">
-                        Innovation Hackathons
+                        Robotics & ES Lab
+                      </Link>
+                    </MenuItem>
+                    <MenuItem onClick={handleDropdownClose}>
+                      <Link className={styles.navLinksTxt} href="/">
+                        AR / VR Lab
+                      </Link>
+                    </MenuItem>
+                    <MenuItem onClick={handleDropdownClose}>
+                      <Link className={styles.navLinksTxt} href="/">
+                        Center of Excellence
                       </Link>
                     </MenuItem>
                   </div>
