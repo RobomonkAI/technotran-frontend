@@ -25,17 +25,17 @@ const WorkshopsPage = () => {
     },
   };
 
-//   const cardVariants = {
-//     hidden: { opacity: 0, y: 50 },
-//     visible: {
-//       opacity: 1,
-//       y: 0,
-//       transition: {
-//         duration: 0.3,
-//         ease: "easeInOut",
-//       },
-//     },
-//   };
+  const cardVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.3,
+        ease: "easeInOut",
+      },
+    },
+  };
 
   return (
     <main id="Workshops Page" className={styles.mainBody}>
@@ -97,7 +97,14 @@ const WorkshopsPage = () => {
         </motion.h2>
         <div className={styles.imageContainer}>
           {workshopsData.map((item, index) => (
-            <div key={item.id} className={styles.imageCard}>
+            <motion.div
+              key={item.id}
+              initial="hidden"
+              whileInView="visible"
+              variants={cardVariants}
+              viewport={{ once: false, amount: 0.3 }}
+              className={styles.imageCard}
+            >
               <Image
                 src={item.imgSrc}
                 alt={`workshop img${index}`}
@@ -111,7 +118,7 @@ const WorkshopsPage = () => {
               >
                 Know More
               </a>
-            </div>
+            </motion.div>
           ))}
         </div>
       </section>

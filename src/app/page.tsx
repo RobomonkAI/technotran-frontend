@@ -12,7 +12,7 @@ import FooterMain from "@/sections/FooterMain";
 
 export default function Home() {
   return (
-    <main>
+    <main id="Home Page">
       <NavBar />
       <div className={styles.mainBody}>
         <Landing />

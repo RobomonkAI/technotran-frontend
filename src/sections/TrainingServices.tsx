@@ -42,6 +42,8 @@ const TrainingServices = () => {
       window.open("https://internships.technotran.in/", "_blank");
     } else if (type === "Workshops") {
       router.push("/workshops");
+    } else {
+      router.push("/job-oriented-courses");
     }
   };
 
