@@ -107,15 +107,10 @@
 
 /* Image styling */
 .cardImage {
+  height: 35%;
   width: 100%;
   height: auto;
-  object-fit: cover;
-}
-
-/* Card hover effect */
-.card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+  object-fit: fill;
 }
 
 /* Card content styles */

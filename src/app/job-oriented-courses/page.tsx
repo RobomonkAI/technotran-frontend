@@ -81,6 +81,7 @@ const JobOrientedCourcesPage = () => {
                 alt={`Job Oriented Courses img${index}`}
                 height={300}
                 width={300}
+                priority
                 className={styles.cardImage}
               />
               <div className={styles.cardContent}>
