@@ -1,5 +1,5 @@
 .whyChooseUsContainer {
-  height: 92vh;
+  height: 85vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -25,14 +25,14 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 0.2rem;
   height: 100%;
   width: 100%;
   max-width: 80rem /* 1280px */;
 }
 
 .cardContainer {
-  width: 32%;
+  width: 33%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -45,21 +45,16 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.cardContainer:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
 .cardImg {
-  height: 60%;
+  height: 55%;
   width: 100%;
   object-fit: fill;
 }
 
 .cardSubContainer {
-  height: 40%;
+  height: 45%;
   width: 100%;
-  padding: 1rem;
+  padding: 0.8rem;
   background-color: #4b0406;
   display: flex;
   flex-direction: column;
@@ -69,10 +64,10 @@
 }
 
 .cardTxt {
-  font-size: 1rem;
-  line-height: 1.5rem;
-  letter-spacing: 0.03rem;
-  text-align: left;
+  text-align: justify;
+  font-size: 0.9rem;
+  line-height: 1.6rem;
+  letter-spacing: 0.05rem;
   color: #f5f5f5;
   font-weight: 500;
 }

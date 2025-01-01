@@ -9,6 +9,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import FooterMainCarousel from "@/components/FooterMainCarousel";
+import Image from "next/image";
 
 const FooterMain = () => {
   const handleSocialIconsClick = (link: string) => {
@@ -140,6 +141,14 @@ const FooterMain = () => {
                 className={styles.followUsSocialMediaIcons}
               />
             </div>
+            <Image
+              src="/Images/Technotran-logo.png"
+              alt="Footer Logo"
+              height={200}
+              width={300}
+              priority
+              className={styles.footerLogo}
+            />
           </div>
         </div>
       </div>
