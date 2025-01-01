@@ -67,7 +67,11 @@ const ContactUsPage = () => {
           </motion.h2>
         </div>
       </section>
-      <section
+      <motion.section
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: false, amount: 0.2 }}
+        variants={cardVariants}
         id="Contact Us Content Section"
         className={styles.contactSection}
       >
@@ -123,7 +127,7 @@ const ContactUsPage = () => {
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
       <FooterMain />
       <WhatsAppBtn />
       <PhoneBtn />
