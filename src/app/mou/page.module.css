@@ -1,0 +1,58 @@
+.mainBody {
+  /* max-width: 80rem; 1280px; */
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: hidden;
+  position: relative;
+  color: white;
+}
+
+.mouMainContainer {
+  height: 85vh;
+  width: 100vw;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.mouLandingImg {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+}
+
+.sectionOne {
+  min-height: 10vh;
+  width: 100%;
+  margin-bottom: 3rem;
+  padding: 3rem;
+  background-color: #f9f9f9; /* Soft background */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sectionTxt {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  letter-spacing: 0.03rem;
+  font-weight: 500;
+  max-width: 80rem;
+  text-align: justify;
+}
+
+.subTitle {
+  font-size: 2rem;
+  color: #4b0406;
+  margin-bottom: 1rem;
+  letter-spacing: 0.04rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 1.5rem 0;
+}

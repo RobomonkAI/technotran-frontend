@@ -70,11 +70,11 @@ const DesignServicesPage = () => {
             viewport={{ once: false, amount: 0.2 }}
             className={`${styles.sectionTxt} quicksand-text`}
           >
-            At Technotran, we pride ourselves on our Quality design services,
+            {` At Technotran, we pride ourselves on our Quality design services,
             powered by our state-of-the-art manufacturing unit equipped with
             advanced machinery. Our dedicated facility includes CNC machines,
             laser cutting machines, and 3D printers, enabling us to offer a wide
-            range of design solutions tailored to meet your specific needs.
+            range of design solutions tailored to meet your specific needs.`}
           </motion.h3>
         </div>
         <div className={styles.sectionTwo}>

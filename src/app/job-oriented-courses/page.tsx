@@ -45,7 +45,7 @@ const JobOrientedCourcesPage = () => {
       >
         <Image
           src="/images/Job-oriented-courses-banner-img.png"
-          alt="Workshops Landing Img"
+          alt="Job Oriented Landing Img"
           height={700}
           width={1000}
           priority
@@ -65,7 +65,10 @@ const JobOrientedCourcesPage = () => {
           </motion.h3>
         </div>
       </section>
-      <section id="Workshops Content Section" className={styles.contentSection}>
+      <section
+        id="Job Oriented Content Section"
+        className={styles.contentSection}
+      >
         <div className={styles.container}>
           {jobOrientedCoursesData.map((item, index) => (
             <motion.div
