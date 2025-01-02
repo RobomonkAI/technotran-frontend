@@ -6,7 +6,9 @@ import { motion } from "framer-motion";
 
 const WhatsAppBtn = () => {
   const handleWhatsAppClick = () => {
-    window.open("https://wa.me/919000325936", "_blank");
+    if (typeof window !== "undefined") {
+      window.open("https://wa.me/919000325936", "_blank");
+    }
   };
 
   const variants = {

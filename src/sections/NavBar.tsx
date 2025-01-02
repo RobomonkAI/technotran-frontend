@@ -25,11 +25,15 @@ const NavBar = () => {
       }
     };
 
-    window.addEventListener("resize", handleResize);
-    handleResize(); // Initialize on mount
+    if (typeof window !== "undefined") {
+      window.addEventListener("resize", handleResize);
+      handleResize(); // Initialize on mount
+    }
 
     return () => {
-      window.removeEventListener("resize", handleResize);
+      if (typeof window !== "undefined") {
+        window.removeEventListener("resize", handleResize);
+      }
     };
   }, []);
 
