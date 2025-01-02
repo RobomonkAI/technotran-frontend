@@ -1,27 +1,24 @@
 "use client";
+
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-// import Logo from "/images/Technotran-logo.png";
-import styles from "../styles/NavBar.module.css";
 import { Menu, MenuItem } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
-import KeyboardArrowDown from "@mui/icons-material/KeyboardArrowDown";
-import KeyboardArrowUp from "@mui/icons-material/KeyboardArrowUp";
 import NavBanner from "@/sections/NavBanner";
+import DropdownMenu from "@/components/DropdownMenu";
+import styles from "../styles/NavBar.module.css";
 
 const NavBar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
-  const [activeSubDropdown, setActiveSubDropdown] = useState<string | null>(
-    null
-  );
   const [activeNavItem, setActiveNavItem] = useState<string>("home");
 
   const toggleMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
+    setIsMobileMenuOpen((prevState) => !prevState);
+    console.log("Clicked", isMobileMenuOpen);
   };
 
   const handleDropdownOpen = (
@@ -35,17 +32,12 @@ const NavBar = () => {
   const handleDropdownClose = () => {
     setAnchorEl(null);
     setActiveDropdown(null);
-    setActiveSubDropdown(null);
-  };
-
-  const handleSubDropdownToggle = (menu: string) => {
-    setActiveSubDropdown(menu === activeSubDropdown ? null : menu); // Toggle the sub-dropdown
   };
 
   const handleNavItemClick = (item: string) => {
     setActiveNavItem(item);
     handleDropdownClose();
-    setIsMobileMenuOpen(false); // Close mobile menu on any nav item click
+    setIsMobileMenuOpen(false); // Ensure the menu closes when a nav item is clicked
   };
 
   const containerVariant = {
@@ -84,260 +76,81 @@ const NavBar = () => {
         <div className={styles.hamburger} onClick={toggleMenu}>
           <MenuIcon aria-label="Toggle Menu" />
         </div>
-        <motion.ul
-          variants={containerVariant}
-          initial="hidden"
-          animate="visible"
-          role="menu"
-          aria-hidden={!isMobileMenuOpen}
-          className={`${styles.navLinks} ${
-            isMobileMenuOpen ? styles.navLinksActive : ""
-          }`}
-        >
-          <li>
-            <Link className={styles.navLinksTxt} href="/">
-              <h2
-                className={activeNavItem === "home" ? styles.activeNavItem : ""}
-                onClick={() => handleNavItemClick("home")}
-              >
-                Home
-              </h2>
-            </Link>
-          </li>
-          <li>
-            <div
-              aria-haspopup="true"
-              aria-expanded={activeDropdown === "training"}
-              onClick={(e) => handleDropdownOpen(e, "training")}
-              style={{
-                display: "flex",
-                alignItems: "center",
-                cursor: "pointer",
-              }}
-            >
-              <h2>Training Services</h2>
-              {activeDropdown === "training" ? (
-                <KeyboardArrowUp className={styles.arrows} />
-              ) : (
-                <KeyboardArrowDown className={styles.arrows} />
-              )}
-            </div>
-            {activeDropdown === "training" && (
-              <Menu
-                anchorEl={anchorEl}
-                open={Boolean(anchorEl)}
-                onClose={handleDropdownClose}
-                transformOrigin={{ vertical: "top", horizontal: "right" }}
-                anchorOrigin={{ vertical: "bottom", horizontal: "right" }}
-              >
-                <MenuItem onClick={handleDropdownClose}>
-                  <Link className={styles.navLinksTxt} href="/">
-                    Workshops
-                  </Link>
-                </MenuItem>
-                <MenuItem onClick={handleDropdownClose}>
-                  <Link className={styles.navLinksTxt} href="/">
-                    Internships
-                  </Link>
-                </MenuItem>
-                <MenuItem onClick={handleDropdownClose}>
-                  <Link className={styles.navLinksTxt} href="/">
-                    Job Oriented Courses
-                  </Link>
-                </MenuItem>
-              </Menu>
-            )}
-          </li>
-          <li>
-            <Link className={styles.navLinksTxt} href="/design-services">
-              <h2
-                className={
-                  activeNavItem === "design-services"
-                    ? styles.activeNavItem
-                    : ""
-                }
-                onClick={() => handleNavItemClick("design-services")}
-              >
-                Design Services
-              </h2>
-            </Link>
-          </li>
-          <li>
-            <div
-              aria-haspopup="true"
-              aria-expanded={activeDropdown === "innovation"}
-              onClick={(e) => handleDropdownOpen(e, "innovation")}
-              style={{
-                display: "flex",
-                alignItems: "center",
-                cursor: "pointer",
-              }}
-            >
-              <h2>Innovation Labs</h2>
-              {activeDropdown === "innovation" ? (
-                <KeyboardArrowUp className={styles.arrows} />
-              ) : (
-                <KeyboardArrowDown className={styles.arrows} />
-              )}
-            </div>
-            {activeDropdown === "innovation" && (
-              <Menu
-                anchorEl={anchorEl}
-                open={Boolean(anchorEl)}
-                onClose={handleDropdownClose}
-              >
-                <MenuItem
-                  onClick={() => handleSubDropdownToggle("school")}
-                  style={{
-                    display: "flex",
-                    justifyContent: "space-between",
-                    alignItems: "center",
-                    width: "100%",
-                  }}
+        {isMobileMenuOpen && (
+          <motion.ul
+            variants={containerVariant}
+            initial="hidden"
+            animate="visible"
+            role="menu"
+            aria-hidden={!isMobileMenuOpen}
+            className={`${styles.navLinks} ${
+              isMobileMenuOpen ? styles.navLinksActive : ""
+            }`}
+          >
+            <li>
+              <Link className={styles.navLinksTxt} href="/">
+                <h2
+                  className={
+                    activeNavItem === "home" ? styles.activeNavItem : ""
+                  }
+                  onClick={() => handleNavItemClick("home")}
                 >
-                  <span>School</span>
-                  {activeSubDropdown === "school" ? (
-                    <KeyboardArrowUp className={styles.arrows} />
-                  ) : (
-                    <KeyboardArrowDown className={styles.arrows} />
-                  )}
-                </MenuItem>
-
-                {/* Render submenu items below if active */}
-                {activeSubDropdown === "school" && (
-                  <div className={styles.subMenu}>
-                    <MenuItem
-                      className={styles.subMenuItem}
-                      onClick={handleDropdownClose}
-                    >
-                      <Link className={styles.navLinksTxt} href="/">
-                        School Robotics Lab
-                      </Link>
-                    </MenuItem>
-                    <MenuItem
-                      className={styles.subMenuItem}
-                      onClick={handleDropdownClose}
-                    >
-                      <Link className={styles.navLinksTxt} href="/">
-                        ATAL Tinkering Lab
-                      </Link>
-                    </MenuItem>
-                    <MenuItem
-                      className={styles.subMenuItem}
-                      onClick={handleDropdownClose}
-                    >
-                      <Link className={styles.navLinksTxt} href="/">
-                        AR / VR Lab
-                      </Link>
-                    </MenuItem>
-                  </div>
-                )}
-
-                <MenuItem
-                  onClick={() => handleSubDropdownToggle("college")}
-                  style={{
-                    display: "flex",
-                    justifyContent: "space-between",
-                    alignItems: "center",
-                    width: "100%",
-                  }}
+                  Home
+                </h2>
+              </Link>
+            </li>
+            <DropdownMenu
+              title="Training Services"
+              activeDropdown={activeDropdown}
+              menuItems={["Workshops", "Internships", "Job Oriented Courses"]}
+              onDropdownOpen={handleDropdownOpen}
+              anchorEl={anchorEl}
+              onDropdownClose={handleDropdownClose}
+            />
+            <li>
+              <Link className={styles.navLinksTxt} href="/design-services">
+                <h2
+                  className={
+                    activeNavItem === "design-services"
+                      ? styles.activeNavItem
+                      : ""
+                  }
+                  onClick={() => handleNavItemClick("design-services")}
                 >
-                  <span>College</span>
-                  {activeSubDropdown === "college" ? (
-                    <KeyboardArrowUp className={styles.arrows} />
-                  ) : (
-                    <KeyboardArrowDown className={styles.arrows} />
-                  )}
-                </MenuItem>
-
-                {/* Render College submenu items below if active */}
-                {activeSubDropdown === "college" && (
-                  <div style={{ paddingLeft: "1rem", marginTop: "-0.5rem" }}>
-                    <MenuItem onClick={handleDropdownClose}>
-                      <Link className={styles.navLinksTxt} href="/">
-                        IOT Lab
-                      </Link>
-                    </MenuItem>
-                    <MenuItem onClick={handleDropdownClose}>
-                      <Link className={styles.navLinksTxt} href="/">
-                        Robotics & ES Lab
-                      </Link>
-                    </MenuItem>
-                    <MenuItem onClick={handleDropdownClose}>
-                      <Link className={styles.navLinksTxt} href="/">
-                        AR / VR Lab
-                      </Link>
-                    </MenuItem>
-                    <MenuItem onClick={handleDropdownClose}>
-                      <Link className={styles.navLinksTxt} href="/">
-                        Center of Excellence
-                      </Link>
-                    </MenuItem>
-                  </div>
-                )}
-              </Menu>
-            )}
-          </li>
-          <li>
-            <Link className={styles.navLinksTxt} href="/">
-              <h2
-                className={
-                  activeNavItem === "projects" ? styles.activeNavItem : ""
-                }
-                onClick={() => handleNavItemClick("projects")}
-              >
-                Projects
-              </h2>
-            </Link>
-          </li>
-          <li>
-            <div
-              aria-haspopup="true"
-              aria-expanded={activeDropdown === "company"}
-              onClick={(e) => handleDropdownOpen(e, "company")}
-              style={{
-                display: "flex",
-                alignItems: "center",
-                cursor: "pointer",
-              }}
-            >
-              <h2>Company</h2>
-              {activeDropdown === "company" ? (
-                <KeyboardArrowUp className={styles.arrows} />
-              ) : (
-                <KeyboardArrowDown className={styles.arrows} />
-              )}
-            </div>
-            {activeDropdown === "company" && (
-              <Menu
-                anchorEl={anchorEl}
-                open={Boolean(anchorEl)}
-                onClose={handleDropdownClose}
-              >
-                <MenuItem onClick={handleDropdownClose}>
-                  <Link className={styles.navLinksTxt} href="/">
-                    About Us
-                  </Link>
-                </MenuItem>
-                <MenuItem onClick={handleDropdownClose}>
-                  <Link className={styles.navLinksTxt} href="/">
-                    MOU
-                  </Link>
-                </MenuItem>
-                <MenuItem onClick={handleDropdownClose}>
-                  <Link className={styles.navLinksTxt} href="/">
-                    Careers
-                  </Link>
-                </MenuItem>
-                <MenuItem onClick={handleDropdownClose}>
-                  <Link className={styles.navLinksTxt} href="/">
-                    Contact Us
-                  </Link>
-                </MenuItem>
-              </Menu>
-            )}
-          </li>
-        </motion.ul>
+                  Design Services
+                </h2>
+              </Link>
+            </li>
+            <DropdownMenu
+              title="Innovation Labs"
+              activeDropdown={activeDropdown}
+              menuItems={["School", "College"]}
+              onDropdownOpen={handleDropdownOpen}
+              anchorEl={anchorEl}
+              onDropdownClose={handleDropdownClose}
+            />
+            <li>
+              <Link className={styles.navLinksTxt} href="/">
+                <h2
+                  className={
+                    activeNavItem === "projects" ? styles.activeNavItem : ""
+                  }
+                  onClick={() => handleNavItemClick("projects")}
+                >
+                  Projects
+                </h2>
+              </Link>
+            </li>
+            <DropdownMenu
+              title="Company"
+              activeDropdown={activeDropdown}
+              menuItems={["About Us", "MOU", "Careers", "Contact Us"]}
+              onDropdownOpen={handleDropdownOpen}
+              anchorEl={anchorEl}
+              onDropdownClose={handleDropdownClose}
+            />
+          </motion.ul>
+        )}
       </nav>
     </>
   );
