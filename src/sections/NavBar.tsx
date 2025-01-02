@@ -18,8 +18,10 @@ const NavBar = () => {
   // Close mobile menu on resize to larger screens
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth > 768) {
-        setIsMobileMenuOpen(true); // Close menu in web view
+      if (typeof window !== "undefined") {
+        if (window.innerWidth > 768) {
+          setIsMobileMenuOpen(true); // Close menu in web view
+        }
       }
     };
 

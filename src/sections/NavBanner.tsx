@@ -9,7 +9,9 @@ import styles from "../styles/NavBanner.module.css";
 
 const NavBanner = () => {
   const handleSocialIconsClick = (link: string) => {
-    window.open(link, "_blank");
+    if (typeof window !== "undefined") {
+      window.open(link, "_blank");
+    }
   };
 
   return (
