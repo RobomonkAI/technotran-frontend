@@ -39,7 +39,9 @@ const TrainingServices = () => {
   const handleOnClick = (type: string) => {
     if (type === "Internships") {
       // Opens the URL in a new tab
-      window.open("https://internships.technotran.in/", "_blank");
+      if (typeof window !== "undefined") {
+        window.open("https://internships.technotran.in/", "_blank");
+      }
     } else if (type === "Workshops") {
       router.push("/workshops");
     } else {

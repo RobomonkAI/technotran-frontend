@@ -13,7 +13,9 @@ import Image from "next/image";
 
 const FooterMain = () => {
   const handleSocialIconsClick = (link: string) => {
-    window.open(link, "_blank");
+    if (typeof window !== "undefined") {
+      window.open(link, "_blank");
+    }
   };
 
   return (
