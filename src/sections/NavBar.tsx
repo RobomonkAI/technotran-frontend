@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
@@ -16,9 +16,24 @@ const NavBar = () => {
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const [activeNavItem, setActiveNavItem] = useState<string>("home");
 
+  // Close mobile menu on resize to larger screens
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 768) {
+        setIsMobileMenuOpen(true); // Close menu in web view
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize(); // Initialize on mount
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   const toggleMenu = () => {
     setIsMobileMenuOpen((prevState) => !prevState);
-    console.log("Clicked", isMobileMenuOpen);
   };
 
   const handleDropdownOpen = (
@@ -36,7 +51,6 @@ const NavBar = () => {
 
   const handleNavItemClick = (item: string) => {
     setActiveNavItem(item);
-    handleDropdownClose();
     setIsMobileMenuOpen(false); // Ensure the menu closes when a nav item is clicked
   };
 
@@ -76,29 +90,34 @@ const NavBar = () => {
         <div className={styles.hamburger} onClick={toggleMenu}>
           <MenuIcon aria-label="Toggle Menu" />
         </div>
-        {isMobileMenuOpen && (
-          <motion.ul
+        <ul
+          role="menu"
+          aria-hidden={!isMobileMenuOpen}
+          className={`${styles.navLinks} ${
+            isMobileMenuOpen || window.innerWidth > 768
+              ? styles.navLinksActive
+              : ""
+          }`}
+        >
+          <motion.li
             variants={containerVariant}
             initial="hidden"
             animate="visible"
-            role="menu"
-            aria-hidden={!isMobileMenuOpen}
-            className={`${styles.navLinks} ${
-              isMobileMenuOpen ? styles.navLinksActive : ""
-            }`}
           >
-            <li>
-              <Link className={styles.navLinksTxt} href="/">
-                <h2
-                  className={
-                    activeNavItem === "home" ? styles.activeNavItem : ""
-                  }
-                  onClick={() => handleNavItemClick("home")}
-                >
-                  Home
-                </h2>
-              </Link>
-            </li>
+            <Link className={styles.navLinksTxt} href="/">
+              <h2
+                className={activeNavItem === "home" ? styles.activeNavItem : ""}
+                onClick={() => handleNavItemClick("home")}
+              >
+                Home
+              </h2>
+            </Link>
+          </motion.li>
+          <motion.li
+            variants={containerVariant}
+            initial="hidden"
+            animate="visible"
+          >
             <DropdownMenu
               title="Training Services"
               activeDropdown={activeDropdown}
@@ -107,20 +126,30 @@ const NavBar = () => {
               anchorEl={anchorEl}
               onDropdownClose={handleDropdownClose}
             />
-            <li>
-              <Link className={styles.navLinksTxt} href="/design-services">
-                <h2
-                  className={
-                    activeNavItem === "design-services"
-                      ? styles.activeNavItem
-                      : ""
-                  }
-                  onClick={() => handleNavItemClick("design-services")}
-                >
-                  Design Services
-                </h2>
-              </Link>
-            </li>
+          </motion.li>
+          <motion.li
+            variants={containerVariant}
+            initial="hidden"
+            animate="visible"
+          >
+            <Link className={styles.navLinksTxt} href="/design-services">
+              <h2
+                className={
+                  activeNavItem === "design-services"
+                    ? styles.activeNavItem
+                    : ""
+                }
+                onClick={() => handleNavItemClick("design-services")}
+              >
+                Design Services
+              </h2>
+            </Link>
+          </motion.li>
+          <motion.li
+            variants={containerVariant}
+            initial="hidden"
+            animate="visible"
+          >
             <DropdownMenu
               title="Innovation Labs"
               activeDropdown={activeDropdown}
@@ -129,18 +158,28 @@ const NavBar = () => {
               anchorEl={anchorEl}
               onDropdownClose={handleDropdownClose}
             />
-            <li>
-              <Link className={styles.navLinksTxt} href="/">
-                <h2
-                  className={
-                    activeNavItem === "projects" ? styles.activeNavItem : ""
-                  }
-                  onClick={() => handleNavItemClick("projects")}
-                >
-                  Projects
-                </h2>
-              </Link>
-            </li>
+          </motion.li>
+          <motion.li
+            variants={containerVariant}
+            initial="hidden"
+            animate="visible"
+          >
+            <Link className={styles.navLinksTxt} href="/">
+              <h2
+                className={
+                  activeNavItem === "projects" ? styles.activeNavItem : ""
+                }
+                onClick={() => handleNavItemClick("projects")}
+              >
+                Projects
+              </h2>
+            </Link>
+          </motion.li>
+          <motion.li
+            variants={containerVariant}
+            initial="hidden"
+            animate="visible"
+          >
             <DropdownMenu
               title="Company"
               activeDropdown={activeDropdown}
@@ -149,8 +188,8 @@ const NavBar = () => {
               anchorEl={anchorEl}
               onDropdownClose={handleDropdownClose}
             />
-          </motion.ul>
-        )}
+          </motion.li>
+        </ul>
       </nav>
     </>
   );
