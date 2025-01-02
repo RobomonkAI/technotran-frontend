@@ -14,28 +14,36 @@ const NavBar = () => {
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const [activeNavItem, setActiveNavItem] = useState<string>("home");
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    // This will only run on the client side
+    setIsClient(true);
+  }, []);
 
   // Close mobile menu on resize to larger screens
   useEffect(() => {
-    const handleResize = () => {
-      if (typeof window !== "undefined") {
-        if (window.innerWidth > 768) {
-          setIsMobileMenuOpen(true); // Close menu in web view
+    if (isClient) {
+      const handleResize = () => {
+        if (typeof window !== "undefined") {
+          if (window.innerWidth > 768) {
+            setIsMobileMenuOpen(true); // Close menu in web view
+          }
         }
-      }
-    };
+      };
 
-    if (typeof window !== "undefined") {
-      window.addEventListener("resize", handleResize);
-      handleResize(); // Initialize on mount
-    }
-
-    return () => {
       if (typeof window !== "undefined") {
-        window.removeEventListener("resize", handleResize);
+        window.addEventListener("resize", handleResize);
+        handleResize(); // Initialize on mount
       }
-    };
-  }, []);
+
+      return () => {
+        if (typeof window !== "undefined") {
+          window.removeEventListener("resize", handleResize);
+        }
+      };
+    }
+  }, [isClient]);
 
   const toggleMenu = () => {
     setIsMobileMenuOpen((prevState) => !prevState);
