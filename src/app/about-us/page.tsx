@@ -1,3 +1,5 @@
+"use client";
+
 import NavBar from "@/sections/NavBar";
 import React from "react";
 
