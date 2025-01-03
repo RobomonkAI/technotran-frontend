@@ -7,7 +7,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import WhatsAppBtn from "@/components/WhatsAppBtn";
 import PhoneBtn from "@/components/PhoneBtn";
-import CustomGoogleMap from "./components/CumstomGMaps";
+import CustomGoogleMap from "../../components/CumstomGMaps";
 import PhoneIcon from "@mui/icons-material/Phone";
 import EmailIcon from "@mui/icons-material/Email";
 import FooterMain from "@/sections/FooterMain";

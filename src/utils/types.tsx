@@ -36,3 +36,23 @@ export interface FooterMainCarouselDataItem {
   id: number;
   imgSrc: string;
 }
+
+export interface DesignServicesDataItem {
+  id: number;
+  title: string;
+  desc: string;
+  imgSrc: string;
+}
+
+export interface JobOrientedCoursesDataItem {
+  id: number;
+  title: string;
+  desc: string;
+  imgSrc: string;
+}
+
+export interface MouDataItem {
+  id: number;
+  name: string;
+  imgSrc: string;
+}

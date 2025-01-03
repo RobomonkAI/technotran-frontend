@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 import WhatsAppBtn from "@/components/WhatsAppBtn";
 import PhoneBtn from "@/components/PhoneBtn";
 import FooterMain from "@/sections/FooterMain";
-import ContactForm from "./components/Enquiry";
+import ContactForm from "../../utils/Forms/JOCEnquiry";
 import { jobOrientedCoursesData } from "./utils/helpers";
 
 const JobOrientedCourcesPage = () => {
