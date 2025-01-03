@@ -50,9 +50,9 @@
 
 .navLinks li h2 {
   font-family: "Parkinsans", serif;
-  color: black;
+  color: #4b0406;
   text-decoration: none;
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   font-weight: 500;
   transition: color font-size 0.3s ease;
   letter-spacing: 0.02rem;
@@ -71,11 +71,15 @@
   padding-bottom: 5px;
 }
 
+.dropDownContainer {
+  width: 250px;
+}
+
 .dropDownTxt {
   font-family: "Parkinsans", serif;
-  color: black;
+  color: #4b0406;
   text-decoration: none;
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   font-weight: 500;
   transition: color font-size 0.3s ease;
   letter-spacing: 0.02rem;

@@ -40,7 +40,7 @@
   font-family: "Parkinsans", serif;
   color: #4b0406;
   text-decoration: underline;
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   font-weight: 500;
   transition: color font-size 0.3s ease;
   letter-spacing: 0.02rem;
@@ -60,11 +60,11 @@
 .socialMediaIcons {
   fill: #4b0406 !important;
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .socialMediaIcons:hover {
-  fill: royalblue !important;
+  fill: #333 !important;
   font-size: 1.7rem;
 }
 

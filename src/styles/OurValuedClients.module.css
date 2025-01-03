@@ -1,7 +1,7 @@
 .ourValuedClientsContainer {
   width: 100%;
   min-height: 100vh;
-  padding: 50px 20px;
+  padding: 1rem;
   background: linear-gradient(
     to bottom,
     #ffffff,
@@ -23,7 +23,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  gap: 2rem; /* Increased spacing for balance */
+  gap: 1rem; /* Increased spacing for balance */
 }
 
 .ourValuedClientsContentContainer {
@@ -34,7 +34,7 @@
   flex-wrap: wrap;
   justify-content: center; /* Centered alignment */
   align-items: center;
-  gap: 2rem; /* More spacing between cards */
+  gap: 1rem; /* More spacing between cards */
 }
 
 .title {
@@ -46,7 +46,7 @@
 }
 
 .cardContainer {
-  width: 250px; /* Defined size for consistency */
+  width: 200px; /* Defined size for consistency */
   height: 250px;
   border: 1px solid #ddd; /* Light border for structure */
   border-radius: 10px; /* Rounded corners for a modern feel */
@@ -61,14 +61,14 @@
 }
 
 .cardImg {
-  height: 120px;
-  width: 120px;
+  height: 90px;
+  width: 90px;
   object-fit: cover; /* Ensures images are not distorted */
   margin-bottom: 10px;
 }
 
 .cardImgContainer {
-  height: 55%;
+  height: 50%;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -78,7 +78,7 @@
 
 .cardSubContainer {
   text-align: center; /* Center-align text */
-  height: 45%;
+  height: 50%;
   width: 100%;
   background-color: #4b0406;
   padding: 0.5rem;

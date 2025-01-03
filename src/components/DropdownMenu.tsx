@@ -2,7 +2,6 @@ import { Menu, MenuItem } from "@mui/material";
 import { KeyboardArrowDown, KeyboardArrowUp } from "@mui/icons-material";
 import { FC } from "react";
 import styles from "../styles/NavBar.module.css";
-import Link from "next/link";
 import { motion } from "framer-motion";
 
 interface DropdownMenuProps {
@@ -52,7 +51,11 @@ const DropdownMenu: FC<DropdownMenuProps> = ({
           onClose={onDropdownClose}
         >
           {menuItems.map((item, index) => (
-            <MenuItem key={index} onClick={onDropdownClose}>
+            <MenuItem
+              className={styles.dropDownContainer}
+              key={index}
+              onClick={onDropdownClose}
+            >
               <h2 className={styles.dropDownTxt}>{item}</h2>
             </MenuItem>
           ))}
