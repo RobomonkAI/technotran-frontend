@@ -1,0 +1,9 @@
+.mainBody {
+    /* max-width: 80rem; 1280px; */
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: hidden;
+    position: relative;
+    color: white;
+  }
+  
