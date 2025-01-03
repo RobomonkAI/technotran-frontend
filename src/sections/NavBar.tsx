@@ -99,7 +99,7 @@ const NavBar = () => {
             role="menu"
             aria-hidden={!isMobileMenuOpen}
             className={`${styles.navLinks} ${
-              isMobileMenuOpen || window.innerWidth > 768
+              isMobileMenuOpen || (isClient && window.innerWidth > 768)
                 ? styles.navLinksActive
                 : ""
             }`}
