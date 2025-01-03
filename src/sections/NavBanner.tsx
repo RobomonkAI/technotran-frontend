@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -8,9 +8,18 @@ import YouTubeIcon from "@mui/icons-material/YouTube";
 import styles from "../styles/NavBanner.module.css";
 
 const NavBanner = () => {
+  const [isClient, setIsClient] = useState(false); // Track if the app is running on the client
+  useEffect(() => {
+    // Only run this code on the client side
+    console.log(isClient);
+    setIsClient(true);
+  }, []);
+
   const handleSocialIconsClick = (link: string) => {
-    if (typeof window !== "undefined") {
-      window.open(link, "_blank");
+    if (isClient) {
+      if (typeof window !== "undefined") {
+        window.open(link, "_blank");
+      }
     }
   };
 

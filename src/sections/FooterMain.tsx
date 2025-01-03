@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "../styles/FooterMain.module.css";
 import PhoneIcon from "@mui/icons-material/Phone";
 import EmailIcon from "@mui/icons-material/Email";
@@ -12,9 +12,18 @@ import FooterMainCarousel from "@/components/FooterMainCarousel";
 import Image from "next/image";
 
 const FooterMain = () => {
+  const [isClient, setIsClient] = useState(false); // Track if the app is running on the client
+  useEffect(() => {
+    // Only run this code on the client side
+    console.log(isClient);
+    setIsClient(true);
+  }, []);
+
   const handleSocialIconsClick = (link: string) => {
-    if (typeof window !== "undefined") {
-      window.open(link, "_blank");
+    if (isClient) {
+      if (typeof window !== "undefined") {
+        window.open(link, "_blank");
+      }
     }
   };
 

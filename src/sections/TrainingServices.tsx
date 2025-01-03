@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "../styles/TrainingServices.module.css";
 import { trainingServicesData } from "@/utils/helpers";
 import Image from "next/image";
@@ -9,6 +9,12 @@ import { useRouter } from "next/navigation";
 
 const TrainingServices = () => {
   const router = useRouter();
+  const [isClient, setIsClient] = useState(false); // Track if the app is running on the client
+  useEffect(() => {
+    // Only run this code on the client side
+    console.log(isClient);
+    setIsClient(true);
+  }, []);
 
   // Fade-In animation for the entire section
   const sectionVariants = {
@@ -37,15 +43,17 @@ const TrainingServices = () => {
   //   };
 
   const handleOnClick = (type: string) => {
-    if (type === "Internships") {
-      // Opens the URL in a new tab
-      if (typeof window !== "undefined") {
-        window.open("https://internships.technotran.in/", "_blank");
+    if (isClient) {
+      if (type === "Internships") {
+        // Opens the URL in a new tab
+        if (typeof window !== "undefined") {
+          window.open("https://internships.technotran.in/", "_blank");
+        }
+      } else if (type === "Workshops") {
+        router.push("/workshops");
+      } else {
+        router.push("/job-oriented-courses");
       }
-    } else if (type === "Workshops") {
-      router.push("/workshops");
-    } else {
-      router.push("/job-oriented-courses");
     }
   };
 

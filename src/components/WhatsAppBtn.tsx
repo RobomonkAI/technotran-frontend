@@ -1,13 +1,22 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Fab } from "@mui/material";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import { motion } from "framer-motion";
 
 const WhatsAppBtn = () => {
+  const [isClient, setIsClient] = useState(false); // Track if the app is running on the client
+  useEffect(() => {
+    // Only run this code on the client side
+    console.log(isClient);
+    setIsClient(true);
+  }, []);
+
   const handleWhatsAppClick = () => {
-    if (typeof window !== "undefined") {
-      window.open("https://wa.me/919000325936", "_blank");
+    if (isClient) {
+      if (typeof window !== "undefined") {
+        window.open("https://wa.me/919000325936", "_blank");
+      }
     }
   };
 

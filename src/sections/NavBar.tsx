@@ -14,17 +14,25 @@ const NavBar = () => {
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const [activeNavItem, setActiveNavItem] = useState<string>("home");
+  const [isClient, setIsClient] = useState(false); // Track if the app is running on the client
+  useEffect(() => {
+    // Only run this code on the client side
+    console.log(isClient);
+    setIsClient(true);
+  }, []);
 
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      const handleResize = () => {
-        if (window.innerWidth > 768) {
-          setIsMobileMenuOpen(false);
-        }
-      };
+    if (isClient) {
+      if (typeof window !== "undefined") {
+        const handleResize = () => {
+          if (window.innerWidth > 768) {
+            setIsMobileMenuOpen(false);
+          }
+        };
 
-      window.addEventListener("resize", handleResize);
-      return () => window.removeEventListener("resize", handleResize);
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+      }
     }
   }, []);
 
