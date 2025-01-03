@@ -1,5 +1,5 @@
 .landingMainContainer {
-  height: 85vh;
+  height: 65vh;
   width: 100vw;
   background-color: whitesmoke;
   display: flex;
@@ -13,4 +13,28 @@
   width: 100%;
   height: 100%;
   object-fit: fill;
+}
+
+/* Extra Small Mobile Devices (Portrait) */
+/* iPhone SE, older Android phones */
+@media only screen and (max-width: 320px) {
+  .landingMainContainer {
+    height: 35vh;
+  }
+}
+
+/* Small Mobile Devices (Portrait) */
+/* iPhone 6/7/8, Galaxy S8 */
+@media only screen and (min-width: 321px) and (max-width: 375px) {
+  .landingMainContainer {
+    height: 40vh;
+  }
+}
+
+/* Medium Mobile Devices (Portrait) */
+/* iPhone 11 Pro, Google Pixel 2 */
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+  .landingMainContainer {
+    height: 40vh;
+  }
 }

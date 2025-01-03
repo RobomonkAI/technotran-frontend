@@ -16,22 +16,12 @@ const NavBanner = () => {
 
   return (
     <section id="navBanner" className={styles.navBannerMainContainer}>
-      {/* Contact Info Section */}
-      <div className={styles.navBannerContactContainer}>
-        <div className={styles.navBannerContactSubContainer}>
-          <PhoneIcon className={styles.contactIcons} />
-          <h2 className={styles.navBannerContact}>+91 9100 103 806</h2>
-        </div>
-        <div className={styles.navBannerContactSubContainer}>
-          <EmailIcon className={styles.contactIcons} />
-          <h2 className={styles.navBannerContact}>admin@technotran.in</h2>
-        </div>
-      </div>
-
       {/* LMS and Certificate Verification Section */}
       <div className={styles.navBannerBtnContainer}>
-        <div className={styles.navBannerBtn}>LMS</div>
-        <div className={styles.navBannerBtn}>Certificate Verification</div>
+        <div className={styles.navBannerBtn}>Events</div>
+        <div className={styles.navBannerBtn}>Media</div>{" "}
+        <div className={styles.navBannerBtn}>LMS Portal</div>
+        <div className={styles.navBannerBtn}>E - Verify</div>
       </div>
 
       {/* Social Media Icons Section */}

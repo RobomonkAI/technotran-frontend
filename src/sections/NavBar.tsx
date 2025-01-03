@@ -14,36 +14,19 @@ const NavBar = () => {
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const [activeNavItem, setActiveNavItem] = useState<string>("home");
-  const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
-    // This will only run on the client side
-    setIsClient(true);
-  }, []);
-
-  // Close mobile menu on resize to larger screens
-  useEffect(() => {
-    if (isClient) {
+    if (typeof window !== "undefined") {
       const handleResize = () => {
-        if (typeof window !== "undefined") {
-          if (window.innerWidth > 768) {
-            setIsMobileMenuOpen(true); // Close menu in web view
-          }
+        if (window.innerWidth > 768) {
+          setIsMobileMenuOpen(false);
         }
       };
 
-      if (typeof window !== "undefined") {
-        window.addEventListener("resize", handleResize);
-        handleResize(); // Initialize on mount
-      }
-
-      return () => {
-        if (typeof window !== "undefined") {
-          window.removeEventListener("resize", handleResize);
-        }
-      };
+      window.addEventListener("resize", handleResize);
+      return () => window.removeEventListener("resize", handleResize);
     }
-  }, [isClient]);
+  }, []);
 
   const toggleMenu = () => {
     setIsMobileMenuOpen((prevState) => !prevState);
@@ -82,70 +65,64 @@ const NavBar = () => {
     <>
       <NavBanner />
       <nav className={styles.navbar}>
-        <motion.div
-          variants={logoVariant}
-          initial="hidden"
-          animate="visible"
-          whileHover="hover"
-          className={styles.logo}
-        >
-          <Link href="/">
-            <Image
-              src="/images/Technotran-logo.png"
-              alt="Technotran Nav Logo"
-              className={styles.logoImg}
-              height={100}
-              width={200}
-              priority
-            />
-          </Link>
-        </motion.div>
-        <div className={styles.hamburger} onClick={toggleMenu}>
-          <MenuIcon aria-label="Toggle Menu" />
-        </div>
-        <ul
-          role="menu"
-          aria-hidden={!isMobileMenuOpen}
-          className={`${styles.navLinks} ${
-            isMobileMenuOpen || window.innerWidth > 768
-              ? styles.navLinksActive
-              : ""
-          }`}
-        >
-          <motion.li
-            variants={containerVariant}
+        <div className={styles.navbarSub}>
+          <motion.div
+            variants={logoVariant}
             initial="hidden"
             animate="visible"
+            whileHover="hover"
+            className={styles.logo}
           >
-            <Link className={styles.navLinksTxt} href="/">
+            <Link href="/">
+              <Image
+                src="/images/Technotran-logo.png"
+                alt="Technotran Nav Logo"
+                className={styles.logoImg}
+                height={100}
+                width={200}
+                priority
+              />
+            </Link>
+          </motion.div>
+          <div className={styles.hamburger} onClick={toggleMenu}>
+            <MenuIcon aria-label="Toggle Menu" />
+          </div>
+          <ul
+            role="menu"
+            aria-hidden={!isMobileMenuOpen}
+            className={`${styles.navLinks} ${
+              isMobileMenuOpen || window.innerWidth > 768
+                ? styles.navLinksActive
+                : ""
+            }`}
+          >
+            <motion.li
+              variants={containerVariant}
+              initial="hidden"
+              animate="visible"
+            >
               <h2
                 className={activeNavItem === "home" ? styles.activeNavItem : ""}
                 onClick={() => handleNavItemClick("home")}
               >
                 Home
               </h2>
-            </Link>
-          </motion.li>
-          <motion.li
-            variants={containerVariant}
-            initial="hidden"
-            animate="visible"
-          >
+            </motion.li>
+
             <DropdownMenu
-              title="Training Services"
+              title="Training Solutions"
               activeDropdown={activeDropdown}
               menuItems={["Workshops", "Internships", "Job Oriented Courses"]}
               onDropdownOpen={handleDropdownOpen}
               anchorEl={anchorEl}
               onDropdownClose={handleDropdownClose}
             />
-          </motion.li>
-          <motion.li
-            variants={containerVariant}
-            initial="hidden"
-            animate="visible"
-          >
-            <Link className={styles.navLinksTxt} href="/design-services">
+
+            <motion.li
+              variants={containerVariant}
+              initial="hidden"
+              animate="visible"
+            >
               <h2
                 className={
                   activeNavItem === "design-services"
@@ -154,30 +131,24 @@ const NavBar = () => {
                 }
                 onClick={() => handleNavItemClick("design-services")}
               >
-                Design Services
+                Industrial Solutions
               </h2>
-            </Link>
-          </motion.li>
-          <motion.li
-            variants={containerVariant}
-            initial="hidden"
-            animate="visible"
-          >
+            </motion.li>
+
             <DropdownMenu
-              title="Innovation Labs"
+              title="Lab Solutions"
               activeDropdown={activeDropdown}
               menuItems={["School", "College"]}
               onDropdownOpen={handleDropdownOpen}
               anchorEl={anchorEl}
               onDropdownClose={handleDropdownClose}
             />
-          </motion.li>
-          <motion.li
-            variants={containerVariant}
-            initial="hidden"
-            animate="visible"
-          >
-            <Link className={styles.navLinksTxt} href="/">
+
+            <motion.li
+              variants={containerVariant}
+              initial="hidden"
+              animate="visible"
+            >
               <h2
                 className={
                   activeNavItem === "projects" ? styles.activeNavItem : ""
@@ -186,13 +157,8 @@ const NavBar = () => {
               >
                 Projects
               </h2>
-            </Link>
-          </motion.li>
-          <motion.li
-            variants={containerVariant}
-            initial="hidden"
-            animate="visible"
-          >
+            </motion.li>
+
             <DropdownMenu
               title="Company"
               activeDropdown={activeDropdown}
@@ -201,8 +167,8 @@ const NavBar = () => {
               anchorEl={anchorEl}
               onDropdownClose={handleDropdownClose}
             />
-          </motion.li>
-        </ul>
+          </ul>
+        </div>
       </nav>
     </>
   );

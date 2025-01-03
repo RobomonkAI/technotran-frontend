@@ -1,20 +1,28 @@
 /* Basic Reset */
 .navbar {
-  height: 10vh;
+  height: 12vh;
   position: sticky;
   top: 0;
   z-index: 10;
+  padding: 1rem 1.5rem;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbarSub {
+  height: 100%;
+  width: 100%;
+  max-width: 80rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 1.5rem;
-  background-color: white;
-  color: white;
 }
 
 .logoImg {
-  height: 70px;
-  width: 200px;
+  height: 65px;
+  width: 170px;
 }
 
 /* Navigation Links */
@@ -41,18 +49,21 @@
 }
 
 .navLinks li h2 {
-  font-family: "Quicksand", sans-serif;
-  color: #333;
+  font-family: "Parkinsans", serif;
+  color: black;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 0.85rem;
+  font-weight: 500;
   transition: color font-size 0.3s ease;
-  letter-spacing: 0.05rem;
+  letter-spacing: 0.02rem;
   text-align: center;
+  cursor: pointer;
 }
 
 .navLinks li h2:hover {
   color: #4b0406;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
 }
 
 .activeNavItem {
@@ -60,14 +71,29 @@
   padding-bottom: 5px;
 }
 
-.navLinksTxt {
+.dropDownTxt {
+  font-family: "Parkinsans", serif;
+  color: black;
   text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: color font-size 0.3s ease;
+  letter-spacing: 0.02rem;
+  text-align: center;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.dropDownTxt:hover {
+  color: #4b0406;
+  font-size: 0.9rem;
+  font-weight: 500;
 }
 
 .arrows {
   font-size: 1.2rem;
-  fill: #4b0406;
-  margin-left: 7px;
+  fill: #4b0406 !important;
+  margin-left: 5px;
 }
 
 .subMenu {
@@ -102,8 +128,8 @@
 /* Responsive Design */
 @media screen and (max-width: 768px) {
   .logoImg {
-    height: 70px;
-    width: 220px;
+    height: 50px;
+    width: 170px;
   }
 
   .hamburger {

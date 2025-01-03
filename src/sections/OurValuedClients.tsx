@@ -46,7 +46,7 @@ const OurValuedClients = () => {
           variants={headingVariants}
           initial="hidden"
           whileInView="visible"
-          className={`${styles.title} cinzel-text`}
+          className={`${styles.title} josefin-sans-text`}
         >
           Our Valued Clients
         </motion.h2>
@@ -72,7 +72,7 @@ const OurValuedClients = () => {
                 />
               </div>
               <div className={styles.cardSubContainer}>
-                <h2 className={`${styles.cardTxt} quicksand-text`}>
+                <h2 className={`${styles.cardTxt} josefin-sans-text`}>
                   {item.name}
                 </h2>
               </div>

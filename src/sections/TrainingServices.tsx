@@ -51,7 +51,7 @@ const TrainingServices = () => {
 
   return (
     <motion.section
-      id="Training Services"
+      id="Training Solutions"
       className={styles.trainingServicesMainContainer}
       variants={sectionVariants}
       initial="hidden"
@@ -59,7 +59,7 @@ const TrainingServices = () => {
       viewport={{ once: false, amount: 0.3 }}
     >
       <motion.h2
-        className={`${styles.trainingServicesTitle} cinzel-text`}
+        className={`${styles.trainingServicesTitle} josefin-sans-text`}
         initial={{ opacity: 0, y: 50 }} // Start with opacity 0 and moved down
         animate={{ opacity: 1, y: 0 }} // When it comes into view, animate to full opacity
         transition={{
@@ -78,7 +78,7 @@ const TrainingServices = () => {
         }} // Trigger animation while element is in view
         viewport={{ once: false, amount: 0.3 }} // Ensure the animation can repeat
       >
-        Our Training Services
+        Our Training Solutions
       </motion.h2>
 
       <div className={styles.cardsMainContainer}>

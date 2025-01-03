@@ -36,11 +36,11 @@ const WhyChooseUs = () => {
       className={styles.whyChooseUsContainer}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: false, amount: 0.4 }} // Ensures section animation triggers on focus
+      viewport={{ once: false, amount: 0.2 }} // Ensures section animation triggers on focus
     >
       <motion.h2
         variants={headingVariants}
-        className={`${styles.whyChooseUsTitle} cinzel-text`}
+        className={`${styles.whyChooseUsTitle} josefin-sans-text`}
       >
         Why Choose Technotran?
       </motion.h2>

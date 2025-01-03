@@ -122,3 +122,72 @@
 .nextButton {
   margin-left: 20px; /* Space between the buttons */
 }
+
+/* Extra Small Mobile Devices (Portrait) */
+/* iPhone SE, older Android phones */
+@media only screen and (max-width: 320px) {
+  .title {
+    font-size: 1.2rem;
+  }
+
+  .carouselTitle {
+    font-size: 0.75rem;
+  }
+
+  .prevButton,
+  .nextButton {
+    height: 30px;
+    width: 30px;
+  }
+
+  .prevButton svg,
+  .nextButton svg {
+    font-size: 1rem;
+  }
+}
+
+/* Small Mobile Devices (Portrait) */
+/* iPhone 6/7/8, Galaxy S8 */
+@media only screen and (min-width: 321px) and (max-width: 375px) {
+  .title {
+    font-size: 1.2rem;
+  }
+
+  .carouselTitle {
+    font-size: 0.75rem;
+  }
+
+  .prevButton,
+  .nextButton {
+    height: 30px;
+    width: 30px;
+  }
+
+  .prevButton svg,
+  .nextButton svg {
+    font-size: 1rem;
+  }
+}
+
+/* Medium Mobile Devices (Portrait) */
+/* iPhone 11 Pro, Google Pixel 2 */
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+  .title {
+    font-size: 1.2rem;
+  }
+
+  .carouselTitle {
+    font-size: 0.75rem;
+  }
+
+  .prevButton,
+  .nextButton {
+    height: 30px;
+    width: 30px;
+  }
+
+  .prevButton svg,
+  .nextButton svg {
+    font-size: 1rem;
+  }
+}

@@ -57,17 +57,17 @@ const InnovationLabsSection = () => {
           className={styles.innovationLabsContentContainer}
           variants={contentVariant}
         >
-          <h2 className={`${styles.innovationLabsTitle} cinzel-text`}>
+          <h2 className={`${styles.innovationLabsTitle} josefin-sans-text`}>
             Innovation Labs
           </h2>
           <h3 className={`${styles.innovationLabsDesc} quicksand-text`}>
-            Technotran specializes in providing comprehensive lab setup services
+            {`Technotran specializes in providing comprehensive lab setup services
             for schools and colleges, ensuring that institutions can offer
             cutting-edge technology education to their students. Our services
             encompass the complete establishment of Robotics Labs, IoT Labs, and
             Embedded System Labs, including the provision of custom-designed
             robotics kits, student training, and ongoing support to ensure a
-            seamless learning experience.
+            seamless learning experience.`}
           </h3>
         </motion.div>
       </div>

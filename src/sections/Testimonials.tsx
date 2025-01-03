@@ -55,6 +55,7 @@ const Testimonials = () => {
     autoplaySpeed: 2500,
     dots: false,
     arrows: false,
+    slidesToShow: 2,
     responsive: [
       {
         breakpoint: 1200, // Large screens
@@ -62,7 +63,7 @@ const Testimonials = () => {
       },
       {
         breakpoint: 768, // Tablets
-        settings: { slidesToShow: 1, slidesToScroll: 1 },
+        settings: { slidesToShow: 2, slidesToScroll: 1 },
       },
       {
         breakpoint: 480, // Mobile devices

@@ -56,11 +56,11 @@ const DesignServices = () => {
       >
         <motion.h2
           variants={headingVariants}
-          className={`${styles.title} cinzel-text`}
+          className={`${styles.title} josefin-sans-text`}
         >
           Explore Our Design Services
         </motion.h2>
-        <p className={styles.description}>
+        <p className={`${styles.description} quicksand-text`}>
           {`Discover the power of creativity with our state-of-the-art design
           services. Leveraging advanced CNC machines, laser cutting technology,
           3D printing capabilities, and expert PCB design, we offer

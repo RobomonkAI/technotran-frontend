@@ -34,7 +34,7 @@
   flex-wrap: wrap;
   justify-content: center; /* Centered alignment */
   align-items: center;
-  gap: 2.5rem; /* More spacing between cards */
+  gap: 2rem; /* More spacing between cards */
 }
 
 .title {
@@ -46,8 +46,8 @@
 }
 
 .cardContainer {
-  width: 270px; /* Defined size for consistency */
-  height: 270px;
+  width: 250px; /* Defined size for consistency */
+  height: 250px;
   border: 1px solid #ddd; /* Light border for structure */
   border-radius: 10px; /* Rounded corners for a modern feel */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
@@ -85,8 +85,57 @@
 }
 
 .cardTxt {
-  font-size: 1rem; /* Slightly larger text */
+  font-size: 0.95rem; /* Slightly larger text */
   font-weight: 600; /* Bold text */
   color: white; /* Neutral dark color */
   margin-top: 10px;
+  line-height: 1.6;
+}
+
+/* Extra Small Mobile Devices (Portrait) */
+/* iPhone SE, older Android phones */
+@media only screen and (max-width: 320px) {
+  .landingMainContainer {
+    height: 40vh;
+  }
+}
+
+/* Small Mobile Devices (Portrait) */
+/* iPhone 6/7/8, Galaxy S8 */
+@media only screen and (min-width: 321px) and (max-width: 375px) {
+  .landingMainContainer {
+    height: 40vh;
+  }
+}
+
+/* Medium Mobile Devices (Portrait) */
+/* iPhone 11 Pro, Google Pixel 2 */
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+  .title {
+    font-size: 1.2rem;
+  }
+
+  .ourValuedClientsContentContainer {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .cardContainer {
+    height: 220px;
+    width: 220px;
+  }
+
+  .cardTxt {
+    font-size: 0.75rem;
+  }
+
+  .cardImgContainer {
+    height: 65%;
+    width: 100%;
+  }
+
+  .cardSubContainer {
+    height: 35%;
+    width: 100%;
+  }
 }

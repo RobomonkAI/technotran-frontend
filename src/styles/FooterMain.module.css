@@ -1,8 +1,7 @@
 .footerMainSection {
-  height: 65vh;
+  height: 70vh;
   width: 100%;
   background-color: #4b0406;
-  padding-bottom: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,7 +9,7 @@
 }
 
 .footerCarouselSection {
-  height: 35%;
+  height: 40%;
   width: 100%;
   max-width: 80rem;
   display: flex;
@@ -19,7 +18,7 @@
 }
 
 .footerSubSection {
-  height: 65%;
+  height: 60%;
   width: 100%;
   max-width: 80rem;
   display: flex;
@@ -112,7 +111,6 @@
   height: 100%;
   width: 80%;
   max-width: 80rem;
-  top: 50%;
   overflow: hidden;
   padding: 2rem 0;
 }
@@ -125,8 +123,8 @@
 }
 
 .carouselImage {
-  width: 120px;
-  height: 120px;
+  width: 170px;
+  height: 140px;
   object-fit: fill;
   border-radius: 8px;
   align-self: center;
@@ -196,4 +194,100 @@
   height: 100px;
   width: 250px;
   padding: 0.5rem;
+}
+
+/* Extra Small Mobile Devices (Portrait) */
+/* iPhone SE, older Android phones */
+@media only screen and (max-width: 320px) {
+  .landingMainContainer {
+    height: 40vh;
+  }
+}
+
+/* Small Mobile Devices (Portrait) */
+/* iPhone 6/7/8, Galaxy S8 */
+@media only screen and (min-width: 321px) and (max-width: 375px) {
+  .landingMainContainer {
+    height: 40vh;
+  }
+}
+
+/* Medium Mobile Devices (Portrait) */
+/* iPhone 11 Pro, Google Pixel 2 */
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+  .footerMainSection {
+    height: 170vh;
+  }
+
+  .footerCarouselSection {
+    height: 200px;
+  }
+
+  .carouselContainer {
+    width: 90%;
+    height: 150px;
+  }
+
+  .carouselImage {
+    height: 80px;
+    width: 80px;
+  }
+
+  .footerSubSection {
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .quickLinksSection {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+  }
+
+  .footerSubContainer {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .footerSubContainerOne {
+    height: 300px;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .followUsSection {
+    height: 170px;
+    width: 100%;
+  }
+
+  .title {
+    font-size: 1rem;
+  }
+
+  .quickLinksTxt {
+    font-size: 0.75rem;
+  }
+
+  .reachUsTxt {
+    font-size: 0.75rem;
+  }
+
+  .contactInfoTxt {
+    font-size: 0.75rem;
+  }
+
+  .followUsIconsContainer {
+    height: 20%;
+  }
+
+  .followUsSocialMediaIcons {
+    font-size: 1.3rem;
+  }
+
+  .followUsSocialMediaIcons:hover {
+    font-size: 1.5rem;
+  }
 }

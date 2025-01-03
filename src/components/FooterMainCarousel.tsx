@@ -29,18 +29,19 @@ const FooterMainCarousel = () => {
     autoplaySpeed: 2500,
     dots: false,
     arrows: false,
+    slidesToShow: 4,
     responsive: [
       {
         breakpoint: 1200, // Large screens
-        settings: { slidesToShow: 4, slidesToScroll: 1 },
+        settings: { slidesToShow: 3, slidesToScroll: 1 },
       },
       {
         breakpoint: 768, // Tablets
-        settings: { slidesToShow: 4, slidesToScroll: 1 },
+        settings: { slidesToShow: 3, slidesToScroll: 1 },
       },
       {
         breakpoint: 480, // Mobile devices
-        settings: { slidesToShow: 2, slidesToScroll: 1 },
+        settings: { slidesToShow: 3, slidesToScroll: 1 },
       },
     ],
   };

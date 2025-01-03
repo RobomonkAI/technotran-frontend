@@ -3,6 +3,7 @@ import { KeyboardArrowDown, KeyboardArrowUp } from "@mui/icons-material";
 import { FC } from "react";
 import styles from "../styles/NavBar.module.css";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 interface DropdownMenuProps {
   title: string;
@@ -21,8 +22,13 @@ const DropdownMenu: FC<DropdownMenuProps> = ({
   anchorEl,
   onDropdownClose,
 }) => {
+  const containerVariant = {
+    hidden: { opacity: 0, y: -20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+  };
+
   return (
-    <li>
+    <motion.li variants={containerVariant} initial="hidden" animate="visible">
       <div
         aria-haspopup="true"
         aria-expanded={activeDropdown === title}
@@ -30,7 +36,6 @@ const DropdownMenu: FC<DropdownMenuProps> = ({
         style={{
           display: "flex",
           alignItems: "center",
-          cursor: "pointer",
         }}
       >
         <h2>{title}</h2>
@@ -48,14 +53,12 @@ const DropdownMenu: FC<DropdownMenuProps> = ({
         >
           {menuItems.map((item, index) => (
             <MenuItem key={index} onClick={onDropdownClose}>
-              <Link className={styles.navLinksTxt} href="/">
-                {item}
-              </Link>
+              <h2 className={styles.dropDownTxt}>{item}</h2>
             </MenuItem>
           ))}
         </Menu>
       )}
-    </li>
+    </motion.li>
   );
 };
 

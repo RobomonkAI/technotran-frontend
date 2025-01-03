@@ -5,12 +5,13 @@
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  background-color: #4b0406;
+  background-color: white;
+  border-bottom: 0.5px dashed #4b0406;
 }
 
 .navBannerContactContainer {
   height: 100%;
-  width: 35%;
+  width: 40%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -28,35 +29,36 @@
 
 .navBannerBtnContainer {
   height: 100%;
-  width: 40%;
+  width: 60%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+}
+
+.navBannerBtn {
+  font-family: "Parkinsans", serif;
+  color: #4b0406;
+  text-decoration: underline;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: color font-size 0.3s ease;
+  letter-spacing: 0.02rem;
+  text-align: center;
+  cursor: pointer;
 }
 
 .navBannerIconsContainer {
   height: 100%;
-  width: 20%;
+  width: 30%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
 }
 
-.navBannerContact {
-  font-size: 0.7rem;
-  color: white;
-  letter-spacing: 0.05rem;
-}
-
-.contactIcons {
-  font-size: 0.9rem;
-  fill: white !important;
-}
-
 .socialMediaIcons {
-  fill: white !important;
+  fill: #4b0406 !important;
   cursor: pointer;
   font-size: 1.5rem;
 }
@@ -64,4 +66,28 @@
 .socialMediaIcons:hover {
   fill: royalblue !important;
   font-size: 1.7rem;
+}
+
+/* Extra Small Mobile Devices (Portrait) */
+/* iPhone SE, older Android phones */
+@media only screen and (max-width: 320px) {
+  .navBannerMainContainer {
+    display: none;
+  }
+}
+
+/* Small Mobile Devices (Portrait) */
+/* iPhone 6/7/8, Galaxy S8 */
+@media only screen and (min-width: 321px) and (max-width: 375px) {
+  .navBannerMainContainer {
+    display: none;
+  }
+}
+
+/* Medium Mobile Devices (Portrait) */
+/* iPhone 11 Pro, Google Pixel 2 */
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+  .navBannerMainContainer {
+    display: none;
+  }
 }

@@ -53,6 +53,7 @@ const IndustriesWeServe = () => {
     autoplaySpeed: 2500,
     dots: false,
     arrows: false,
+    slidesToShow: 3,
     responsive: [
       {
         breakpoint: 1200, // Large screens
@@ -64,7 +65,7 @@ const IndustriesWeServe = () => {
       },
       {
         breakpoint: 480, // Mobile devices
-        settings: { slidesToShow: 2, slidesToScroll: 1 },
+        settings: { slidesToShow: 3, slidesToScroll: 1 },
       },
     ],
   };
@@ -100,7 +101,7 @@ const IndustriesWeServe = () => {
           variants={headingVariants}
           initial="hidden"
           whileInView="visible"
-          className={`${styles.title} cinzel-text`}
+          className={`${styles.title} josefin-sans-text`}
         >
           Industries We Serve
         </motion.h2>
@@ -115,8 +116,8 @@ const IndustriesWeServe = () => {
               <div key={index} className={styles.carouselItem}>
                 <Image
                   priority
-                  height={200}
-                  width={200}
+                  height={400}
+                  width={400}
                   src={item.imgSrc}
                   alt={item.title}
                   className={styles.carouselImage}
