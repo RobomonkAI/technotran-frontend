@@ -51,6 +51,7 @@ const DropdownMenu: FC<DropdownMenuProps> = ({
           anchorEl={anchorEl}
           open={Boolean(anchorEl)}
           onClose={onDropdownClose}
+          style={{ zIndex: 10000 }}
         >
           {menuItems.map((item, index) => (
             <MenuItem

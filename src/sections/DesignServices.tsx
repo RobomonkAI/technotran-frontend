@@ -55,18 +55,27 @@ const DesignServices = () => {
         className={styles.contentContainer}
       >
         <motion.h2
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: false, amount: 0.4 }}
           variants={headingVariants}
           className={`${styles.title} josefin-sans-text`}
         >
           Explore Our Design Services
         </motion.h2>
-        <p className={`${styles.description} quicksand-text`}>
+        <motion.p
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: false, amount: 0.4 }}
+          variants={headingVariants}
+          className={`${styles.description} quicksand-text`}
+        >
           {`Discover the power of creativity with our state-of-the-art design
           services. Leveraging advanced CNC machines, laser cutting technology,
           3D printing capabilities, and expert PCB design, we offer
           comprehensive solutions for your prototyping and manufacturing needs.
           From concept to creation, we're here to turn your vision into reality.`}
-        </p>
+        </motion.p>
         <Link href="/design-services" className={styles.exploreLink}>
           Explore more
         </Link>

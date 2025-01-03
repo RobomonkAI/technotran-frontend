@@ -1,8 +1,6 @@
-/* DesignServices.module.css */
-
 .designServicesSection {
   position: relative;
-  height: 50vh;
+  height: 45vh;
   overflow: hidden;
   color: white;
   background-image: url("https://github.com/CVSCharan/Technotran_Assets/blob/main/business-businessmen-classroom-267507.jpg?raw=true");
@@ -47,6 +45,9 @@
   font-weight: bold;
   color: whitesmoke;
   margin-bottom: 1.5rem;
+  background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+  padding: 0.5rem;
+  border-radius: 8px;
 }
 
 .description {
@@ -57,21 +58,25 @@
   color: whitesmoke;
   font-weight: 500;
   letter-spacing: 0.03rem;
+  background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+  padding: 0.5rem;
+  border-radius: 8px;
 }
 
 .exploreLink {
   font-size: 1rem;
   color: #fff;
   text-decoration: none;
-  background: #e63946;
+  background: rgba(0, 0, 0, 0.6); /* Dark overlay */
   padding: 0.8rem 1.5rem;
-  border-radius: 5px;
+  border-radius: 25px;
   transition: all 0.3s ease;
   letter-spacing: 0.03rem;
+  border: 2px dashed;
 }
 
 .exploreLink:hover {
-  background: #d62828;
+  background: #4b0406;
   transform: translateY(-3px);
 }
 
@@ -123,5 +128,21 @@
 
   .exploreLink {
     font-size: 0.75rem;
+  }
+}
+
+/* Tablets (portrait and landscape) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .exploreLink {
+    font-size: 0.9rem;
   }
 }

@@ -53,7 +53,7 @@ const WhyChooseUs = () => {
             variants={cardVariants}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: false, amount: 0.3 }} // Triggers each card animation in the viewport
+            viewport={{ once: false, amount: 0.6 }} // Triggers each card animation in the viewport
           >
             <Image
               priority

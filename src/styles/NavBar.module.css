@@ -3,7 +3,7 @@
   height: 12vh;
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 10000;
   padding: 1rem 1.5rem;
   background-color: white;
   display: flex;
@@ -131,9 +131,14 @@
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
+  .navbar {
+    height: 10vh;
+  }
+
   .logoImg {
-    height: 50px;
-    width: 170px;
+    height: 60px;
+    width: 200px;
+    align-self: center !important;
   }
 
   .hamburger {
@@ -142,7 +147,7 @@
 
   .navLinks {
     position: absolute;
-    top: 60px; /* Adjust the top position to ensure it doesn't overlap with the logo */
+    top: 90px; /* Adjust the top position to ensure it doesn't overlap with the logo */
     right: 0;
     background-color: white;
     flex-direction: column;
@@ -166,7 +171,7 @@
   }
 
   .navLinks li h2 {
-    font-size: 1.1rem; /* Adjust the font size for better readability */
+    font-size: 0.9rem; /* Adjust the font size for better readability */
   }
 
   .subMenu {

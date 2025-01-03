@@ -1,5 +1,5 @@
 .whyChooseUsContainer {
-  height: 80vh;
+  height: auto;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -55,7 +55,7 @@
   height: 45%;
   width: 100%;
   padding: 0.8rem;
-  background-color: #4b0406;
+  background: linear-gradient(90deg, #4b0406, #6b0f12, #a82b30);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -64,7 +64,7 @@
 }
 
 .cardTxt {
-  text-align: justify;
+  text-align: left;
   font-size: 0.8rem;
   line-height: 1.6rem;
   letter-spacing: 0.03rem;
@@ -175,6 +175,42 @@
 
   .cardTxt {
     font-size: 0.75rem;
+    line-height: 1.5;
+  }
+}
+
+/* Tablets (portrait and landscape) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .whyChooseUsContainer {
+    min-height: 40vh;
+  }
+
+  .whyChooseUsTitle {
+    font-size: 2rem;
+  }
+
+  .cardMainContainer {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .cardContainer {
+    width: 100%;
+    height: 470px;
+  }
+
+  .cardImg {
+    height: 60%;
+  }
+
+  .cardSubContainer {
+    height: 40%;
+  }
+
+  .cardTxt {
+    font-size: 0.8rem;
     line-height: 1.5;
   }
 }

@@ -1,11 +1,12 @@
 .footerMainSection {
   height: 75vh;
   width: 100%;
-  background-color: #4b0406;
+  background: linear-gradient(90deg, #4b0406, #6b0f12, #a82b30);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 20px;
 }
 
 .footerCarouselSection {

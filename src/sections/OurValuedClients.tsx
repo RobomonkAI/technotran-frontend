@@ -20,7 +20,7 @@ const OurValuedClients = () => {
   };
 
   const cardVariants = {
-    hidden: { opacity: 0, scale: 0.9, y: 50 },
+    hidden: { opacity: 0, scale: 0.9, y: 30 },
     visible: (i: number) => ({
       opacity: 1,
       scale: 1,

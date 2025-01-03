@@ -2,7 +2,7 @@
   width: 100%;
   min-height: 45vh;
   padding: 20px;
-  background-color: lightgray;
+  background: linear-gradient(180deg, lightgray, #b0bec5, #78909c);
   margin: 2rem 0;
   display: flex;
   justify-content: center;
@@ -22,7 +22,6 @@
 .innovationLabsImgContainer {
   width: 50%;
   height: 100%;
-  background-color: lightgray;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -32,7 +31,6 @@
 .innovationLabsContentContainer {
   width: 50%;
   height: 100%;
-  background-color: lightgray;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
