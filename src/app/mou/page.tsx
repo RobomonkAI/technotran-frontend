@@ -8,7 +8,7 @@ import WhatsAppBtn from "@/components/WhatsAppBtn";
 import PhoneBtn from "@/components/PhoneBtn";
 import FooterMain from "@/sections/FooterMain";
 import { motion } from "framer-motion";
-import { mouData } from "./utils/helpers";
+import { mouData } from "@/utils/helpers";
 
 const MOUPage = () => {
   const headingVariants = {

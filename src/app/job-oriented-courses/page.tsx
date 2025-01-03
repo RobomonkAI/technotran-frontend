@@ -9,7 +9,7 @@ import WhatsAppBtn from "@/components/WhatsAppBtn";
 import PhoneBtn from "@/components/PhoneBtn";
 import FooterMain from "@/sections/FooterMain";
 import ContactForm from "../../utils/Forms/JOCEnquiry";
-import { jobOrientedCoursesData } from "./utils/helpers";
+import { jobOrientedCoursesData } from "@/utils/helpers";
 
 const JobOrientedCourcesPage = () => {
   const headingVariants = {
