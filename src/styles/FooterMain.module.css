@@ -1,16 +1,16 @@
 .footerMainSection {
-  height: 75vh;
+  height: 90vh;
   width: 100%;
   background: linear-gradient(90deg, #4b0406, #6b0f12, #a82b30);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   padding-bottom: 20px;
 }
 
 .footerCarouselSection {
-  height: 40%;
+  height: 35%;
   width: 100%;
   max-width: 80rem;
   display: flex;
@@ -23,7 +23,7 @@
   width: 100%;
   max-width: 80rem;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   padding: 0.7rem 1.5rem;
@@ -37,32 +37,45 @@
 }
 
 .footerSubContainer {
-  width: 63%;
+  height: 80%;
+  width: 100%;
   display: flex;
   flex-direction: row;
-  height: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }
 
 .footerSubContainerOne {
-  width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  padding-top: 2rem;
+  gap: 0.5rem;
 }
 
 .quickLinksSection {
-  height: 100%;
-  width: 30%;
+  height: 20%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .reachUsSection {
-  height: 100%;
+  height: 50%;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .contactInfoSection {
-  height: 100%;
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .quickLinksItem {
@@ -75,21 +88,22 @@
   color: white;
   letter-spacing: 0.03rem;
   font-weight: 500;
+  text-decoration: underline;
 }
 
 .quickLinksSubSection {
-  height: 80%;
+  height: 100%;
   width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-evenly;
-  align-items: flex-start;
+  align-items: center;
   padding: 0.5rem;
+  gap: 0.5rem;
 }
 
 .reachUsSubSection {
-  height: 50%;
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -162,12 +176,13 @@
 
 .followUsSection {
   height: 100%;
-  width: 100%;
+  width: 40%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   gap: 2rem;
+  padding: 2rem 0;
 }
 
 .followUsIconsContainer {
@@ -199,29 +214,24 @@
 
 /* Extra Small Mobile Devices (Portrait) */
 /* iPhone SE, older Android phones */
-/* @media only screen and (max-width: 320px) {
-  .landingMainContainer {
-    height: 40vh;
-  }
-} */
+@media only screen and (max-width: 320px) {
+}
 
 /* Small Mobile Devices (Portrait) */
 /* iPhone 6/7/8, Galaxy S8 */
-/* @media only screen and (min-width: 321px) and (max-width: 375px) {
-  .landingMainContainer {
-    height: 40vh;
-  }
-} */
+@media only screen and (min-width: 321px) and (max-width: 375px) {
+}
 
 /* Medium Mobile Devices (Portrait) */
 /* iPhone 11 Pro, Google Pixel 2 */
-/* @media only screen and (min-width: 376px) and (max-width: 425px) {
+@media only screen and (min-width: 376px) and (max-width: 425px) {
   .footerMainSection {
-    height: 140vh;
+    height: 100vh;
+    justify-content: flex-start;
   }
 
   .footerCarouselSection {
-    height: 200px;
+    height: 150px;
   }
 
   .carouselContainer {
@@ -240,7 +250,7 @@
   }
 
   .quickLinksSection {
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -250,12 +260,14 @@
   .footerSubContainer {
     width: 100%;
     flex-direction: column;
+    justify-content: space-evenly;
   }
 
   .footerSubContainerOne {
-    height: 300px;
+    height: 500px;
     width: 100%;
     margin-bottom: 1rem;
+    border: 1px solid;
   }
 
   .followUsSection {
@@ -290,4 +302,4 @@
   .followUsSocialMediaIcons:hover {
     font-size: 1.5rem;
   }
-} */
+}

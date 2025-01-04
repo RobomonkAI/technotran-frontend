@@ -1,6 +1,6 @@
 .ourValuedClientsContainer {
   width: 100%;
-  min-height: 100vh;
+  height: auto;
   padding: 1rem;
   background: linear-gradient(
     to bottom,
@@ -95,16 +95,64 @@
 /* Extra Small Mobile Devices (Portrait) */
 /* iPhone SE, older Android phones */
 @media only screen and (max-width: 320px) {
-  .landingMainContainer {
-    height: 40vh;
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .ourValuedClientsContentContainer {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .cardContainer {
+    height: 220px;
+    width: 220px;
+  }
+
+  .cardTxt {
+    font-size: 0.75rem;
+  }
+
+  .cardImgContainer {
+    height: 65%;
+    width: 100%;
+  }
+
+  .cardSubContainer {
+    height: 35%;
+    width: 100%;
   }
 }
 
 /* Small Mobile Devices (Portrait) */
 /* iPhone 6/7/8, Galaxy S8 */
 @media only screen and (min-width: 321px) and (max-width: 375px) {
-  .landingMainContainer {
-    height: 40vh;
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .ourValuedClientsContentContainer {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .cardContainer {
+    height: 220px;
+    width: 220px;
+  }
+
+  .cardTxt {
+    font-size: 0.75rem;
+  }
+
+  .cardImgContainer {
+    height: 65%;
+    width: 100%;
+  }
+
+  .cardSubContainer {
+    height: 35%;
+    width: 100%;
   }
 }
 
@@ -112,7 +160,7 @@
 /* iPhone 11 Pro, Google Pixel 2 */
 @media only screen and (min-width: 376px) and (max-width: 425px) {
   .title {
-    font-size: 1.2rem;
+    font-size: 1.7rem;
   }
 
   .ourValuedClientsContentContainer {

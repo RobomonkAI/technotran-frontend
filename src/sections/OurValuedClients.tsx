@@ -48,7 +48,7 @@ const OurValuedClients = () => {
           whileInView="visible"
           className={`${styles.title} josefin-sans-text`}
         >
-          Our Valued Clients
+          Esteemed Clients
         </motion.h2>
         <div className={styles.ourValuedClientsContentContainer}>
           {valuedClientsData.map((item, index) => (

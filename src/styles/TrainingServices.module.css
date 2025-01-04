@@ -87,7 +87,7 @@
 /* iPhone SE, older Android phones */
 @media only screen and (max-width: 320px) {
   .trainingServicesTitle {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 
   .cardsMainContainer {
@@ -109,7 +109,7 @@
 /* iPhone 6/7/8, Galaxy S8 */
 @media only screen and (min-width: 321px) and (max-width: 375px) {
   .trainingServicesTitle {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 
   .cardsMainContainer {
@@ -133,7 +133,7 @@
 /* iPhone 11 Pro, Google Pixel 2 */
 @media only screen and (min-width: 376px) and (max-width: 425px) {
   .trainingServicesTitle {
-    font-size: 1.2rem;
+    font-size: 1.7rem;
   }
 
   .cardsMainContainer {
@@ -144,7 +144,7 @@
   }
 
   .cardContainer {
-    width: 80%;
+    width: 90%;
     height: 300px;
   }
 

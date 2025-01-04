@@ -103,7 +103,7 @@ const IndustriesWeServe = () => {
           whileInView="visible"
           className={`${styles.title} josefin-sans-text`}
         >
-          Industries We Serve
+          Industry Expertise
         </motion.h2>
 
         {/* Carousel */}

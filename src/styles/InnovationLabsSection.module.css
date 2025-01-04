@@ -53,13 +53,12 @@
 
 .innovationLabsDesc {
   font-size: 1rem;
-  line-height: 1.5rem;
+  line-height: 1.6rem;
   letter-spacing: 0.03rem;
-  font-weight: 500;
+  font-weight: 600;
   text-align: justify;
   color: black;
 }
-
 
 /* Extra Small Mobile Devices (Portrait) */
 /* iPhone SE, older Android phones */
@@ -79,12 +78,13 @@
   }
 
   .innovationLabsTitle {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 
   .innovationLabsDesc {
     font-size: 0.75rem;
-    font-weight: 500;
+    font-weight: 600;
+    line-height: 1.6;
   }
 }
 
@@ -106,12 +106,13 @@
   }
 
   .innovationLabsTitle {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 
   .innovationLabsDesc {
     font-size: 0.75rem;
-    font-weight: 500;
+    font-weight: 600;
+    line-height: 1.6;
   }
 }
 
@@ -133,11 +134,12 @@
   }
 
   .innovationLabsTitle {
-    font-size: 1.2rem;
+    font-size: 1.7rem;
   }
 
   .innovationLabsDesc {
-    font-size: 0.75rem;
-    font-weight: 500;
+    font-size: 0.8rem;
+    font-weight: 600;
+    line-height: 1.6;
   }
 }

@@ -1,6 +1,6 @@
 .designServicesSection {
   position: relative;
-  height: 45vh;
+  height: 47vh;
   overflow: hidden;
   color: white;
   background-image: url("https://github.com/CVSCharan/Technotran_Assets/blob/main/business-businessmen-classroom-267507.jpg?raw=true");
@@ -95,6 +95,10 @@
   .exploreLink {
     font-size: 0.75rem;
   }
+
+  .contentContainer {
+    padding: 2rem 1rem;
+  }
 }
 
 /* Small Mobile Devices (Portrait) */
@@ -112,22 +116,30 @@
   .exploreLink {
     font-size: 0.75rem;
   }
+
+  .contentContainer {
+    padding: 2rem 1rem;
+  }
 }
 
 /* Medium Mobile Devices (Portrait) */
 /* iPhone 11 Pro, Google Pixel 2 */
 @media only screen and (min-width: 376px) and (max-width: 425px) {
   .title {
-    font-size: 1.2rem;
+    font-size: 1.7rem;
   }
 
   .description {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     line-height: 1.5;
   }
 
   .exploreLink {
     font-size: 0.75rem;
+  }
+
+  .contentContainer {
+    padding: 2rem 1rem;
   }
 }
 
@@ -144,5 +156,9 @@
 
   .exploreLink {
     font-size: 0.9rem;
+  }
+
+  .contentContainer {
+    padding: 2rem 1rem;
   }
 }

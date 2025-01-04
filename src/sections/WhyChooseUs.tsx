@@ -42,7 +42,7 @@ const WhyChooseUs = () => {
         variants={headingVariants}
         className={`${styles.whyChooseUsTitle} josefin-sans-text`}
       >
-        Why Choose Technotran?
+        Why Technotran Solutions?
       </motion.h2>
 
       <div className={styles.cardMainContainer}>

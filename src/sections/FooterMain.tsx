@@ -2,30 +2,66 @@
 
 import React, { useEffect, useState } from "react";
 import styles from "../styles/FooterMain.module.css";
-import PhoneIcon from "@mui/icons-material/Phone";
-import EmailIcon from "@mui/icons-material/Email";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import YouTubeIcon from "@mui/icons-material/YouTube";
+import {
+  Phone,
+  Email,
+  Facebook,
+  Instagram,
+  LinkedIn,
+  YouTube,
+} from "@mui/icons-material";
 import FooterMainCarousel from "@/components/FooterMainCarousel";
 import Image from "next/image";
 
 const FooterMain = () => {
-  const [isClient, setIsClient] = useState(false); // Track if the app is running on the client
+  const [isClient, setIsClient] = useState(false);
+
   useEffect(() => {
-    // Only run this code on the client side
-    console.log(isClient);
     setIsClient(true);
   }, []);
 
   const handleSocialIconsClick = (link: string) => {
-    if (isClient) {
-      if (typeof window !== "undefined") {
-        window.open(link, "_blank");
-      }
-    }
+    if (isClient && typeof window !== "undefined") window.open(link, "_blank");
   };
+
+  const quickLinks = [
+    "Home",
+    "About Us",
+    "MOU",
+    "Contact Us",
+    "Shipping, Return, Refund Policy",
+    "Terms And Conditions",
+    "Privacy Policy",
+  ];
+
+  const contactInfo = [
+    { icon: Phone, text: "+91 9000 326 936" },
+    { icon: Phone, text: "+91 9100 103 806" },
+    { icon: Email, text: "info@technotran.in" },
+  ];
+
+  const socialLinks = [
+    {
+      icon: Facebook,
+      color: "#1877F2",
+      link: "https://www.facebook.com/technotran?mibextid=ZbWKwL",
+    },
+    {
+      icon: Instagram,
+      color: "#cd486b",
+      link: "https://www.instagram.com/technotran/?igshid=OGQ5ZDc2ODk2ZA%3D%3D",
+    },
+    {
+      icon: LinkedIn,
+      color: "#0077B5",
+      link: "https://www.linkedin.com/company/technotran/",
+    },
+    {
+      icon: YouTube,
+      color: "#FF0000",
+      link: "https://www.youtube.com/@TechnoTran",
+    },
+  ];
 
   return (
     <footer id="Footer Main" className={styles.footerMainSection}>
@@ -33,124 +69,71 @@ const FooterMain = () => {
         <FooterMainCarousel />
       </div>
       <div className={styles.footerSubSection}>
+        {/* Quick Links Section */}
         <div className={styles.quickLinksSection}>
-          <h2 className={`${styles.title} cinzel-text`}>Quick Links</h2>
+          <h2 className={`${styles.title} josefin-sans-text`}>Quick Links</h2>
           <ul className={styles.quickLinksSubSection}>
-            <li className={styles.quickLinksItem}>
-              <h2 className={`${styles.quickLinksTxt} quicksand-text`}>Home</h2>
-            </li>
-            <li className={styles.quickLinksItem}>
-              <h2 className={`${styles.quickLinksTxt} quicksand-text`}>
-                About US
-              </h2>
-            </li>
-            <li className={styles.quickLinksItem}>
-              <h2 className={`${styles.quickLinksTxt} quicksand-text`}>MOU</h2>
-            </li>
-            <li className={styles.quickLinksItem}>
-              <h2 className={`${styles.quickLinksTxt} quicksand-text`}>
-                Contact Us
-              </h2>
-            </li>
-            <li className={styles.quickLinksItem}>
-              <h2 className={`${styles.quickLinksTxt} quicksand-text`}>
-                Shipping, Return, Refund Policy
-              </h2>
-            </li>
-            <li className={styles.quickLinksItem}>
-              <h2 className={`${styles.quickLinksTxt} quicksand-text`}>
-                Terms And Conditions
-              </h2>
-            </li>
-            <li className={styles.quickLinksItem}>
-              <h2 className={`${styles.quickLinksTxt} quicksand-text`}>
-                Privacy Policy
-              </h2>
-            </li>
+            {quickLinks.map((link, index) => (
+              <li key={index} className={styles.quickLinksItem}>
+                <h2 className={`${styles.quickLinksTxt} josefin-sans-text`}>
+                  {link}
+                </h2>
+              </li>
+            ))}
           </ul>
         </div>
+
+        {/* Reach Us and Contact Us */}
         <div className={styles.footerSubContainer}>
           <div className={styles.footerSubContainerOne}>
             <div className={styles.reachUsSection}>
-              <h2 className={`${styles.title} cinzel-text`}>Reach Us</h2>
+              <h2 className={`${styles.title} josefin-sans-text`}>Reach Us</h2>
               <div className={styles.reachUsSubSection}>
-                <h3 className={`${styles.reachUsTxt} quicksand-text`}>
-                  Technotran office, Plot-24/2,
-                </h3>
-                <h3 className={`${styles.reachUsTxt} quicksand-text`}>
-                  Near more supermarket,
-                </h3>
-                <h3 className={`${styles.reachUsTxt} quicksand-text`}>
-                  beside Canara bank,
-                </h3>
-                <h3 className={`${styles.reachUsTxt} quicksand-text`}>
-                  Magunta layout, Nellore, A.P - 524003
-                </h3>
+                {[
+                  "Technotran office, Plot-24/2,",
+                  "Near more supermarket,",
+                  "beside Canara bank,",
+                  "Magunta layout, Nellore, A.P - 524003",
+                ].map((line, index) => (
+                  <h3
+                    key={index}
+                    className={`${styles.reachUsTxt} quicksand-text`}
+                  >
+                    {line}
+                  </h3>
+                ))}
               </div>
             </div>
+
             <div className={styles.contactInfoSection}>
-              <h2 className={`${styles.title} cinzel-text`}>Contact Us</h2>
+              <h2 className={`${styles.title} josefin-sans-text`}>
+                Contact Us
+              </h2>
               <div className={styles.contactInfoSubSection}>
-                <div className={styles.contactInfoItems}>
-                  <PhoneIcon className={styles.contactIcons} />
-                  <h2 className={`${styles.contactInfoTxt} quicksand-text`}>
-                    +91 9000 326 936
-                  </h2>
-                </div>
-                <div className={styles.contactInfoItems}>
-                  <PhoneIcon className={styles.contactIcons} />
-                  <h2 className={`${styles.contactInfoTxt} quicksand-text`}>
-                    +91 9100 103 806
-                  </h2>
-                </div>
-                <div className={styles.contactInfoItems}>
-                  <EmailIcon className={styles.contactIcons} />
-                  <h2 className={`${styles.contactInfoTxt} quicksand-text`}>
-                    info@technotran.in
-                  </h2>
-                </div>
+                {contactInfo.map((info, index) => (
+                  <div key={index} className={styles.contactInfoItems}>
+                    <info.icon className={styles.contactIcons} />
+                    <h2 className={`${styles.contactInfoTxt} quicksand-text`}>
+                      {info.text}
+                    </h2>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
 
+          {/* Follow Us */}
           <div className={styles.followUsSection}>
-            <h2 className={`${styles.title} cinzel-text`}>Follow Us</h2>
-            {/* Social Media Icons Section */}
+            <h2 className={`${styles.title} josefin-sans-text`}>Follow Us</h2>
             <div className={styles.followUsIconsContainer}>
-              <FacebookIcon
-                style={{ fill: "#1877F2", fontSize: "3rem" }}
-                onClick={() =>
-                  handleSocialIconsClick(
-                    "https://www.facebook.com/technotran?mibextid=ZbWKwL"
-                  )
-                }
-                className={styles.followUsSocialMediaIcons}
-              />
-              <InstagramIcon
-                style={{ fill: "#cd486b", fontSize: "3rem" }}
-                onClick={() =>
-                  handleSocialIconsClick(
-                    "https://www.instagram.com/technotran/?igshid=OGQ5ZDc2ODk2ZA%3D%3D"
-                  )
-                }
-                className={styles.followUsSocialMediaIcons}
-              />
-              <LinkedInIcon
-                style={{ fill: "#0077B5", fontSize: "3rem" }}
-                onClick={() =>
-                  handleSocialIconsClick(
-                    "https://www.linkedin.com/company/technotran/"
-                  )
-                }
-                className={styles.followUsSocialMediaIcons}
-              />
-              <YouTubeIcon
-                style={{ fill: "#FF0000", fontSize: "3rem" }}
-                onClick={() =>
-                  handleSocialIconsClick("https://www.youtube.com/@TechnoTran")
-                }
-                className={styles.followUsSocialMediaIcons}
-              />
+              {socialLinks.map(({ icon: Icon, color, link }, index) => (
+                <Icon
+                  key={index}
+                  style={{ fill: color, fontSize: "3rem" }}
+                  onClick={() => handleSocialIconsClick(link)}
+                  className={styles.followUsSocialMediaIcons}
+                />
+              ))}
             </div>
             <Image
               src="/Images/Technotran-logo.png"

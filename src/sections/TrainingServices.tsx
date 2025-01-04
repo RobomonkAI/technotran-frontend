@@ -86,7 +86,7 @@ const TrainingServices = () => {
         }} // Trigger animation while element is in view
         viewport={{ once: false, amount: 0.3 }} // Ensure the animation can repeat
       >
-        Our Training Solutions
+        Training Solutions
       </motion.h2>
 
       <div className={styles.cardsMainContainer}>

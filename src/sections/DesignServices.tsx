@@ -61,7 +61,7 @@ const DesignServices = () => {
           variants={headingVariants}
           className={`${styles.title} josefin-sans-text`}
         >
-          Explore Our Design Services
+          Industrial Solutions
         </motion.h2>
         <motion.p
           initial="hidden"

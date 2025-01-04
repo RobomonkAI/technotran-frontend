@@ -105,7 +105,7 @@ const Testimonials = () => {
               const isExpanded = expandedIds[item.id] || false;
               const shortDesc =
                 item.desc.length > 170
-                  ? `${item.desc.substring(0, 170)} ...`
+                  ? `${item.desc.substring(0, 170)} ... ... ...`
                   : item.desc;
 
               return (
@@ -131,7 +131,7 @@ const Testimonials = () => {
                             className={`${styles.readMoreBtn} josefin-sans-text`}
                             onClick={() => toggleReadMore(item.id)}
                           >
-                            {isExpanded ? "Read Less" : "Read More"}
+                            {isExpanded ? "Read less" : "Read more"}
                           </button>
                         )}
                       </div>
@@ -170,20 +170,14 @@ const Testimonials = () => {
         </motion.div>
 
         {/* Custom Buttons */}
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: false, amount: 0.7 }}
-          variants={cardVariants}
-          className={styles.customControls}
-        >
+        <div className={styles.customControls}>
           <button className={styles.prevButton} onClick={goToPrev}>
             <ArrowBackIosNewIcon />
           </button>
           <button className={styles.nextButton} onClick={goToNext}>
             <ArrowForwardIosIcon />
           </button>
-        </motion.div>
+        </div>
       </div>
     </motion.section>
   );

@@ -147,7 +147,7 @@
 
   .navLinks {
     position: absolute;
-    top: 90px; /* Adjust the top position to ensure it doesn't overlap with the logo */
+    top: 4rem; /* Adjust the top position to ensure it doesn't overlap with the logo */
     right: 0;
     background-color: white;
     flex-direction: column;

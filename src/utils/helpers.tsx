@@ -15,19 +15,19 @@ export const whyChooseUsData: WhyChooseUsItem[] = [
     id: 1,
     imgSrc:
       "https://github.com/CVSCharan/Technotran_Assets/blob/main/why-choose-technotran.png?raw=true",
-    desc: "Technotran, an innovative edu-tech company, stands out for its expertise in diverse fields including robotics, IoT, embedded systems, 3D printing, and PCB design.",
+    desc: "Technotran Solutions, an innovative edu-tech company, stands out for its expertise in diverse fields including robotics, IoT, embedded systems, 3D printing, and PCB design.",
   },
   {
     id: 2,
     imgSrc:
       "https://github.com/CVSCharan/Technotran_Assets/blob/main/why-choose-technotran-2.png?raw=true",
-    desc: "Technotran provide cutting-edge manufacturing technologies including CNC cutters, laser cutting machines, and 3D printers to deliver premium project kits and products customized for both educational and industrial applications.",
+    desc: "Technotran Solutions provide cutting-edge manufacturing technologies including CNC cutters, laser cutting machines, and 3D printers to deliver premium project kits and products customized for both educational and industrial applications.",
   },
   {
     id: 3,
     imgSrc:
       "https://github.com/CVSCharan/Technotran_Assets/blob/main/why-choose-technotran-3.png?raw=true",
-    desc: "Choose Technotran for unparalleled training services, offering a wide range of opportunities including internships, workshops, and online courses, providing practical skills and knowledge for career advancement.",
+    desc: "Choose Technotran Solutions for unparalleled training services, offering a wide range of opportunities including internships, workshops, and online courses, providing practical skills and knowledge for career advancement.",
   },
 ];
 
