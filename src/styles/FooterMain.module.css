@@ -215,18 +215,8 @@
 /* Extra Small Mobile Devices (Portrait) */
 /* iPhone SE, older Android phones */
 @media only screen and (max-width: 320px) {
-}
-
-/* Small Mobile Devices (Portrait) */
-/* iPhone 6/7/8, Galaxy S8 */
-@media only screen and (min-width: 321px) and (max-width: 375px) {
-}
-
-/* Medium Mobile Devices (Portrait) */
-/* iPhone 11 Pro, Google Pixel 2 */
-@media only screen and (min-width: 376px) and (max-width: 425px) {
   .footerMainSection {
-    height: 100vh;
+    height: auto;
     justify-content: flex-start;
   }
 
@@ -240,8 +230,8 @@
   }
 
   .carouselImage {
-    height: 80px;
-    width: 80px;
+    height: 90px;
+    width: 120px;
   }
 
   .footerSubSection {
@@ -264,15 +254,173 @@
   }
 
   .footerSubContainerOne {
-    height: 500px;
     width: 100%;
-    margin-bottom: 1rem;
-    border: 1px solid;
+    padding-left: 2rem;
   }
 
   .followUsSection {
-    height: 170px;
     width: 100%;
+    padding: 0 auto !important;
+  }
+
+  .title {
+    font-size: 1rem;
+  }
+
+  .quickLinksTxt {
+    font-size: 0.75rem;
+  }
+
+  .reachUsTxt {
+    font-size: 0.75rem;
+  }
+
+  .contactInfoTxt {
+    font-size: 0.75rem;
+  }
+
+  .followUsIconsContainer {
+    height: 20%;
+  }
+
+  .followUsSocialMediaIcons {
+    font-size: 1.3rem;
+  }
+
+  .followUsSocialMediaIcons:hover {
+    font-size: 1.5rem;
+  }
+}
+
+/* Small Mobile Devices (Portrait) */
+/* iPhone 6/7/8, Galaxy S8 */
+@media only screen and (min-width: 321px) and (max-width: 375px) {
+  .footerMainSection {
+    height: auto;
+    justify-content: flex-start;
+  }
+
+  .footerCarouselSection {
+    height: 150px;
+  }
+
+  .carouselContainer {
+    width: 90%;
+    height: 150px;
+  }
+
+  .carouselImage {
+    height: 90px;
+    width: 120px;
+  }
+
+  .footerSubSection {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .quickLinksSection {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+  }
+
+  .footerSubContainer {
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .footerSubContainerOne {
+    width: 100%;
+    padding-left: 2rem;
+  }
+
+  .followUsSection {
+    width: 100%;
+    padding: 0 auto !important;
+  }
+
+  .title {
+    font-size: 1rem;
+  }
+
+  .quickLinksTxt {
+    font-size: 0.75rem;
+  }
+
+  .reachUsTxt {
+    font-size: 0.75rem;
+  }
+
+  .contactInfoTxt {
+    font-size: 0.75rem;
+  }
+
+  .followUsIconsContainer {
+    height: 20%;
+  }
+
+  .followUsSocialMediaIcons {
+    font-size: 1.3rem;
+  }
+
+  .followUsSocialMediaIcons:hover {
+    font-size: 1.5rem;
+  }
+}
+
+/* Medium Mobile Devices (Portrait) */
+/* iPhone 11 Pro, Google Pixel 2 */
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+  .footerMainSection {
+    height: auto;
+    justify-content: flex-start;
+  }
+
+  .footerCarouselSection {
+    height: 150px;
+  }
+
+  .carouselContainer {
+    width: 90%;
+    height: 150px;
+  }
+
+  .carouselImage {
+    height: 90px;
+    width: 120px;
+  }
+
+  .footerSubSection {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .quickLinksSection {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+  }
+
+  .footerSubContainer {
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .footerSubContainerOne {
+    width: 100%;
+    padding-left: 2rem;
+  }
+
+  .followUsSection {
+    width: 100%;
+    padding: 0 auto !important;
   }
 
   .title {
