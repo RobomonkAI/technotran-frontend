@@ -95,7 +95,7 @@ const NavBar = () => {
       router.push("/ar-vr-lab");
     } else if (item === "Robotics & ES Lab") {
       router.push("/robotics-es-lab");
-    } else if (item === "Internship") {
+    } else if (item === "Internships") {
       window.open("https://internships.technotran.in/", "_blank"); // Opens in a new tab
     } else {
       router.push(item.toLowerCase().replace(/\s+/g, "-")); // Ensure the route matches the item

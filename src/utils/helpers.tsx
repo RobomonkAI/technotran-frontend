@@ -152,16 +152,16 @@ export const valuedClientsData: ValuedClientsDataItem[] = [
       "https://github.com/CVSCharan/Technotran_Assets/blob/main/Narayana-Engineering-College-Nellore-Gudur.png?raw=true",
     name: "Narayana Engineering College, Nellore & Gudur",
   },
-  {
-    id: 11,
-    imgSrc:
-      "https://github.com/CVSCharan/Technotran_Assets/blob/main/Laki-Reddy-Bali-Reddy-College-of-Engineering-Vijayawada.png?raw=true",
-    name: "Laki Reddy Bali Reddy College of Engineering, Vijayawada",
-  },
+  // {
+  //   id: 11,
+  //   imgSrc:
+  //     "https://github.com/CVSCharan/Technotran_Assets/blob/main/Laki-Reddy-Bali-Reddy-College-of-Engineering-Vijayawada.png?raw=true",
+  //   name: "Laki Reddy Bali Reddy College of Engineering, Vijayawada",
+  // },
   {
     id: 12,
     imgSrc:
-      "https://github.com/CVSCharan/Technotran_Assets/blob/main/Geethanjali-College-of-Engineering-technology-Hyderabad.png?raw=true",
+      "https://github.com/CVSCharan/Technotran_Assets/blob/main/GIST-Gangavaram-new-logo.jpg?raw=true",
     name: "Geethanjali College of Engineering & technology, Hyderabad",
   },
   {
@@ -179,7 +179,7 @@ export const valuedClientsData: ValuedClientsDataItem[] = [
   {
     id: 15,
     imgSrc:
-      "https://github.com/CVSCharan/Technotran_Assets/blob/main/Annamacharya-Institute-of-Technology-sciences-Rajampet.png?raw=true",
+      "https://github.com/CVSCharan/Technotran_Assets/blob/main/Annamacharya-university-new-Logo.png?raw=true",
     name: "Annamacharya Institute of Technology & sciences, Rajampet",
   },
   {
@@ -187,6 +187,12 @@ export const valuedClientsData: ValuedClientsDataItem[] = [
     imgSrc:
       "https://github.com/CVSCharan/Technotran_Assets/blob/main/Sree-Chaitanya.png?raw=true",
     name: "Sree Chaitanya",
+  },
+  {
+    id: 17,
+    imgSrc:
+      "https://github.com/CVSCharan/Technotran_Assets/blob/main/CMR-College-Hyderabad-new-Logo.jpg?raw=true",
+    name: "CMR College of Engineering & Technology",
   },
 ];
 
@@ -262,6 +268,22 @@ export const testimonialsCarouselData: TestimonialsCarouselDataItem[] = [
       "https://github.com/CVSCharan/Technotran_Assets/blob/main/Picture11.png?raw=true",
     name: "Prof.P. Srinivasulu Reddy",
     designation: "HOD, NEC, Gudur",
+  },
+  {
+    id: 10,
+    desc: "As the Head of the Department, I would like to extend my gratitude to the Technotran team for organizing the workshops on the Internet of Robotic Things (IoRT) and Edge AI at our college. These sessions have been excellent hands-on learning experiences for our students, enabling them to gain a deeper understanding of IoRT and Edge AI concepts. These workshops have provided invaluable opportunities for our students, and we sincerely appreciate the Technotran team's commitment and expertise.",
+    imgSrc:
+      "https://github.com/CVSCharan/Technotran_Assets/blob/main/CMR-College-Testimonial-Image.jpg?raw=true",
+    name: "Dr.P. Raveendra Babu",
+    designation: "HOD, ECE, CMRCET, Hyderabad",
+  },
+  {
+    id: 11,
+    desc: "We would like to express our gratitude to the Technotran team for organizing the Arduino Workshop at our college. The workshop provided an invaluable hands-on learning experience for our students, greatly enriching their understanding of Arduino projects and programming. This initiative has unquestionably offered our students a valuable educational experience, and we extend our sincere thanks to the Technotran team for their exemplary efforts in making this workshop a success.",
+    imgSrc:
+      "https://github.com/CVSCharan/Technotran_Assets/blob/main/GIST-Gangavaram-Testimonial-Logo.jpg?raw=true",
+    name: "Dr.U. Penchalaiah",
+    designation: "HOD, ECE, GIST, Gangavaram",
   },
 ];
 
