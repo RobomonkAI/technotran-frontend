@@ -38,96 +38,98 @@ const ContactUsPage = () => {
   };
 
   return (
-    <main id="Contact Us Page" className={styles.mainBody}>
+    <main id="Contact Us Page">
       <NavBar />
-      <section
-        id="Contact Us Landing Img"
-        className={styles.contactUsMainContainer}
-      >
-        <Image
-          src="/images/Contact-us-banner-image.png"
-          alt="Contact Us Landing Img"
-          height={700}
-          width={1000}
-          priority
-          className={styles.contactUsLandingImg}
-        />
-      </section>
-      <section id="Contact Us Landing Section">
-        <div className={styles.sectionOne}>
-          <motion.h2
-            initial="hidden"
-            whileInView="visible"
-            variants={headingVariants}
-            viewport={{ once: false, amount: 0.2 }}
-            className={`${styles.subTitle} cinzel-text`}
-          >
-            {`We're here to assist you and answer any questions you may have. Feel
+      <div className={styles.mainBody}>
+        <section
+          id="Contact Us Landing Img"
+          className={styles.contactUsMainContainer}
+        >
+          <Image
+            src="/images/Contact-us-banner-image.png"
+            alt="Contact Us Landing Img"
+            height={700}
+            width={1000}
+            priority
+            className={styles.contactUsLandingImg}
+          />
+        </section>
+        <section id="Contact Us Landing Section">
+          <div className={styles.sectionOne}>
+            <motion.h2
+              initial="hidden"
+              whileInView="visible"
+              variants={headingVariants}
+              viewport={{ once: false, amount: 0.2 }}
+              className={`${styles.subTitle} cinzel-text`}
+            >
+              {`We're here to assist you and answer any questions you may have. Feel
             free to reach out to us.`}
-          </motion.h2>
-        </div>
-      </section>
-      <motion.section
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: false, amount: 0.2 }}
-        variants={cardVariants}
-        id="Contact Us Content Section"
-        className={styles.contactSection}
-      >
-        <div className={styles.contactContainer}>
-          {/* Left Section */}
-          <div className={styles.leftSection}>
-            <Image
-              alt="Contact Us Banner Img"
-              src="/images/contact-us-banner-img.jpg"
-              height={500}
-              width={500}
-              priority
-              className={styles.bannerImage}
-            />
-
-            <CustomGoogleMap />
+            </motion.h2>
           </div>
+        </section>
+        <motion.section
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: false, amount: 0.2 }}
+          variants={cardVariants}
+          id="Contact Us Content Section"
+          className={styles.contactSection}
+        >
+          <div className={styles.contactContainer}>
+            {/* Left Section */}
+            <div className={styles.leftSection}>
+              <Image
+                alt="Contact Us Banner Img"
+                src="/images/contact-us-banner-img.jpg"
+                height={500}
+                width={500}
+                priority
+                className={styles.bannerImage}
+              />
 
-          {/* Right Section */}
-          <div className={styles.rightSection}>
-            <Image
-              src="/images/Technotran-logo.png"
-              alt="Contact Us Logo"
-              height={200}
-              width={200}
-              priority
-              className={styles.logoImage}
-            />
-            <div className={styles.contactDetails}>
-              <div className={styles.contactItem}>
-                <h2>Address</h2>
-                <p>Technotran office, Near more supermarket,</p>
-                <p>beside Canara bank, Magunta layout, Nellore.</p>
-              </div>
-              <div className={styles.contactItem}>
-                <h2>Email</h2>
-                <div className={styles.contactInfo}>
-                  <EmailIcon className={styles.icon} />
-                  <p>info@technotran.in</p>
+              <CustomGoogleMap />
+            </div>
+
+            {/* Right Section */}
+            <div className={styles.rightSection}>
+              <Image
+                src="/images/Technotran-logo.png"
+                alt="Contact Us Logo"
+                height={200}
+                width={200}
+                priority
+                className={styles.logoImage}
+              />
+              <div className={styles.contactDetails}>
+                <div className={styles.contactItem}>
+                  <h2>Address</h2>
+                  <p>Technotran office, Near more supermarket,</p>
+                  <p>beside Canara bank, Magunta layout, Nellore.</p>
                 </div>
-              </div>
-              <div className={styles.contactItem}>
-                <h2>Contact Number</h2>
-                <div className={styles.contactInfo}>
-                  <PhoneIcon className={styles.icon} />
-                  <p>+91 9000 326 936</p>
+                <div className={styles.contactItem}>
+                  <h2>Email</h2>
+                  <div className={styles.contactInfo}>
+                    <EmailIcon className={styles.icon} />
+                    <p>info@technotran.in</p>
+                  </div>
                 </div>
-                <div className={styles.contactInfo}>
-                  <PhoneIcon className={styles.icon} />
-                  <p>+91 9100 103 806</p>
+                <div className={styles.contactItem}>
+                  <h2>Contact Number</h2>
+                  <div className={styles.contactInfo}>
+                    <PhoneIcon className={styles.icon} />
+                    <p>+91 9000 326 936</p>
+                  </div>
+                  <div className={styles.contactInfo}>
+                    <PhoneIcon className={styles.icon} />
+                    <p>+91 9100 103 806</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </motion.section>
+        </motion.section>
+      </div>
       <FooterMain />
       <WhatsAppBtn />
       <PhoneBtn />

@@ -48,6 +48,24 @@
   align-items: center;
 }
 
+.navLinks li a {
+  font-family: "Parkinsans", serif;
+  color: #4b0406;
+  text-decoration: none;
+  font-size: 0.75rem;
+  font-weight: 500;
+  transition: color font-size 0.3s ease;
+  letter-spacing: 0.02rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.navLinks li a:hover {
+  color: #4b0406;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
 .navLinks li h2 {
   font-family: "Parkinsans", serif;
   color: #4b0406;

@@ -8,6 +8,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import NavBanner from "@/sections/NavBanner";
 import DropdownMenu from "@/components/DropdownMenu";
 import styles from "../styles/NavBar.module.css";
+import { useRouter, usePathname } from "next/navigation";
 
 const NavBar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -20,6 +21,37 @@ const NavBar = () => {
     console.log(isClient);
     setIsClient(true);
   }, []);
+
+  const router = useRouter();
+
+  const pathname = usePathname();
+
+  useEffect(() => {
+    // Update the active nav item based on the current route
+    const path = pathname;
+
+    if (path === "/") {
+      setActiveNavItem("home");
+    } else if (path.includes("industrial-solutions")) {
+      setActiveNavItem("industrial-solutions");
+    } else if (path.includes("projects")) {
+      setActiveNavItem("projects");
+    } else if (path.includes("training-solutions")) {
+      setActiveNavItem("training-solutions");
+    } else if (path.includes("workshops")) {
+      setActiveNavItem("training-solutions");
+    } else if (path.includes("job-oriented-courses")) {
+      setActiveNavItem("training-solutions");
+    } else if (path.includes("about-us")) {
+      setActiveNavItem("company");
+    } else if (path.includes("mou")) {
+      setActiveNavItem("company");
+    } else if (path.includes("careers")) {
+      setActiveNavItem("company");
+    } else if (path.includes("contact-us")) {
+      setActiveNavItem("company");
+    }
+  }, [pathname]);
 
   useEffect(() => {
     if (isClient) {
@@ -54,8 +86,18 @@ const NavBar = () => {
   };
 
   const handleNavItemClick = (item: string) => {
-    setActiveNavItem(item);
-    setIsMobileMenuOpen(false); // Ensure the menu closes when a nav item is clicked
+    setActiveNavItem(item); // Update active item
+    setIsMobileMenuOpen(false); // Close the mobile menu
+
+    if (item === "home" || item === "projects") {
+      router.push("/");
+    } else if (item === "AR/VR Lab") {
+      router.push("/ar-vr-lab");
+    } else if (item === "Robotics & ES Lab") {
+      router.push("/robotics-es-lab");
+    } else {
+      router.push(item.toLowerCase().replace(/\s+/g, "-")); // Ensure the route matches the item
+    }
   };
 
   const containerVariant = {
@@ -124,6 +166,8 @@ const NavBar = () => {
               onDropdownOpen={handleDropdownOpen}
               anchorEl={anchorEl}
               onDropdownClose={handleDropdownClose}
+              handleNavItemClick={handleNavItemClick}
+              activeNavItem={activeNavItem}
             />
 
             <motion.li
@@ -133,11 +177,11 @@ const NavBar = () => {
             >
               <h2
                 className={
-                  activeNavItem === "design-services"
+                  activeNavItem === "industrial-solutions"
                     ? styles.activeNavItem
                     : ""
                 }
-                onClick={() => handleNavItemClick("design-services")}
+                onClick={() => handleNavItemClick("industrial-solutions")}
               >
                 Industrial Solutions
               </h2>
@@ -146,10 +190,33 @@ const NavBar = () => {
             <DropdownMenu
               title="Lab Solutions"
               activeDropdown={activeDropdown}
-              menuItems={["School", "College"]}
+              menuItems={[
+                {
+                  title: "Academic Lab Solutions",
+                  submenu: [
+                    "School Robotics Lab",
+                    "ATAL Tinkering Lab",
+                    "IoT Lab",
+                    "Robotics & ES Lab",
+                    "AR/VR Lab",
+                    "Center Of Excellence",
+                  ],
+                },
+                {
+                  title: "Industrial Lab Solutions",
+                  submenu: [
+                    "IoT Lab",
+                    "Robotics & ES Lab",
+                    "AR / VR Lab",
+                    "Center of Excellenve",
+                  ],
+                },
+              ]}
               onDropdownOpen={handleDropdownOpen}
               anchorEl={anchorEl}
               onDropdownClose={handleDropdownClose}
+              handleNavItemClick={handleNavItemClick}
+              activeNavItem={activeNavItem}
             />
 
             <motion.li
@@ -174,6 +241,8 @@ const NavBar = () => {
               onDropdownOpen={handleDropdownOpen}
               anchorEl={anchorEl}
               onDropdownClose={handleDropdownClose}
+              handleNavItemClick={handleNavItemClick}
+              activeNavItem={activeNavItem}
             />
           </ul>
         </div>

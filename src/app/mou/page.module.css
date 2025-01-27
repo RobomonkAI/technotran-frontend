@@ -132,10 +132,15 @@
 }
 
 /* Gallery Container */
+/* Gallery Container */
 .galleryContainer {
-  display: flex;
+  display: grid; /* Use grid for better control over layout */
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(250px, 1fr)
+  ); /* Adjust the number of columns based on available space */
   gap: 1rem; /* Space between items */
-  justify-items: space-evenly;
+  justify-items: center; /* Center align the grid items */
   flex-wrap: wrap;
   align-items: start;
 }

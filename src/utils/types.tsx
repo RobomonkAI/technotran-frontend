@@ -56,3 +56,15 @@ export interface MouDataItem {
   name: string;
   imgSrc: string;
 }
+
+export interface CareersDataItem {
+  id: number;
+  title: string;
+  desc: string;
+}
+
+export interface SchoolRoboticsLabImgsDataItem {
+  id: number;
+  imgSrc: string;
+  title: string;
+}

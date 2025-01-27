@@ -1,0 +1,72 @@
+/* Form Styles */
+.formContainer {
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 2px solid #4b0406;
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap */
+  gap: 1rem; /* Creates space between form groups */
+}
+
+.formGroup {
+  flex: 1 1 calc(50% - 0.5rem); /* Each takes up half the container with gap */
+  min-width: 300px; /* Prevents shrinking too much */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Make the Message field occupy full width */
+.formGroup.fullWidth {
+  flex: 1 1 100%; /* Occupies full width */
+}
+
+.formGroup label {
+  font-size: 1rem;
+  color: #555;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.formGroup input,
+.formGroup select,
+.formGroup textarea {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  padding: 0.7rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+
+.formGroup input:focus,
+.formGroup select:focus,
+.formGroup textarea:focus {
+  border-color: #4b0406;
+  outline: none;
+}
+
+.submitButton {
+  display: block;
+  width: 40%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+  background-color: white;
+  border: 2px solid #4b0406;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 1rem auto 0; /* Centers button */
+  text-align: center;
+}
+
+.submitButton:hover {
+  background-color: #4b0406;
+  color: white;
+}

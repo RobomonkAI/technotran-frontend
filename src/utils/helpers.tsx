@@ -1,9 +1,11 @@
 import {
+  CareersDataItem,
   DesignServicesDataItem,
   FooterMainCarouselDataItem,
   IndustriesWeServeCarouselDataItem,
   JobOrientedCoursesDataItem,
   MouDataItem,
+  SchoolRoboticsLabImgsDataItem,
   TestimonialsCarouselDataItem,
   TrainingServicesItem,
   ValuedClientsDataItem,
@@ -368,7 +370,7 @@ export const jobOrientedCoursesData: JobOrientedCoursesDataItem[] = [
   },
 ];
 
-export const designServicesData: DesignServicesDataItem[] = [
+export const industrialSolutionsData: DesignServicesDataItem[] = [
   {
     id: 1,
     title: "Embedded software Development",
@@ -417,5 +419,60 @@ export const designServicesData: DesignServicesDataItem[] = [
     desc: "We provide website development services, creating solutions to enhance your online presence. Our experienced team ensures your website is visually appealing, user-friendly, and optimized for performance across all devices. Whether you need a simple site, e-commerce platform, or custom web application, we deliver high-quality solutions from design to deployment. With our expertise, we help you stand out online and drive business growth.",
     imgSrc:
       "https://github.com/CVSCharan/Technotran_Assets/blob/main/website-development.png?raw=true",
+  },
+];
+
+export const careersData: CareersDataItem[] = [
+  {
+    id: 1,
+    title: "Robotics Trainer",
+    desc: "As a Robotics Trainer at Technotran, you’ll play a key role in delivering hands-on robotics training to students and educators. Join us and inspire the next generation of innovators in the field of robotics.",
+  },
+  {
+    id: 2,
+    title: "Technical Associate",
+    desc: "Are you passionate about technology and education? As a Technical Associate at Technotran, you’ll play a key role in developing cutting-edge educational products and solutions. Join us and help shape the future of learning.",
+  },
+  {
+    id: 3,
+    title: "Design Engineer",
+    desc: "As a Design Engineer at Technotran, you’ll be at the forefront of product innovation, working on the design and development of our next-generation educational kits and hardware solutions. Join our team and bring your creativity and technical expertise to the table.",
+  },
+  {
+    id: 4,
+    title: "Business Development Executive (BDE)",
+    desc: "We’re seeking a proactive and results-driven Business Development Manager to expand our market presence and drive business growth. If you have a knack for building strategic partnerships and achieving sales targets, this role is for you.",
+  },
+  {
+    id: 5,
+    title: "Intern",
+    desc: "Are you a student or recent graduate looking to gain hands-on experience in the tech industry? Our internship program offers valuable learning opportunities in areas such as product development, marketing, and research. Kickstart your career with Technotran and unleash your potential.",
+  },
+];
+
+export const schoolRoboticsLabImgsData: SchoolRoboticsLabImgsDataItem[] = [
+  {
+    id: 1,
+    imgSrc:
+      "https://github.com/CVSCharan/Technotran_Assets/blob/main/srl-Robotics.png?raw=true",
+    title: "Robotics",
+  },
+  {
+    id: 2,
+    imgSrc:
+      "https://github.com/CVSCharan/Technotran_Assets/blob/main/srl-Artificial-intelligence.png?raw=true",
+    title: "Artificial Intelligence",
+  },
+  {
+    id: 3,
+    imgSrc:
+      "https://github.com/CVSCharan/Technotran_Assets/blob/main/srl-3D-printing-1.png?raw=true",
+    title: "3D - Printing",
+  },
+  {
+    id: 4,
+    imgSrc:
+      "https://github.com/CVSCharan/Technotran_Assets/blob/main/srl-%2021st-century-skills.png?raw=true",
+    title: "21st Century Skills",
   },
 ];

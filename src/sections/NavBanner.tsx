@@ -28,7 +28,7 @@ const NavBanner = () => {
       {/* LMS and Certificate Verification Section */}
       <div className={styles.navBannerBtnContainer}>
         <div className={styles.navBannerBtn}>Events</div>
-        <div className={styles.navBannerBtn}>Media</div>{" "}
+        <div className={styles.navBannerBtn}>Media</div>
         <div className={styles.navBannerBtn}>LMS Portal</div>
         <div className={styles.navBannerBtn}>E - Verify</div>
       </div>

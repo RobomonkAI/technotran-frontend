@@ -76,7 +76,7 @@ const DesignServices = () => {
           comprehensive solutions for your prototyping and manufacturing needs.
           From concept to creation, we're here to turn your vision into reality.`}
         </motion.p>
-        <Link href="/design-services" className={styles.exploreLink}>
+        <Link href="/indistrial-solutions" className={styles.exploreLink}>
           Explore more
         </Link>
       </motion.div>

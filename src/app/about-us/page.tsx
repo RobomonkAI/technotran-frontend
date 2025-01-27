@@ -6,8 +6,9 @@ import styles from "./page.module.css";
 
 const AboutUsPage = () => {
   return (
-    <main id="About Us Page" className={styles.mainBody}>
+    <main id="About Us Page">
       <NavBar />
+      <div className={styles.mainBody}></div>
     </main>
   );
 };
