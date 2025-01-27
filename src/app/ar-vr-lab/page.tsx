@@ -93,7 +93,7 @@ const ArVrLabPage = () => {
               viewport={{ once: true, amount: 0.2 }}
               className={`${styles.sectionTxt} quicksand-text`}
             >
-              Augmented Reality (AR) and Virtual Reality (VR) are immersive
+              {`Augmented Reality (AR) and Virtual Reality (VR) are immersive
               technologies that reshape our perception of the world. AR enhances
               our environment by overlaying digital information onto the real
               world, while VR transports users to entirely virtual spaces,
@@ -101,7 +101,7 @@ const ArVrLabPage = () => {
               revolutionizing industries, from entertainment and gaming to
               education and healthcare, by providing interactive and realistic
               simulations. As tools of innovation, AR and VR continue to create
-              new opportunities for learning, exploration, and engagement."
+              new opportunities for learning, exploration, and engagement."`}
             </motion.h3>
             <Image
               src={
