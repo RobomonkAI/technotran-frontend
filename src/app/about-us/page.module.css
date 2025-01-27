@@ -149,6 +149,10 @@
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Modern shadow */
 }
 
+.list li:first-child {
+  flex: 1 1 100%;
+}
+
 .heroSection {
   width: 100%;
   padding: 5rem 2rem;
