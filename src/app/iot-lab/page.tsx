@@ -176,7 +176,7 @@ const IotLabPage = () => {
               viewport={{ once: false, amount: 0.2 }}
               className={`${styles.subTitle} cinzel-text`}
             >
-              Why Technotran's IoT Hub Stands Out
+              {`Why Technotran's IoT Hub Stands Out`}
             </motion.h2>
             <Image
               src={

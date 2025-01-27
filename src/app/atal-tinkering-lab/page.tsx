@@ -112,7 +112,7 @@ const AtalTinkeringLabPage = () => {
               viewport={{ once: false, amount: 0.2 }}
               className={`${styles.subTitle} cinzel-text`}
             >
-              Features of Technotran's ATL
+              {`Features of Technotran's ATL`}
             </motion.h2>
             <motion.h3
               initial="hidden"

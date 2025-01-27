@@ -24,18 +24,6 @@ const SchoolRoboticsLabPage = () => {
     },
   };
 
-  const cardVariants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.3,
-        ease: "easeInOut",
-      },
-    },
-  };
-
   return (
     <main id="Technotran School Robotics Lab">
       <NavBar />
@@ -103,7 +91,7 @@ const SchoolRoboticsLabPage = () => {
               viewport={{ once: false, amount: 0.3 }}
               className={`${styles.subTitle} cinzel-text`}
             >
-              What Sets Technotran's Robotics Lab Apart?
+              {`What Sets Technotran's Robotics Lab Apart?`}
             </motion.h2>
             <div className={styles.cardContainer}>
               <div className={styles.card}>
@@ -117,9 +105,9 @@ const SchoolRoboticsLabPage = () => {
                   style={{ color: "white" }}
                   className={`${styles.cardDesc} quicksand-text`}
                 >
-                  We don’t just provide equipment; we transform spaces. Our labs
+                  {`We don’t just provide equipment; we transform spaces. Our labs
                   are designed to be both functional and inspiring, equipped
-                  with the latest robotics gear.
+                  with the latest robotics gear.`}
                 </h3>
               </div>
               <div className={styles.card}>

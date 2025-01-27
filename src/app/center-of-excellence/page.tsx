@@ -46,7 +46,7 @@ const CenterOfExcellencePage = () => {
               viewport={{ once: false, amount: 0.2 }}
               className={`${styles.subTitle} cinzel-text`}
             >
-              Technotran's Center of Excellence (COE)
+              {`Technotran's Center of Excellence (COE)`}
             </motion.h2>
             <motion.h3
               initial="hidden"

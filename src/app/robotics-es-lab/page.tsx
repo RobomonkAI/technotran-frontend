@@ -23,18 +23,6 @@ const RoboticsEsLabPage = () => {
     },
   };
 
-  const cardVariants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.3,
-        ease: "easeInOut",
-      },
-    },
-  };
-
   return (
     <main id="Technotran Robotics & ES Lab">
       <NavBar />
@@ -177,7 +165,7 @@ const RoboticsEsLabPage = () => {
               viewport={{ once: false, amount: 0.2 }}
               className={`${styles.subTitle} cinzel-text`}
             >
-              Why Technotran's IoT Hub Stands Out
+              {`Why Technotran's IoT Hub Stands Out`}
             </motion.h2>
             <Image
               src={

@@ -58,12 +58,12 @@ const ArVrLabPage = () => {
               viewport={{ once: true, amount: 0.2 }}
               className={`${styles.sectionTxt} quicksand-text`}
             >
-              Dive into the next dimension with Technotran's specialized AR & VR
+              {`Dive into the next dimension with Technotran's specialized AR & VR
               Lab Solutions. As the digital landscape evolves, augmented and
               virtual reality are reshaping how we interact, learn, and
               innovate. Our meticulously designed lab setups are more than just
               spaces; they are gateways to new realities, crafted to catalyze
-              creativity and pioneer breakthroughs in the immersive tech domain.
+              creativity and pioneer breakthroughs in the immersive tech domain.`}
             </motion.h3>
             <Image
               src={
