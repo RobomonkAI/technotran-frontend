@@ -5,6 +5,11 @@ import styles from "./page.module.css";
 import NavBar from "@/sections/NavBar";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { industrialLabSolutions } from "@/utils/helpers";
+import EnquiryForm from "@/components/Enquiry";
+import PhoneBtn from "@/components/PhoneBtn";
+import WhatsAppBtn from "@/components/WhatsAppBtn";
+import FooterMain from "@/sections/FotterMain";
 
 const IndustrialLabSolutions = () => {
   const headingVariants = {
@@ -48,7 +53,7 @@ const IndustrialLabSolutions = () => {
             className={styles.industrialLabSolLandingImg}
           />
         </section>
-        <section id="About Us Landing Section">
+        <section id="Industrial Lab Solutions Landing Section">
           <div className={styles.sectionOne}>
             <motion.h2
               initial="hidden"
@@ -76,7 +81,7 @@ const IndustrialLabSolutions = () => {
             </motion.h3>
           </div>
         </section>
-        <section id="About Us Content Section">
+        <section id="Industrial Lab Solutions Content Section">
           <div className={styles.sectionOne}>
             <motion.h2
               initial="hidden"
@@ -124,7 +129,65 @@ const IndustrialLabSolutions = () => {
             </motion.ul>
           </div>
         </section>
+        <section id="Industrial Lab Solutions Content">
+          <div className={styles.sectionOne}>
+            <motion.h2
+              variants={headingVariants}
+              initial="hidden"
+              whileInView="visible"
+              className={`${styles.subTitle} josefin-sans-text`}
+            >
+              Our Products Portfolio
+            </motion.h2>
+            <div className={styles.contentContainer}>
+              {industrialLabSolutions.map((item, index) => (
+                <motion.div
+                  className={styles.cardContainer}
+                  key={index}
+                  custom={index} // Pass index for staggered effect
+                  variants={cardVariants}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true, amount: 0.2 }}
+                >
+                  <div className={styles.cardImgContainer}>
+                    <Image
+                      priority
+                      src={item.imgSrc}
+                      height={300}
+                      width={300}
+                      alt={`valued clients img${item.id}`}
+                      className={styles.cardImg}
+                    />
+                  </div>
+                  <div className={styles.cardSubContainer}>
+                    <h2 className={`${styles.cardTxt} josefin-sans-text`}>
+                      {item.title}
+                    </h2>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
+        <section id="Industrial Lab Solutions Enquiry Section">
+          <div className={styles.enquiryContainer}>
+            <motion.h2
+              initial="hidden"
+              whileInView="visible"
+              variants={headingVariants}
+              viewport={{ once: false, amount: 0.4 }}
+              className={`${styles.subTitle} josefin-sans-text`}
+            >
+              Enquiry Form
+            </motion.h2>
+            <EnquiryForm />
+          </div>
+        </section>
       </div>
+      <FooterMain />
+      <WhatsAppBtn />
+      <PhoneBtn />
     </main>
   );
 };
