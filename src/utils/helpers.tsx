@@ -2,6 +2,7 @@ import {
   CareersDataItem,
   DesignServicesDataItem,
   FooterMainCarouselDataItem,
+  IndustrialLabSolDataItem,
   IndustriesWeServeCarouselDataItem,
   JobOrientedCoursesDataItem,
   MouDataItem,
@@ -496,5 +497,296 @@ export const schoolRoboticsLabImgsData: SchoolRoboticsLabImgsDataItem[] = [
     imgSrc:
       "https://github.com/CVSCharan/Technotran_Assets/blob/main/srl-%2021st-century-skills.png?raw=true",
     title: "21st Century Skills",
+  },
+];
+
+export const industrialLabSolutions: IndustrialLabSolDataItem[] = [
+  {
+    id: 1,
+    title: "Acid-Cabinets",
+    imgSrc:
+      "https://github.com/CVSCharan/Technotran_Assets/blob/main/Acid-Cabinets.png?raw=true",
+  },
+  {
+    id: 2,
+    title: "Analytical Balances",
+    imgSrc:
+      "https://github.com/CVSCharan/Technotran_Assets/blob/main/Analytical%20Balances.png?raw=true",
+  },
+  {
+    id: 3,
+    title: "Automatic Co2 Brix Monitor",
+    imgSrc:
+      "https://github.com/CVSCharan/Technotran_Assets/blob/main/Automatic%20Co2%20Brix%20Monitor.png?raw=true",
+  },
+  {
+    id: 4,
+    title: "Automatic Plater",
+    imgSrc:
+      "https://github.com/CVSCharan/Technotran_Assets/blob/main/Automatic%20Plater.png?raw=true",
+  },
+  {
+    id: 5,
+    title: "Automatic Polarimeter",
+    imgSrc:
+      "https://github.com/CVSCharan/Technotran_Assets/blob/main/Automatic%20Polarimeter.png?raw=true",
+  },
+  {
+    id: 6,
+    title: "Automatoc Digital Refractometer",
+    imgSrc:
+      "https://github.com/CVSCharan/Technotran_Assets/blob/main/Automatoc%20digital%20Refractometer.png?raw=true",
+  },
+  {
+    id: 7,
+    title: "BOD Incubator",
+    imgSrc:
+      "https://github.com/CVSCharan/Technotran_Assets/blob/main/BOD%20Incubator.png?raw=true",
+  },
+  {
+    id: 8,
+    title: "Big safety cabinet",
+    imgSrc:
+      "https://github.com/CVSCharan/Technotran_Assets/blob/main/Big%20safety%20cabinet.jpeg?raw=true",
+  },
+  {
+    id: 9,
+    title: "Chamber Furnace",
+    imgSrc:
+      "https://github.com/CVSCharan/Technotran_Assets/blob/main/Chamber%20Furnace.png?raw=true",
+  },
+  {
+    id: 10,
+    title: "Digital Salt-Meter",
+    imgSrc:
+      "https://github.com/CVSCharan/Technotran_Assets/blob/main/Digital%20Salt-Meter.png?raw=true",
+  },
+  {
+    id: 11,
+    title: "Digital Visco Meter",
+    imgSrc:
+      "https://github.com/CVSCharan/Technotran_Assets/blob/main/Digital%20Visco%20Meter.png?raw=true",
+  },
+  {
+    id: 12,
+    title: "Dispensing Pump for Culture Media Preparation",
+    imgSrc:
+      "https://github.com/CVSCharan/Technotran_Assets/blob/main/Dispensing%20Pump%20for%20Culture%20Media%20Preparation.jpeg?raw=true",
+  },
+  {
+    id: 13,
+    title: "Double stage water Distillation Unit",
+    imgSrc:
+      "https://github.com/CVSCharan/Technotran_Assets/blob/main/Double%20stage%20water%20Distillation%20Unit.jpeg?raw=true",
+  },
+  {
+    id: 14,
+    title: "Dual Motion Shaker",
+    imgSrc:
+      "https://github.com/CVSCharan/Technotran_Assets/blob/main/Dual%20Motion%20Shaker.jpeg?raw=true",
+  },
+  {
+    id: 15,
+    title: "Flourescene Microscope",
+    imgSrc:
+      "https://github.com/CVSCharan/Technotran_Assets/blob/main/Flourescene%20Microscope.png?raw=true",
+  },
+  {
+    id: 16,
+    title: "Freeze Dryers",
+    imgSrc:
+      "https://github.com/CVSCharan/Technotran_Assets/blob/main/Freeze%20Dryers.png?raw=true",
+  },
+  {
+    id: 17,
+    title: "Gas Generators",
+    imgSrc:
+      "https://github.com/CVSCharan/Technotran_Assets/blob/main/Gas%20Generators.png?raw=true",
+  },
+  {
+    id: 18,
+    title: "Heating & Cooling Block",
+    imgSrc:
+      "https://github.com/CVSCharan/Technotran_Assets/blob/main/Heating%20&%20Cooling%20Block.png?raw=true",
+  },
+  {
+    id: 19,
+    title: "Hot Plate with magnetic Stirrers",
+    imgSrc:
+      "https://github.com/CVSCharan/Technotran_Assets/blob/main/Hot%20Plate%20with%20magnetic%20Stirrers.png?raw=true",
+  },
+  {
+    id: 20,
+    title: "IR Btix Meter",
+    imgSrc:
+      "https://github.com/CVSCharan/Technotran_Assets/blob/main/IR%20Btix%20Meter.png?raw=true",
+  },
+  {
+    id: 21,
+    title: "Inverted microscope",
+    imgSrc:
+      "https://github.com/CVSCharan/Technotran_Assets/blob/main/Inverted%20microscope.jpeg?raw=true",
+  },
+  {
+    id: 22,
+    title: "KF Titrators",
+    imgSrc:
+      "https://github.com/CVSCharan/Technotran_Assets/blob/main/KF%20Titrators.png?raw=true",
+  },
+  {
+    id: 23,
+    title: "Laboratory Microscope",
+    imgSrc:
+      "https://github.com/CVSCharan/Technotran_Assets/blob/main/Laboratory%20Microscope.png?raw=true",
+  },
+  {
+    id: 24,
+    title: "Laboratory Oven",
+    imgSrc:
+      "https://github.com/CVSCharan/Technotran_Assets/blob/main/Laboratory%20Oven.png?raw=true",
+  },
+  {
+    id: 25,
+    title: "Laboratory Refrigerators",
+    imgSrc:
+      "https://github.com/CVSCharan/Technotran_Assets/blob/main/Laboratory%20Refrigerators.png?raw=true",
+  },
+  {
+    id: 26,
+    title: "Mass Standards and weight of Classes E0,E1& E2",
+    imgSrc:
+      "https://github.com/CVSCharan/Technotran_Assets/blob/main/Mass%20Standards%20and%20weight%20of%20Classes%20E0,E1&%20E2.png?raw=true",
+  },
+  {
+    id: 27,
+    title: "Micro Mixer",
+    imgSrc:
+      "https://github.com/CVSCharan/Technotran_Assets/blob/main/Micro%20Mixer.jpeg?raw=true",
+  },
+  {
+    id: 28,
+    title: "Multi Sampler KF Titrators",
+    imgSrc:
+      "https://github.com/CVSCharan/Technotran_Assets/blob/main/Multi%20Sampler%20KF%20Titrators.jpeg?raw=true",
+  },
+  {
+    id: 29,
+    title: "Organic sample preparation",
+    imgSrc:
+      "https://github.com/CVSCharan/Technotran_Assets/blob/main/Organic%20sample%20preparation.png?raw=true",
+  },
+  {
+    id: 30,
+    title: "PH Cond-TDS PortableTesters Meters",
+    imgSrc:
+      "https://github.com/CVSCharan/Technotran_Assets/blob/main/PH%20Cond-TDS%20PortableTesters%20Meters.jpeg?raw=true",
+  },
+  {
+    id: 31,
+    title: "PH-Cond- TDS handheld Meters",
+    imgSrc:
+      "https://github.com/CVSCharan/Technotran_Assets/blob/main/PH-Cond-%20TDS%20handheld%20Meters.png?raw=true",
+  },
+  {
+    id: 32,
+    title: "PH-Cond-TDS Bench Top",
+    imgSrc:
+      "https://github.com/CVSCharan/Technotran_Assets/blob/main/PH-Cond-TDS%20Bench%20Top.png?raw=true",
+  },
+  {
+    id: 33,
+    title: "PH-EC-Cond Testers",
+    imgSrc:
+      "https://github.com/CVSCharan/Technotran_Assets/blob/main/PH-EC-Cond%20Testers.png?raw=true",
+  },
+  {
+    id: 34,
+    title: "Petri Dish Storage Stack",
+    imgSrc:
+      "https://github.com/CVSCharan/Technotran_Assets/blob/main/Petri%20Dish%20Storage%20Stack.jpeg?raw=true",
+  },
+  {
+    id: 35,
+    title: "Precision and commercial standard weights of classes m1,m2,m3",
+    imgSrc:
+      "https://github.com/CVSCharan/Technotran_Assets/blob/main/Precision%20and%20commercial%20standard%20weights%20of%20classes%20m1,m2,m3.png?raw=true",
+  },
+  {
+    id: 36,
+    title: "Real-Time Incubator",
+    imgSrc:
+      "https://github.com/CVSCharan/Technotran_Assets/blob/main/Real-Time%20Incubator.png?raw=true",
+  },
+  {
+    id: 37,
+    title: "Reasearch Lab Microscope",
+    imgSrc:
+      "https://github.com/CVSCharan/Technotran_Assets/blob/main/Reasearch%20Lab%20Microscope.png?raw=true",
+  },
+  {
+    id: 38,
+    title: "Rotator",
+    imgSrc:
+      "https://github.com/CVSCharan/Technotran_Assets/blob/main/Rotator.png?raw=true",
+  },
+  {
+    id: 39,
+    title: "Shaking Incubator",
+    imgSrc:
+      "https://github.com/CVSCharan/Technotran_Assets/blob/main/Shaking%20Incubator.jpeg?raw=true",
+  },
+  {
+    id: 40,
+    title: "Single Stage Water Distillation Unit",
+    imgSrc:
+      "https://github.com/CVSCharan/Technotran_Assets/blob/main/Single%20Stage%20Water%20Distillation%20Unit.png?raw=true",
+  },
+  {
+    id: 41,
+    title: "Temperature & humidity Chambers",
+    imgSrc:
+      "https://github.com/CVSCharan/Technotran_Assets/blob/main/Temperature%20&%20humidity%20Chambers.png?raw=true",
+  },
+  {
+    id: 42,
+    title: "Thermal Sealing Unit with waterproof sealing",
+    imgSrc:
+      "https://github.com/CVSCharan/Technotran_Assets/blob/main/Thermal%20Sealing%20Unit%20with%20waterproof%20sealing.jpeg?raw=true",
+  },
+  {
+    id: 43,
+    title: "Tube Furnace",
+    imgSrc:
+      "https://github.com/CVSCharan/Technotran_Assets/blob/main/Tube%20Furnace.png?raw=true",
+  },
+  {
+    id: 44,
+    title: "Vertical",
+    imgSrc:
+      "https://github.com/CVSCharan/Technotran_Assets/blob/main/Vertical.png?raw=true",
+  },
+  {
+    id: 45,
+    title: "Water Chillers",
+    imgSrc:
+      "https://github.com/CVSCharan/Technotran_Assets/blob/main/Water%20Chillers.png?raw=true",
+  },
+  {
+    id: 46,
+    title: "Zirconia Sintering",
+    imgSrc:
+      "https://github.com/CVSCharan/Technotran_Assets/blob/main/Zirconia%20Sintering.png?raw=true",
+  },
+  {
+    id: 47,
+    title: "Evaporation bath",
+    imgSrc:
+      "https://github.com/CVSCharan/Technotran_Assets/blob/main/evaporation%20bath.png?raw=true",
+  },
+  {
+    id: 48,
+    title: "Laboratory Autoclave",
+    imgSrc:
+      "https://github.com/CVSCharan/Technotran_Assets/blob/main/laboratory%20Autoclave.png?raw=true",
   },
 ];

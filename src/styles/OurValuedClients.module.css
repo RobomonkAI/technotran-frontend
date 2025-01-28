@@ -61,9 +61,9 @@
 }
 
 .cardImg {
-  height: 90px;
-  width: 90px;
-  object-fit: cover; /* Ensures images are not distorted */
+  height: 80px;
+  width: 80px;
+  object-fit: fill; /* Ensures images are not distorted */
   margin-bottom: 10px;
 }
 

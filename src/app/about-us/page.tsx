@@ -80,16 +80,21 @@ const AboutUsPage = () => {
               viewport={{ once: true, amount: 0.2 }}
               className={`${styles.sectionTxt} quicksand-text`}
             >
-              Technotran, (an ISO 9001:2015 Certified Company), is a leading
-              Educational Technology firm specializing in Embedded Systems, 3D
-              Printing, Robotics, IoT, and Artificial Intelligence. We serve
-              universities, colleges, and schools nationwide. Our unwavering
-              commitment revolves around delivering top-tier services,
-              encompassing DIY Robotic kit design, electronic product design,
-              PCB Design, prototyping, and Manufacturing, all meticulously
-              customized to precise specifications. Our ultimate mission is to
-              empower both students and institutions with state-of-the-art
-              technology solutions.
+              {`Technotran Solutions (ISO 9001:2015 Certified Company) is a
+              pioneering Educational Technology and Innovation Company
+              specializing in Embedded Systems, Robotics, 3D Printing, IoT, and
+              Artificial Intelligence. Serving schools, colleges, and
+              universities nationwide, we are dedicated to bridging the gap
+              between academics and industry through innovative solutions. Our
+              services encompass hands-on training programs, internship
+              certifications, and industrial workshops, alongside custom DIY
+              robotic kit design, electronic product development, PCB design,
+              prototyping, and manufacturing. With a strong focus on R&D and
+              societal impact, we collaborate with institutions to create
+              cutting-edge labs, support real-world projects, and deliver
+              sustainable technology solutions in agriculture, healthcare, and
+              education. At Technotran, we empower individuals and institutions
+              to thrive in the ever-evolving world of technology.`}
             </motion.h3>
             <Image
               src={
@@ -117,12 +122,12 @@ const AboutUsPage = () => {
                   style={{ color: "white" }}
                   className={`${styles.cardDesc} quicksand-text`}
                 >
-                  Technotran is driven by the mission of nurturing a skilled
-                  workforce that complements the remarkable advancements
-                  unfolding in our nation. Our commitment empowers us to
-                  spearhead, promote, and disseminate educational reforms,
-                  equipping individuals with the precise expertise and skills
-                  demanded by the corporate landscape.
+                  {`To empower individuals and institutions by delivering
+                  innovative educational solutions, cutting-edge technologies,
+                  and real-world training experiences. We aim to bridge the gap
+                  between academia and industry by fostering a culture of
+                  creativity, innovation, and lifelong learning, driving
+                  technological advancements for a better future.`}
                 </h3>
               </div>
               <div className={styles.card}>
@@ -136,12 +141,12 @@ const AboutUsPage = () => {
                   style={{ color: "white" }}
                   className={`${styles.cardDesc} quicksand-text`}
                 >
-                  Our vision is to be at the forefront of the educational
-                  technology sector in India, specifically in the domains of
-                  Robotics, AI, and Embedded Systems. By 2030, we aspire to
-                  establish Robotics labs in more than 100 schools and
-                  educational institutions, featuring our customized Robotics
-                  kits.
+                  {`To be a global leader in educational technology and
+                  innovation, shaping the future of learning and industry
+                  through transformative solutions in robotics, AI, IoT, and
+                  embedded systems. We envision a world where technology and
+                  education work hand-in-hand to solve societal challenges and
+                  enable sustainable development across all sectors.`}
                 </h3>
               </div>
             </div>
@@ -166,26 +171,32 @@ const AboutUsPage = () => {
               className={styles.list}
             >
               <li className={`${styles.sectionTxt} quicksand-text`}>
-                Technotran company is approved by AICTE for Internships and
-                training programs.
+                ISO Certified: An ISO 9001:2015 Certified Company committed to
+                excellence in education and innovation.
               </li>
               <li className={`${styles.sectionTxt} quicksand-text`}>
-                Technotran is an ISO 9001:2015 Certified company.
+                AICTE Approved: Technotran is recognized by AICTE for offering
+                internship programs for UG students.
               </li>
               <li className={`${styles.sectionTxt} quicksand-text`}>
-                Conducted 100 + workshops on various technologies.
+                Workshops Expertise: Successfully conducted 150+ workshops on
+                cutting-edge technologies.
               </li>
               <li className={`${styles.sectionTxt} quicksand-text`}>
-                Trained Over 10,000+ Students in 100+ Colleges across India.
+                Extensive Training: Trained over 20,000 students across 50+
+                colleges in India.
               </li>
               <li className={`${styles.sectionTxt} quicksand-text`}>
-                Two ongoing Research Projects.
+                Research Excellence: Currently engaged in two ongoing research
+                projects.
               </li>
               <li className={`${styles.sectionTxt} quicksand-text`}>
-                Recognized as an Industry by Ministry of MSME, Govt. of India.
+                Industry Recognition: Officially recognized as an Industry by
+                the Ministry of MSME, Government of India.
               </li>
               <li className={`${styles.sectionTxt} quicksand-text`}>
-                We Manufacturing our own Robotic kits from 2023
+                Robotic Innovations: Began manufacturing our customized robotic
+                kits in 2023, ensuring quality and innovation.
               </li>
             </motion.ul>
             <Image

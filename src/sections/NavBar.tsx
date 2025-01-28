@@ -206,12 +206,7 @@ const NavBar = () => {
                 },
                 {
                   title: "Industrial Lab Solutions",
-                  submenu: [
-                    "IoT Lab",
-                    "Robotics & ES Lab",
-                    "AR / VR Lab",
-                    "Center of Excellenve",
-                  ],
+                  submenu: [],
                 },
               ]}
               onDropdownOpen={handleDropdownOpen}
@@ -221,7 +216,7 @@ const NavBar = () => {
               activeNavItem={activeNavItem}
             />
 
-            <motion.li
+            {/* <motion.li
               variants={containerVariant}
               initial="hidden"
               animate="visible"
@@ -234,7 +229,18 @@ const NavBar = () => {
               >
                 Projects
               </h2>
-            </motion.li>
+            </motion.li> */}
+
+            <DropdownMenu
+              title="Projects"
+              activeDropdown={activeDropdown}
+              menuItems={["Academic Projects", "R & D Projects"]}
+              onDropdownOpen={handleDropdownOpen}
+              anchorEl={anchorEl}
+              onDropdownClose={handleDropdownClose}
+              handleNavItemClick={handleNavItemClick}
+              activeNavItem={activeNavItem}
+            />
 
             <DropdownMenu
               title="Company"

@@ -68,3 +68,9 @@ export interface SchoolRoboticsLabImgsDataItem {
   imgSrc: string;
   title: string;
 }
+
+export interface IndustrialLabSolDataItem {
+  id: number;
+  imgSrc: string;
+  title: string;
+}

@@ -109,7 +109,14 @@ const DropdownMenu: FC<DropdownMenuProps> = ({
               return (
                 <MenuItem
                   key={index}
-                  onClick={(e) => handleSubDropdownOpen(e, item.title)}
+                  onClick={
+                    item.submenu.length > 0
+                      ? (e) => handleSubDropdownOpen(e, item.title)
+                      : () => {
+                          handleNavItemClick(item.title);
+                          onDropdownClose(); // Close menu if no submenu
+                        }
+                  }
                   className={styles.dropDownContainer}
                   style={{ display: "flex", justifyContent: "space-between" }}
                 >
@@ -122,41 +129,37 @@ const DropdownMenu: FC<DropdownMenuProps> = ({
                   >
                     <h2 className={styles.dropDownTxt}>{item.title}</h2>
                   </div>
-                  {activeSubDropdown === item.title ? (
-                    <KeyboardArrowUp />
-                  ) : (
-                    <KeyboardArrowDown />
-                  )}
-                  {activeSubDropdown === item.title && (
-                    <Menu
-                      anchorEl={subMenuAnchorEl}
-                      open={Boolean(subMenuAnchorEl)}
-                      onClose={handleSubDropdownClose}
-                      style={{ zIndex: 11000 }}
-                    >
-                      {item.submenu.map((subItem, subIndex) => (
-                        <MenuItem
-                          key={subIndex}
-                          onClick={() => {
-                            handleNavItemClick(subItem);
-                            handleSubDropdownClose();
-                            onDropdownClose(); // Ensure the whole menu closes
-                          }}
-                          className={styles.dropDownContainer}
-                        >
-                          <Link
-                            className={styles.dropDownTxt}
-                            // href={`/${subItem
-                            //   .toLowerCase()
-                            //   .replace(/\s+/g, "-")}`}
-                            href={"/"}
+                  {item.submenu.length > 0 && // Only show arrow if submenu exists
+                    (activeSubDropdown === item.title ? (
+                      <KeyboardArrowUp />
+                    ) : (
+                      <KeyboardArrowDown />
+                    ))}
+                  {activeSubDropdown === item.title &&
+                    item.submenu.length > 0 && (
+                      <Menu
+                        anchorEl={subMenuAnchorEl}
+                        open={Boolean(subMenuAnchorEl)}
+                        onClose={handleSubDropdownClose}
+                        style={{ zIndex: 11000 }}
+                      >
+                        {item.submenu.map((subItem, subIndex) => (
+                          <MenuItem
+                            key={subIndex}
+                            onClick={() => {
+                              handleNavItemClick(subItem);
+                              handleSubDropdownClose();
+                              onDropdownClose(); // Ensure the whole menu closes
+                            }}
+                            className={styles.dropDownContainer}
                           >
-                            {subItem}
-                          </Link>
-                        </MenuItem>
-                      ))}
-                    </Menu>
-                  )}
+                            <Link className={styles.dropDownTxt} href={"/"}>
+                              {subItem}
+                            </Link>
+                          </MenuItem>
+                        ))}
+                      </Menu>
+                    )}
                 </MenuItem>
               );
             }
