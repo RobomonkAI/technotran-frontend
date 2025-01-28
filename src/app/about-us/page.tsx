@@ -5,7 +5,6 @@ import React, { useEffect, useState } from "react";
 import styles from "./page.module.css";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-import { MouDataItem } from "@/utils/types";
 import { mouData } from "@/utils/helpers";
 import PhoneBtn from "@/components/PhoneBtn";
 import WhatsAppBtn from "@/components/WhatsAppBtn";
