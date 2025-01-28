@@ -12,8 +12,6 @@ import WhatsAppBtn from "@/components/WhatsAppBtn";
 import FooterMain from "@/sections/FotterMain";
 
 const AboutUsPage = () => {
-  const [imgSlideOne, setImgSlideOne] = useState<MouDataItem[]>([]);
-  const [imgSlideTwo, setImgSlideTwo] = useState<MouDataItem[]>([]);
   const [currentBannerOneImage, setCurrentBannerOneImage] = useState(0);
 
   const headingVariants = {
@@ -41,10 +39,6 @@ const AboutUsPage = () => {
   };
 
   useEffect(() => {
-    const arrLen = mouData.length / 2;
-    setImgSlideOne(mouData.slice(0, arrLen));
-    setImgSlideTwo(mouData.slice(arrLen, mouData.length));
-
     const interval = setInterval(() => {
       setCurrentBannerOneImage((prev) => (prev + 1) % mouData.length); // Infinite loop for Banner One
     }, 4000); // Change every 4 seconds
