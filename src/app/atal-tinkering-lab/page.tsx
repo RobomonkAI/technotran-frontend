@@ -6,7 +6,7 @@ import styles from "./page.module.css";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import EnquiryForm from "@/components/Enquiry";
-import FooterMain from "@/sections/FooterMain";
+import FooterMain from "@/sections/FotterMain";
 import WhatsAppBtn from "@/components/WhatsAppBtn";
 import PhoneBtn from "@/components/PhoneBtn";
 
@@ -47,7 +47,7 @@ const AtalTinkeringLabPage = () => {
               whileInView="visible"
               variants={headingVariants}
               viewport={{ once: false, amount: 0.2 }}
-              className={`${styles.subTitle} cinzel-text`}
+              className={`${styles.subTitle} josefin-sans-text`}
             >
               Atal Tinkering Lab (ATL) by Technotran
             </motion.h2>
@@ -86,7 +86,7 @@ const AtalTinkeringLabPage = () => {
               variants={headingVariants}
               viewport={{ once: false, amount: 0.2 }}
               style={{ color: "white" }}
-              className={`${styles.subTitle} cinzel-text`}
+              className={`${styles.subTitle} josefin-sans-text`}
             >
               Our Vision
             </motion.h2>
@@ -110,7 +110,7 @@ const AtalTinkeringLabPage = () => {
               whileInView="visible"
               variants={headingVariants}
               viewport={{ once: false, amount: 0.2 }}
-              className={`${styles.subTitle} cinzel-text`}
+              className={`${styles.subTitle} josefin-sans-text`}
             >
               {`Features of Technotran's ATL`}
             </motion.h2>
@@ -159,7 +159,7 @@ const AtalTinkeringLabPage = () => {
             whileInView="visible"
             variants={headingVariants}
             viewport={{ once: false, amount: 0.4 }}
-            className={`${styles.subTitle} cinzel-text`}
+            className={`${styles.subTitle} josefin-sans-text`}
           >
             Enquiry Form
           </motion.h2>

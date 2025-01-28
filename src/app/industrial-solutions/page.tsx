@@ -8,7 +8,7 @@ import styles from "./page.module.css";
 import { industrialSolutionsData } from "@/utils/helpers";
 import WhatsAppBtn from "@/components/WhatsAppBtn";
 import PhoneBtn from "@/components/PhoneBtn";
-import FooterMain from "@/sections/FooterMain";
+import FooterMain from "@/sections/FotterMain";
 import EnquiryForm from "@/components/Enquiry";
 
 const IndustrialSolutionsPage = () => {
@@ -60,7 +60,7 @@ const IndustrialSolutionsPage = () => {
               whileInView="visible"
               variants={headingVariants}
               viewport={{ once: false, amount: 0.2 }}
-              className={`${styles.subTitle} cinzel-text`}
+              className={`${styles.subTitle} josefin-sans-text`}
             >
               Industrial Solutions
             </motion.h2>
@@ -85,7 +85,7 @@ const IndustrialSolutionsPage = () => {
               variants={headingVariants}
               viewport={{ once: false, amount: 0.2 }}
               style={{ color: "white" }}
-              className={`${styles.subTitle} cinzel-text`}
+              className={`${styles.subTitle} josefin-sans-text`}
             >
               Electronic Innovation & Development
             </motion.h2>
@@ -111,7 +111,7 @@ const IndustrialSolutionsPage = () => {
               whileInView="visible"
               variants={headingVariants}
               viewport={{ once: false, amount: 0.4 }}
-              className={`${styles.subTitle} cinzel-text`}
+              className={`${styles.subTitle} josefin-sans-text`}
             >
               Embedded System Offerings
             </motion.h2>
@@ -182,7 +182,7 @@ const IndustrialSolutionsPage = () => {
               >
                 <h2
                   style={{ color: index % 2 !== 0 ? "" : "white" }}
-                  className="cinzel-text"
+                  className="josefin-sans-text"
                 >
                   {item.title}
                 </h2>
@@ -211,7 +211,7 @@ const IndustrialSolutionsPage = () => {
               whileInView="visible"
               variants={headingVariants}
               viewport={{ once: false, amount: 0.4 }}
-              className={`${styles.subTitle} cinzel-text`}
+              className={`${styles.subTitle} josefin-sans-text`}
             >
               Industrial Solutions Enquiry
             </motion.h2>

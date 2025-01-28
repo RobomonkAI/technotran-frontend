@@ -9,13 +9,12 @@ import { MouDataItem } from "@/utils/types";
 import { mouData } from "@/utils/helpers";
 import PhoneBtn from "@/components/PhoneBtn";
 import WhatsAppBtn from "@/components/WhatsAppBtn";
-import FooterMain from "@/sections/FooterMain";
+import FooterMain from "@/sections/FotterMain";
 
 const AboutUsPage = () => {
   const [imgSlideOne, setImgSlideOne] = useState<MouDataItem[]>([]);
   const [imgSlideTwo, setImgSlideTwo] = useState<MouDataItem[]>([]);
   const [currentBannerOneImage, setCurrentBannerOneImage] = useState(0);
-  const [currentBannerTwoImage, setCurrentBannerTwoImage] = useState(0);
 
   const headingVariants = {
     hidden: { opacity: 0, y: -20 },
@@ -47,8 +46,7 @@ const AboutUsPage = () => {
     setImgSlideTwo(mouData.slice(arrLen, mouData.length));
 
     const interval = setInterval(() => {
-      setCurrentBannerOneImage((prev) => (prev + 1) % imgSlideOne.length); // Infinite loop for Banner One
-      setCurrentBannerTwoImage((prev) => (prev + 1) % imgSlideTwo.length); // Infinite loop for Banner Two
+      setCurrentBannerOneImage((prev) => (prev + 1) % mouData.length); // Infinite loop for Banner One
     }, 4000); // Change every 4 seconds
 
     return () => clearInterval(interval); // Cleanup the interval on unmount
@@ -78,7 +76,7 @@ const AboutUsPage = () => {
               whileInView="visible"
               variants={headingVariants}
               viewport={{ once: false, amount: 0.2 }}
-              className={`${styles.subTitle} cinzel-text`}
+              className={`${styles.subTitle} josefin-sans-text`}
             >
               About Us
             </motion.h2>
@@ -118,7 +116,7 @@ const AboutUsPage = () => {
               <div className={styles.card}>
                 <h2
                   style={{ color: "white" }}
-                  className={`${styles.cardTitle} cinzel-text`}
+                  className={`${styles.cardTitle} josefin-sans-text`}
                 >
                   Mission
                 </h2>
@@ -137,7 +135,7 @@ const AboutUsPage = () => {
               <div className={styles.card}>
                 <h2
                   style={{ color: "white" }}
-                  className={`${styles.cardTitle} cinzel-text`}
+                  className={`${styles.cardTitle} josefin-sans-text`}
                 >
                   Vision
                 </h2>
@@ -163,7 +161,7 @@ const AboutUsPage = () => {
               whileInView="visible"
               variants={headingVariants}
               viewport={{ once: false, amount: 0.2 }}
-              className={`${styles.subTitle} cinzel-text`}
+              className={`${styles.subTitle} josefin-sans-text`}
             >
               Technotran Triumphs
             </motion.h2>
@@ -214,7 +212,7 @@ const AboutUsPage = () => {
               whileInView="visible"
               variants={headingVariants}
               viewport={{ once: false, amount: 0.2 }}
-              className={`${styles.subTitle} cinzel-text`}
+              className={`${styles.subTitle} josefin-sans-text`}
             >
               What Sets Us Apart
             </motion.h2>
@@ -222,7 +220,7 @@ const AboutUsPage = () => {
               <div className={styles.cardOne}>
                 <h2
                   style={{ color: "white" }}
-                  className={`${styles.cardTitle} cinzel-text`}
+                  className={`${styles.cardTitle} josefin-sans-text`}
                 >
                   Manufacturing Excellence
                 </h2>
@@ -238,7 +236,7 @@ const AboutUsPage = () => {
               <div className={styles.cardOne}>
                 <h2
                   style={{ color: "white" }}
-                  className={`${styles.cardTitle} cinzel-text`}
+                  className={`${styles.cardTitle} josefin-sans-text`}
                 >
                   Innovative Solutions
                 </h2>
@@ -256,7 +254,7 @@ const AboutUsPage = () => {
               <div className={styles.cardOne}>
                 <h2
                   style={{ color: "white" }}
-                  className={`${styles.cardTitle} cinzel-text`}
+                  className={`${styles.cardTitle} josefin-sans-text`}
                 >
                   Educational Focus
                 </h2>
@@ -272,7 +270,7 @@ const AboutUsPage = () => {
               <div className={styles.cardOne}>
                 <h2
                   style={{ color: "white" }}
-                  className={`${styles.cardTitle} cinzel-text`}
+                  className={`${styles.cardTitle} josefin-sans-text`}
                 >
                   Dedicated Support
                 </h2>
@@ -365,7 +363,7 @@ const AboutUsPage = () => {
               whileInView="visible"
               variants={headingVariants}
               viewport={{ once: false, amount: 0.2 }}
-              className={`${styles.subTitle} cinzel-text`}
+              className={`${styles.subTitle} josefin-sans-text`}
             >
               MOU With Various Institutions
             </motion.h2>
@@ -375,28 +373,12 @@ const AboutUsPage = () => {
                 <AnimatePresence mode="wait">
                   <motion.img
                     key={currentBannerOneImage} // Ensure re-render when image changes
-                    src={imgSlideOne[currentBannerOneImage]?.imgSrc}
+                    src={mouData[currentBannerOneImage]?.imgSrc}
                     alt="DSN Events Intro Banner 1"
                     className={styles.bannerOne}
                     initial={{ x: "100%", opacity: 0 }}
                     animate={{ x: "0%", opacity: 1 }}
                     exit={{ x: "-100%", opacity: 0 }}
-                    transition={{ duration: 1 }}
-                  />
-                </AnimatePresence>
-              </div>
-
-              {/* Banner Two - Slide Right on Change */}
-              <div className={styles.imageWrapperOne}>
-                <AnimatePresence mode="wait">
-                  <motion.img
-                    key={currentBannerTwoImage} // Ensure re-render when image changes
-                    src={imgSlideTwo[currentBannerTwoImage]?.imgSrc}
-                    alt="DSN Events Intro Banner 2"
-                    className={styles.bannerTwo}
-                    initial={{ x: "-100%", opacity: 0 }}
-                    animate={{ x: "0%", opacity: 1 }}
-                    exit={{ x: "100%", opacity: 0 }}
                     transition={{ duration: 1 }}
                   />
                 </AnimatePresence>

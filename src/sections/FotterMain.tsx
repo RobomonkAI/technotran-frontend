@@ -136,7 +136,7 @@ const FooterMain = () => {
               ))}
             </div>
             <Image
-              src="/Images/Technotran-logo.png"
+              src="/images/Technotran-logo.png"
               alt="Footer Logo"
               height={200}
               width={300}

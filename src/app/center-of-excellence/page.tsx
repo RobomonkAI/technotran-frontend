@@ -6,7 +6,7 @@ import NavBar from "@/sections/NavBar";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import EnquiryForm from "@/components/Enquiry";
-import FooterMain from "@/sections/FooterMain";
+import FooterMain from "@/sections/FotterMain";
 import WhatsAppBtn from "@/components/WhatsAppBtn";
 import PhoneBtn from "@/components/PhoneBtn";
 
@@ -44,7 +44,7 @@ const CenterOfExcellencePage = () => {
               whileInView="visible"
               variants={headingVariants}
               viewport={{ once: false, amount: 0.2 }}
-              className={`${styles.subTitle} cinzel-text`}
+              className={`${styles.subTitle} josefin-sans-text`}
             >
               {`Technotran's Center of Excellence (COE)`}
             </motion.h2>
@@ -74,7 +74,7 @@ const CenterOfExcellencePage = () => {
               variants={headingVariants}
               viewport={{ once: false, amount: 0.2 }}
               style={{ color: "white" }}
-              className={`${styles.subTitle} cinzel-text`}
+              className={`${styles.subTitle} josefin-sans-text`}
             >
               Our Commitment
             </motion.h2>
@@ -99,7 +99,7 @@ const CenterOfExcellencePage = () => {
               whileInView="visible"
               variants={headingVariants}
               viewport={{ once: false, amount: 0.2 }}
-              className={`${styles.subTitle} cinzel-text`}
+              className={`${styles.subTitle} josefin-sans-text`}
             >
               Domains of Excellence & Lab Setups
             </motion.h2>
@@ -196,7 +196,7 @@ const CenterOfExcellencePage = () => {
               whileInView="visible"
               variants={headingVariants}
               viewport={{ once: false, amount: 0.2 }}
-              className={`${styles.subTitle} cinzel-text`}
+              className={`${styles.subTitle} josefin-sans-text`}
               style={{ color: "white" }}
             >
               Engage with Our CoE:
@@ -222,7 +222,7 @@ const CenterOfExcellencePage = () => {
             whileInView="visible"
             variants={headingVariants}
             viewport={{ once: false, amount: 0.4 }}
-            className={`${styles.subTitle} cinzel-text`}
+            className={`${styles.subTitle} josefin-sans-text`}
           >
             Enquiry Form
           </motion.h2>

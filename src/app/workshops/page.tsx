@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 import NavBar from "@/sections/NavBar";
 import Testimonials from "@/sections/Testimonials";
 import styles from "./page.module.css";
-import FooterMain from "@/sections/FooterMain";
+import FooterMain from "@/sections/FotterMain";
 import { workshopsData } from "./utils/helpers";
 import EnquiryForm from "@/components/Enquiry";
 
@@ -61,7 +61,7 @@ const WorkshopsPage = () => {
               whileInView="visible"
               variants={headingVariants}
               viewport={{ once: false, amount: 0.2 }}
-              className={`${styles.subTitle} cinzel-text`}
+              className={`${styles.subTitle} josefin-sans-text`}
             >
               Our Exclusive Engineering Workshops
             </motion.h2>
@@ -95,7 +95,7 @@ const WorkshopsPage = () => {
             whileInView="visible"
             variants={headingVariants}
             viewport={{ once: false, amount: 0.3 }}
-            className={`${styles.subTitle} cinzel-text`}
+            className={`${styles.subTitle} josefin-sans-text`}
           >
             Hands on workshops we offer
           </motion.h2>
@@ -136,7 +136,7 @@ const WorkshopsPage = () => {
             whileInView="visible"
             variants={headingVariants}
             viewport={{ once: false, amount: 0.4 }}
-            className={`${styles.subTitle} cinzel-text`}
+            className={`${styles.subTitle} josefin-sans-text`}
           >
             Workshops Enquiry
           </motion.h2>

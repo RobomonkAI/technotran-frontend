@@ -6,7 +6,7 @@ import styles from "./page.module.css";
 import NavBar from "@/sections/NavBar";
 import WhatsAppBtn from "@/components/WhatsAppBtn";
 import PhoneBtn from "@/components/PhoneBtn";
-import FooterMain from "@/sections/FooterMain";
+import FooterMain from "@/sections/FotterMain";
 import { motion } from "framer-motion";
 import { mouData } from "@/utils/helpers";
 
@@ -83,7 +83,7 @@ const MOUPage = () => {
               whileInView="visible"
               variants={headingVariants}
               viewport={{ once: false, amount: 0.2 }}
-              className={`${styles.subTitle} cinzel-text`}
+              className={`${styles.subTitle} josefin-sans-text`}
             >
               MOU
             </motion.h2>
@@ -104,7 +104,7 @@ const MOUPage = () => {
             whileInView="visible"
             variants={headingVariants}
             viewport={{ once: true, amount: 0.4 }}
-            className={`${styles.subTitle} cinzel-text`}
+            className={`${styles.subTitle} josefin-sans-text`}
           >
             Mou with Institutions
           </motion.h2>
@@ -158,7 +158,7 @@ const MOUPage = () => {
               className={styles.mouContentContainer}
               variants={contentVariant}
             >
-              <h2 className={`${styles.mouTitle} cinzel-text`}>Commitment</h2>
+              <h2 className={`${styles.mouTitle} josefin-sans-text`}>Commitment</h2>
               <h3 className={`${styles.mouDesc} quicksand-text`}>
                 {`Technotran is committed to upholding the terms of this Memorandum
               of Understanding and working collaboratively with partner

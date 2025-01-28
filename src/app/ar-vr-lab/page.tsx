@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 import EnquiryForm from "@/components/Enquiry";
 import PhoneBtn from "@/components/PhoneBtn";
 import WhatsAppBtn from "@/components/WhatsAppBtn";
-import FooterMain from "@/sections/FooterMain";
+import FooterMain from "@/sections/FotterMain";
 
 const ArVrLabPage = () => {
   const headingVariants = {
@@ -47,7 +47,7 @@ const ArVrLabPage = () => {
               whileInView="visible"
               variants={headingVariants}
               viewport={{ once: false, amount: 0.2 }}
-              className={`${styles.subTitle} cinzel-text`}
+              className={`${styles.subTitle} josefin-sans-text`}
             >
               AR/VR LAB
             </motion.h2>
@@ -82,7 +82,7 @@ const ArVrLabPage = () => {
               whileInView="visible"
               variants={headingVariants}
               viewport={{ once: false, amount: 0.2 }}
-              className={`${styles.subTitle} cinzel-text`}
+              className={`${styles.subTitle} josefin-sans-text`}
             >
               What is AR & VR?
             </motion.h2>
@@ -125,7 +125,7 @@ const ArVrLabPage = () => {
               whileInView="visible"
               variants={headingVariants}
               viewport={{ once: false, amount: 0.3 }}
-              className={`${styles.subTitle} cinzel-text`}
+              className={`${styles.subTitle} josefin-sans-text`}
             >
               What we Offer
             </motion.h2>
@@ -133,7 +133,7 @@ const ArVrLabPage = () => {
               <div className={styles.card}>
                 <h2
                   style={{ color: "white" }}
-                  className={`${styles.cardTitle} cinzel-text`}
+                  className={`${styles.cardTitle} josefin-sans-text`}
                 >
                   Turnkey AR/VR Lab Setups
                 </h2>
@@ -149,7 +149,7 @@ const ArVrLabPage = () => {
               <div className={styles.card}>
                 <h2
                   style={{ color: "white" }}
-                  className={`${styles.cardTitle} cinzel-text`}
+                  className={`${styles.cardTitle} josefin-sans-text`}
                 >
                   Customized Lab Design
                 </h2>
@@ -177,7 +177,7 @@ const ArVrLabPage = () => {
               <div className={styles.card}>
                 <h2
                   style={{ color: "white" }}
-                  className={`${styles.cardTitle} cinzel-text`}
+                  className={`${styles.cardTitle} josefin-sans-text`}
                 >
                   Immersive Experience Zones
                 </h2>
@@ -193,7 +193,7 @@ const ArVrLabPage = () => {
               <div className={styles.card}>
                 <h2
                   style={{ color: "white" }}
-                  className={`${styles.cardTitle} cinzel-text`}
+                  className={`${styles.cardTitle} josefin-sans-text`}
                 >
                   AR/VR Development Workstations
                 </h2>
@@ -214,7 +214,7 @@ const ArVrLabPage = () => {
               whileInView="visible"
               variants={headingVariants}
               viewport={{ once: false, amount: 0.2 }}
-              className={`${styles.subTitle} cinzel-text`}
+              className={`${styles.subTitle} josefin-sans-text`}
             >
               Why choose Technotran for your AR/VR LAB setup
             </motion.h2>
@@ -282,7 +282,7 @@ const ArVrLabPage = () => {
             whileInView="visible"
             variants={headingVariants}
             viewport={{ once: false, amount: 0.4 }}
-            className={`${styles.subTitle} cinzel-text`}
+            className={`${styles.subTitle} josefin-sans-text`}
           >
             Enquiry Form
           </motion.h2>

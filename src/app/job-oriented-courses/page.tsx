@@ -7,7 +7,7 @@ import NavBar from "@/sections/NavBar";
 import { motion } from "framer-motion";
 import WhatsAppBtn from "@/components/WhatsAppBtn";
 import PhoneBtn from "@/components/PhoneBtn";
-import FooterMain from "@/sections/FooterMain";
+import FooterMain from "@/sections/FotterMain";
 import { jobOrientedCoursesData } from "@/utils/helpers";
 import EnquiryForm from "@/components/Enquiry";
 
@@ -91,7 +91,7 @@ const JobOrientedCourcesPage = () => {
                 <div className={styles.cardContent}>
                   <h2
                     style={{ color: index % 2 === 0 ? "white" : "" }}
-                    className={`${styles.cardTitle} cinzel-text`}
+                    className={`${styles.cardTitle} josefin-sans-text`}
                   >
                     {item.title}
                   </h2>
@@ -115,7 +115,7 @@ const JobOrientedCourcesPage = () => {
             whileInView="visible"
             variants={headingVariants}
             viewport={{ once: false, amount: 0.4 }}
-            className={`${styles.subTitle} cinzel-text`}
+            className={`${styles.subTitle} josefin-sans-text`}
           >
             Register Now
           </motion.h2>

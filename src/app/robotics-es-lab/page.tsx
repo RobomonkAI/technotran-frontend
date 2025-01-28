@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 import EnquiryForm from "@/components/Enquiry";
 import PhoneBtn from "@/components/PhoneBtn";
 import WhatsAppBtn from "@/components/WhatsAppBtn";
-import FooterMain from "@/sections/FooterMain";
+import FooterMain from "@/sections/FotterMain";
 
 const RoboticsEsLabPage = () => {
   const headingVariants = {
@@ -47,7 +47,7 @@ const RoboticsEsLabPage = () => {
               whileInView="visible"
               variants={headingVariants}
               viewport={{ once: false, amount: 0.2 }}
-              className={`${styles.subTitle} cinzel-text`}
+              className={`${styles.subTitle} josefin-sans-text`}
             >
               Robotics and Embedded system LAB
             </motion.h2>
@@ -80,7 +80,7 @@ const RoboticsEsLabPage = () => {
             whileInView="visible"
             variants={headingVariants}
             viewport={{ once: false, amount: 0.3 }}
-            className={`${styles.subTitle} cinzel-text`}
+            className={`${styles.subTitle} josefin-sans-text`}
           >
             What We Deliver
           </motion.h2>
@@ -88,7 +88,7 @@ const RoboticsEsLabPage = () => {
             <div className={styles.card}>
               <h2
                 style={{ color: "white" }}
-                className={`${styles.cardTitle} cinzel-text`}
+                className={`${styles.cardTitle} josefin-sans-text`}
               >
                 Advanced Robotic Platforms
               </h2>
@@ -107,7 +107,7 @@ const RoboticsEsLabPage = () => {
             <div className={styles.card}>
               <h2
                 style={{ color: "white" }}
-                className={`${styles.cardTitle} cinzel-text`}
+                className={`${styles.cardTitle} josefin-sans-text`}
               >
                 Collaborative Design Studios
               </h2>
@@ -125,7 +125,7 @@ const RoboticsEsLabPage = () => {
             <div className={styles.card}>
               <h2
                 style={{ color: "white" }}
-                className={`${styles.cardTitle} cinzel-text`}
+                className={`${styles.cardTitle} josefin-sans-text`}
               >
                 Comprehensive Embedded Systems Environment
               </h2>
@@ -141,7 +141,7 @@ const RoboticsEsLabPage = () => {
             <div className={styles.card}>
               <h2
                 style={{ color: "white" }}
-                className={`${styles.cardTitle} cinzel-text`}
+                className={`${styles.cardTitle} josefin-sans-text`}
               >
                 Real-World Simulation Areas
               </h2>
@@ -163,7 +163,7 @@ const RoboticsEsLabPage = () => {
               whileInView="visible"
               variants={headingVariants}
               viewport={{ once: false, amount: 0.2 }}
-              className={`${styles.subTitle} cinzel-text`}
+              className={`${styles.subTitle} josefin-sans-text`}
             >
               {`Why Technotran's IoT Hub Stands Out`}
             </motion.h2>
@@ -232,7 +232,7 @@ const RoboticsEsLabPage = () => {
             whileInView="visible"
             variants={headingVariants}
             viewport={{ once: false, amount: 0.4 }}
-            className={`${styles.subTitle} cinzel-text`}
+            className={`${styles.subTitle} josefin-sans-text`}
           >
             Enquiry Form
           </motion.h2>

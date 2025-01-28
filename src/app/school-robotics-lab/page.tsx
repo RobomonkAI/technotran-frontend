@@ -7,7 +7,7 @@ import styles from "./page.module.css";
 import { motion } from "framer-motion";
 import { schoolRoboticsLabImgsData } from "@/utils/helpers";
 import EnquiryForm from "@/components/Enquiry";
-import FooterMain from "@/sections/FooterMain";
+import FooterMain from "@/sections/FotterMain";
 import PhoneBtn from "@/components/PhoneBtn";
 import WhatsAppBtn from "@/components/WhatsAppBtn";
 
@@ -48,7 +48,7 @@ const SchoolRoboticsLabPage = () => {
               whileInView="visible"
               variants={headingVariants}
               viewport={{ once: false, amount: 0.2 }}
-              className={`${styles.subTitle} cinzel-text`}
+              className={`${styles.subTitle} josefin-sans-text`}
             >
               School Robotics LAB
             </motion.h2>
@@ -89,7 +89,7 @@ const SchoolRoboticsLabPage = () => {
               whileInView="visible"
               variants={headingVariants}
               viewport={{ once: false, amount: 0.3 }}
-              className={`${styles.subTitle} cinzel-text`}
+              className={`${styles.subTitle} josefin-sans-text`}
             >
               {`What Sets Technotran's Robotics Lab Apart?`}
             </motion.h2>
@@ -97,7 +97,7 @@ const SchoolRoboticsLabPage = () => {
               <div className={styles.card}>
                 <h2
                   style={{ color: "white" }}
-                  className={`${styles.cardTitle} cinzel-text`}
+                  className={`${styles.cardTitle} josefin-sans-text`}
                 >
                   State-of-the-Art Infrastructure
                 </h2>
@@ -113,7 +113,7 @@ const SchoolRoboticsLabPage = () => {
               <div className={styles.card}>
                 <h2
                   style={{ color: "white" }}
-                  className={`${styles.cardTitle} cinzel-text`}
+                  className={`${styles.cardTitle} josefin-sans-text`}
                 >
                   Curated Learning Paths
                 </h2>
@@ -141,7 +141,7 @@ const SchoolRoboticsLabPage = () => {
               <div className={styles.card}>
                 <h2
                   style={{ color: "white" }}
-                  className={`${styles.cardTitle} cinzel-text`}
+                  className={`${styles.cardTitle} josefin-sans-text`}
                 >
                   Beyond the Classroom
                 </h2>
@@ -157,7 +157,7 @@ const SchoolRoboticsLabPage = () => {
               <div className={styles.card}>
                 <h2
                   style={{ color: "white" }}
-                  className={`${styles.cardTitle} cinzel-text`}
+                  className={`${styles.cardTitle} josefin-sans-text`}
                 >
                   Guidance from the Best
                 </h2>
@@ -182,7 +182,7 @@ const SchoolRoboticsLabPage = () => {
             whileInView="visible"
             variants={headingVariants}
             viewport={{ once: false, amount: 0.3 }}
-            className={`${styles.subTitle} cinzel-text`}
+            className={`${styles.subTitle} josefin-sans-text`}
           >
             Skill set cultivated in the Robotics lab
           </motion.h2>
@@ -213,7 +213,7 @@ const SchoolRoboticsLabPage = () => {
             whileInView="visible"
             variants={headingVariants}
             viewport={{ once: false, amount: 0.4 }}
-            className={`${styles.subTitle} cinzel-text`}
+            className={`${styles.subTitle} josefin-sans-text`}
           >
             Enquiry Form
           </motion.h2>

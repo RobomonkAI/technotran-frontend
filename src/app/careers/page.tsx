@@ -6,7 +6,7 @@ import React from "react";
 import styles from "./page.module.css";
 import { motion } from "framer-motion";
 import { careersData } from "@/utils/helpers";
-import FooterMain from "@/sections/FooterMain";
+import FooterMain from "@/sections/FotterMain";
 import WhatsAppBtn from "@/components/WhatsAppBtn";
 import PhoneBtn from "@/components/PhoneBtn";
 import EnquiryForm from "@/components/Enquiry";
@@ -60,7 +60,7 @@ const CareersPage = () => {
               whileInView="visible"
               variants={headingVariants}
               viewport={{ once: false, amount: 0.2 }}
-              className={`${styles.subTitle} cinzel-text`}
+              className={`${styles.subTitle} josefin-sans-text`}
             >
               Welcome to the Technotran Careers Page!
             </motion.h2>
@@ -82,7 +82,7 @@ const CareersPage = () => {
             whileInView="visible"
             variants={headingVariants}
             viewport={{ once: false, amount: 0.3 }}
-            className={`${styles.subTitle} cinzel-text`}
+            className={`${styles.subTitle} josefin-sans-text`}
           >
             Discover Opportunities at Technotran
           </motion.h2>
@@ -98,7 +98,7 @@ const CareersPage = () => {
               >
                 <h2
                   style={{ color: "white" }}
-                  className={`${styles.cardTitle} cinzel-text`}
+                  className={`${styles.cardTitle} josefin-sans-text`}
                 >
                   {item.title}
                 </h2>
@@ -127,7 +127,7 @@ const CareersPage = () => {
             whileInView="visible"
             variants={headingVariants}
             viewport={{ once: false, amount: 0.4 }}
-            className={`${styles.subTitle} cinzel-text`}
+            className={`${styles.subTitle} josefin-sans-text`}
           >
             Careers Enquiry
           </motion.h2>

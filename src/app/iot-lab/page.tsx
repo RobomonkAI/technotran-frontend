@@ -8,7 +8,7 @@ import Image from "next/image";
 import EnquiryForm from "@/components/Enquiry";
 import PhoneBtn from "@/components/PhoneBtn";
 import WhatsAppBtn from "@/components/WhatsAppBtn";
-import FooterMain from "@/sections/FooterMain";
+import FooterMain from "@/sections/FotterMain";
 
 const IotLabPage = () => {
   const headingVariants = {
@@ -47,7 +47,7 @@ const IotLabPage = () => {
               whileInView="visible"
               variants={headingVariants}
               viewport={{ once: false, amount: 0.2 }}
-              className={`${styles.subTitle} cinzel-text`}
+              className={`${styles.subTitle} josefin-sans-text`}
             >
               IOT LAB
             </motion.h2>
@@ -83,7 +83,7 @@ const IotLabPage = () => {
               whileInView="visible"
               variants={headingVariants}
               viewport={{ once: false, amount: 0.3 }}
-              className={`${styles.subTitle} cinzel-text`}
+              className={`${styles.subTitle} josefin-sans-text`}
             >
               What We Deliver
             </motion.h2>
@@ -91,7 +91,7 @@ const IotLabPage = () => {
               <div className={styles.card}>
                 <h2
                   style={{ color: "white" }}
-                  className={`${styles.cardTitle} cinzel-text`}
+                  className={`${styles.cardTitle} josefin-sans-text`}
                 >
                   Holistic IoT Lab Configurations
                 </h2>
@@ -107,7 +107,7 @@ const IotLabPage = () => {
               <div className={styles.card}>
                 <h2
                   style={{ color: "white" }}
-                  className={`${styles.cardTitle} cinzel-text`}
+                  className={`${styles.cardTitle} josefin-sans-text`}
                 >
                   Robust Development Platforms
                 </h2>
@@ -135,7 +135,7 @@ const IotLabPage = () => {
               <div className={styles.card}>
                 <h2
                   style={{ color: "white" }}
-                  className={`${styles.cardTitle} cinzel-text`}
+                  className={`${styles.cardTitle} josefin-sans-text`}
                 >
                   Adaptive Lab Layouts
                 </h2>
@@ -151,7 +151,7 @@ const IotLabPage = () => {
               <div className={styles.card}>
                 <h2
                   style={{ color: "white" }}
-                  className={`${styles.cardTitle} cinzel-text`}
+                  className={`${styles.cardTitle} josefin-sans-text`}
                 >
                   Scenario-Centric Test Beds
                 </h2>
@@ -174,7 +174,7 @@ const IotLabPage = () => {
               whileInView="visible"
               variants={headingVariants}
               viewport={{ once: false, amount: 0.2 }}
-              className={`${styles.subTitle} cinzel-text`}
+              className={`${styles.subTitle} josefin-sans-text`}
             >
               {`Why Technotran's IoT Hub Stands Out`}
             </motion.h2>
@@ -240,7 +240,7 @@ const IotLabPage = () => {
             whileInView="visible"
             variants={headingVariants}
             viewport={{ once: false, amount: 0.4 }}
-            className={`${styles.subTitle} cinzel-text`}
+            className={`${styles.subTitle} josefin-sans-text`}
           >
             Enquiry Form
           </motion.h2>

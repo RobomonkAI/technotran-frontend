@@ -10,7 +10,7 @@ import PhoneBtn from "@/components/PhoneBtn";
 import CustomGoogleMap from "../../components/CumstomGMaps";
 import PhoneIcon from "@mui/icons-material/Phone";
 import EmailIcon from "@mui/icons-material/Email";
-import FooterMain from "@/sections/FooterMain";
+import FooterMain from "@/sections/FotterMain";
 
 const ContactUsPage = () => {
   const headingVariants = {
@@ -61,7 +61,7 @@ const ContactUsPage = () => {
               whileInView="visible"
               variants={headingVariants}
               viewport={{ once: false, amount: 0.2 }}
-              className={`${styles.subTitle} cinzel-text`}
+              className={`${styles.subTitle} josefin-sans-text`}
             >
               {`We're here to assist you and answer any questions you may have. Feel
             free to reach out to us.`}
