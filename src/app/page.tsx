@@ -8,7 +8,10 @@ import DesignServices from "@/sections/DesignServices";
 import IndustriesWeServe from "@/sections/IndustriesWeServe";
 import OurValuedClients from "@/sections/OurValuedClients";
 import Testimonials from "@/sections/Testimonials";
-import FooterMain from "@/sections/FotterMain";
+import FotterMain from "@/sections/FotterMain";
+import PhoneBtn from "@/components/PhoneBtn";
+import WhatsAppBtn from "@/components/WhatsAppBtn";
+import EVerifyBtn from "@/components/EVerifyBtn";
 
 export default function Home() {
   return (
@@ -24,7 +27,10 @@ export default function Home() {
         <OurValuedClients />
         <Testimonials />
       </div>
-      <FooterMain />
+      <EVerifyBtn />
+      <WhatsAppBtn />
+      <PhoneBtn />
+      <FotterMain />
     </main>
   );
 }

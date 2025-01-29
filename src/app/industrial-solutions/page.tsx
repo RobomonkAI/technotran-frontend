@@ -8,8 +8,9 @@ import styles from "./page.module.css";
 import { industrialSolutionsData } from "@/utils/helpers";
 import WhatsAppBtn from "@/components/WhatsAppBtn";
 import PhoneBtn from "@/components/PhoneBtn";
-import FooterMain from "@/sections/FotterMain";
+import FotterMain from "@/sections/FotterMain";
 import EnquiryForm from "@/components/Enquiry";
+import EVerifyBtn from "@/components/EVerifyBtn";
 
 const IndustrialSolutionsPage = () => {
   const headingVariants = {
@@ -219,7 +220,8 @@ const IndustrialSolutionsPage = () => {
           </div>
         </section>
       </div>
-      <FooterMain />
+      <FotterMain />
+      <EVerifyBtn />
       <WhatsAppBtn />
       <PhoneBtn />
     </main>

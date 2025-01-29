@@ -8,9 +8,10 @@ import { motion } from "framer-motion";
 import NavBar from "@/sections/NavBar";
 import Testimonials from "@/sections/Testimonials";
 import styles from "./page.module.css";
-import FooterMain from "@/sections/FotterMain";
+import FotterMain from "@/sections/FotterMain";
 import { workshopsData } from "./utils/helpers";
 import EnquiryForm from "@/components/Enquiry";
+import EVerifyBtn from "@/components/EVerifyBtn";
 
 const WorkshopsPage = () => {
   const headingVariants = {
@@ -143,7 +144,8 @@ const WorkshopsPage = () => {
           <EnquiryForm />
         </section>
       </div>
-      <FooterMain />
+      <FotterMain />
+      <EVerifyBtn />
       <WhatsAppBtn />
       <PhoneBtn />
     </main>

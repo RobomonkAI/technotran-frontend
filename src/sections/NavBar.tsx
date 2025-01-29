@@ -50,6 +50,20 @@ const NavBar = () => {
       setActiveNavItem("company");
     } else if (path.includes("contact-us")) {
       setActiveNavItem("company");
+    } else if (path.includes("robotics-es-lab")) {
+      setActiveNavItem("lab-solutions");
+    } else if (path.includes("r&d-projects")) {
+      setActiveNavItem("lab-solutions");
+    } else if (path.includes("atal-tinkering-lab")) {
+      setActiveNavItem("lab-solutions");
+    } else if (path.includes("iot-lab")) {
+      setActiveNavItem("lab-solutions");
+    } else if (path.includes("school-robotics-lab")) {
+      setActiveNavItem("lab-solutions");
+    } else if (path.includes("ar-vr-lab")) {
+      setActiveNavItem("lab-solutions");
+    } else if (path.includes("center-of-excellence")) {
+      setActiveNavItem("lab-solutions");
     }
   }, [pathname]);
 
@@ -99,6 +113,8 @@ const NavBar = () => {
       window.open("https://internships.technotran.in/", "_blank"); // Opens in a new tab
     } else if (item === "R & D Projects") {
       router.push("/r&d-projects");
+    } else if (item === "Media & Awards") {
+      router.push("/media&awards");
     } else {
       router.push(item.toLowerCase().replace(/\s+/g, "-")); // Ensure the route matches the item
     }
@@ -232,7 +248,14 @@ const NavBar = () => {
             <DropdownMenu
               title="Company"
               activeDropdown={activeDropdown}
-              menuItems={["About Us", "MOU", "Careers", "Contact Us"]}
+              menuItems={[
+                "About Us",
+                "MOU",
+                "Media & Awards",
+                "Events",
+                "Careers",
+                "Contact Us",
+              ]}
               onDropdownOpen={handleDropdownOpen}
               anchorEl={anchorEl}
               onDropdownClose={handleDropdownClose}

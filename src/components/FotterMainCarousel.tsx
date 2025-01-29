@@ -8,7 +8,7 @@ import styles from "../styles/FooterMain.module.css";
 import Image from "next/image";
 import { footerMainCarouselData } from "@/utils/helpers";
 
-const FooterMainCarousel = () => {
+const FotterMainCarousel = () => {
   const carouselRef = useRef<any>(null); // Ref for the Carousel component
 
   const cardVariants = {
@@ -72,4 +72,4 @@ const FooterMainCarousel = () => {
   );
 };
 
-export default FooterMainCarousel;
+export default FotterMainCarousel;

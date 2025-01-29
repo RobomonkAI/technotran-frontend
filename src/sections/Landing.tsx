@@ -1,7 +1,5 @@
 import React from "react";
 import styles from "../styles/LandingStyles.module.css";
-import WhatsAppBtn from "../components/WhatsAppBtn";
-import PhoneBtn from "../components/PhoneBtn";
 
 const Landing = () => {
   return (
@@ -13,8 +11,6 @@ const Landing = () => {
         muted
         className={styles.videoPlayer}
       />
-      <WhatsAppBtn />
-      <PhoneBtn />
     </section>
   );
 };

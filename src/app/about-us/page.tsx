@@ -8,7 +8,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import { mouData } from "@/utils/helpers";
 import PhoneBtn from "@/components/PhoneBtn";
 import WhatsAppBtn from "@/components/WhatsAppBtn";
-import FooterMain from "@/sections/FotterMain";
+import FotterMain from "@/sections/FotterMain";
+import EVerifyBtn from "@/components/EVerifyBtn";
 
 const AboutUsPage = () => {
   const [currentBannerOneImage, setCurrentBannerOneImage] = useState(0);
@@ -391,7 +392,8 @@ const AboutUsPage = () => {
           </div>
         </section>
       </div>
-      <FooterMain />
+      <FotterMain />
+      <EVerifyBtn />
       <WhatsAppBtn />
       <PhoneBtn />
     </main>

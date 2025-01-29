@@ -10,7 +10,7 @@ import {
   LinkedIn,
   YouTube,
 } from "@mui/icons-material";
-import FooterMainCarousel from "@/components/FooterMainCarousel";
+import FotterMainCarousel from "@/components/FotterMainCarousel";
 import Image from "next/image";
 
 const FooterMain = () => {
@@ -66,7 +66,7 @@ const FooterMain = () => {
   return (
     <footer id="Footer Main" className={styles.footerMainSection}>
       <div className={styles.footerCarouselSection}>
-        <FooterMainCarousel />
+        <FotterMainCarousel />
       </div>
       <div className={styles.footerSubSection}>
         {/* Quick Links Section */}

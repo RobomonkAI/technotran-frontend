@@ -6,10 +6,11 @@ import React from "react";
 import styles from "./page.module.css";
 import { motion } from "framer-motion";
 import { careersData } from "@/utils/helpers";
-import FooterMain from "@/sections/FotterMain";
+import FotterMain from "@/sections/FotterMain";
 import WhatsAppBtn from "@/components/WhatsAppBtn";
 import PhoneBtn from "@/components/PhoneBtn";
 import EnquiryForm from "@/components/Enquiry";
+import EVerifyBtn from "@/components/EVerifyBtn";
 
 const CareersPage = () => {
   const headingVariants = {
@@ -134,7 +135,8 @@ const CareersPage = () => {
           <EnquiryForm />
         </section>
       </div>
-      <FooterMain />
+      <FotterMain />
+      <EVerifyBtn />
       <WhatsAppBtn />
       <PhoneBtn />
     </main>

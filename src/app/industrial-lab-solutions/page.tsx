@@ -9,7 +9,8 @@ import { industrialLabSolutions } from "@/utils/helpers";
 import EnquiryForm from "@/components/Enquiry";
 import PhoneBtn from "@/components/PhoneBtn";
 import WhatsAppBtn from "@/components/WhatsAppBtn";
-import FooterMain from "@/sections/FotterMain";
+import FotterMain from "@/sections/FotterMain";
+import EVerifyBtn from "@/components/EVerifyBtn";
 
 const IndustrialLabSolutions = () => {
   const headingVariants = {
@@ -185,7 +186,8 @@ const IndustrialLabSolutions = () => {
           </div>
         </section>
       </div>
-      <FooterMain />
+      <FotterMain />
+      <EVerifyBtn />
       <WhatsAppBtn />
       <PhoneBtn />
     </main>

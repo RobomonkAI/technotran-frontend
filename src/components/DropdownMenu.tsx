@@ -120,13 +120,7 @@ const DropdownMenu: FC<DropdownMenuProps> = ({
                   className={styles.dropDownContainer}
                   style={{ display: "flex", justifyContent: "space-between" }}
                 >
-                  <div
-                    className={
-                      activeNavItem === title.toLowerCase().replace(/\s+/g, "-")
-                        ? styles.activeNavItem
-                        : ""
-                    }
-                  >
+                  <div>
                     <h2 className={styles.dropDownTxt}>{item.title}</h2>
                   </div>
                   {item.submenu.length > 0 && // Only show arrow if submenu exists

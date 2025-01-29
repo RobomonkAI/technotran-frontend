@@ -7,9 +7,10 @@ import styles from "./page.module.css";
 import { motion } from "framer-motion";
 import { schoolRoboticsLabImgsData } from "@/utils/helpers";
 import EnquiryForm from "@/components/Enquiry";
-import FooterMain from "@/sections/FotterMain";
+import FotterMain from "@/sections/FotterMain";
 import PhoneBtn from "@/components/PhoneBtn";
 import WhatsAppBtn from "@/components/WhatsAppBtn";
+import EVerifyBtn from "@/components/EVerifyBtn";
 
 const SchoolRoboticsLabPage = () => {
   const headingVariants = {
@@ -220,7 +221,8 @@ const SchoolRoboticsLabPage = () => {
           <EnquiryForm />
         </section>
       </div>
-      <FooterMain />
+      <FotterMain />
+      <EVerifyBtn />
       <WhatsAppBtn />
       <PhoneBtn />
     </main>

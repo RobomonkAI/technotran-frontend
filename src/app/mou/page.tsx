@@ -6,9 +6,10 @@ import styles from "./page.module.css";
 import NavBar from "@/sections/NavBar";
 import WhatsAppBtn from "@/components/WhatsAppBtn";
 import PhoneBtn from "@/components/PhoneBtn";
-import FooterMain from "@/sections/FotterMain";
+import FotterMain from "@/sections/FotterMain";
 import { motion } from "framer-motion";
 import { mouData } from "@/utils/helpers";
+import EVerifyBtn from "@/components/EVerifyBtn";
 
 const MOUPage = () => {
   const headingVariants = {
@@ -171,7 +172,8 @@ const MOUPage = () => {
           </div>
         </motion.section>
       </div>
-      <FooterMain />
+      <FotterMain />
+      <EVerifyBtn />
       <WhatsAppBtn />
       <PhoneBtn />
     </main>

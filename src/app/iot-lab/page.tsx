@@ -8,7 +8,8 @@ import Image from "next/image";
 import EnquiryForm from "@/components/Enquiry";
 import PhoneBtn from "@/components/PhoneBtn";
 import WhatsAppBtn from "@/components/WhatsAppBtn";
-import FooterMain from "@/sections/FotterMain";
+import FotterMain from "@/sections/FotterMain";
+import EVerifyBtn from "@/components/EVerifyBtn";
 
 const IotLabPage = () => {
   const headingVariants = {
@@ -247,7 +248,8 @@ const IotLabPage = () => {
           <EnquiryForm />
         </section>
       </div>
-      <FooterMain />
+      <FotterMain />
+      <EVerifyBtn />
       <WhatsAppBtn />
       <PhoneBtn />
     </main>

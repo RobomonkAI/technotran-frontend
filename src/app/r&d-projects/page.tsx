@@ -6,7 +6,8 @@ import NavBar from "@/sections/NavBar";
 import { motion } from "framer-motion";
 import PhoneBtn from "@/components/PhoneBtn";
 import WhatsAppBtn from "@/components/WhatsAppBtn";
-import FooterMain from "@/sections/FotterMain";
+import FotterMain from "@/sections/FotterMain";
+import EVerifyBtn from "@/components/EVerifyBtn";
 
 const RnDProjectsPage = () => {
   const headingVariants = {
@@ -121,7 +122,8 @@ const RnDProjectsPage = () => {
           </div>
         </section>
       </div>
-      <FooterMain />
+      <FotterMain />
+      <EVerifyBtn />
       <WhatsAppBtn />
       <PhoneBtn />
     </main>

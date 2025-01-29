@@ -6,9 +6,10 @@ import NavBar from "@/sections/NavBar";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import EnquiryForm from "@/components/Enquiry";
-import FooterMain from "@/sections/FotterMain";
+import FotterMain from "@/sections/FotterMain";
 import WhatsAppBtn from "@/components/WhatsAppBtn";
 import PhoneBtn from "@/components/PhoneBtn";
+import EVerifyBtn from "@/components/EVerifyBtn";
 
 const CenterOfExcellencePage = () => {
   const headingVariants = {
@@ -229,7 +230,8 @@ const CenterOfExcellencePage = () => {
           <EnquiryForm />
         </section>
       </div>
-      <FooterMain />
+      <FotterMain />
+      <EVerifyBtn />
       <WhatsAppBtn />
       <PhoneBtn />
     </main>

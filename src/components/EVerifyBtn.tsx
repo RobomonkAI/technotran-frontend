@@ -1,10 +1,10 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { Fab, Tooltip } from "@mui/material";
-import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import VerifiedUserOutlinedIcon from "@mui/icons-material/VerifiedUserOutlined";
 import { motion } from "framer-motion";
 
-const WhatsAppBtn = () => {
+const EVerifyBtn = () => {
   const [isClient, setIsClient] = useState(false); // Track if the app is running on the client
   useEffect(() => {
     // Only run this code on the client side
@@ -30,7 +30,7 @@ const WhatsAppBtn = () => {
       transition={{ duration: 0.7 }}
       style={{
         position: "fixed",
-        bottom: "20px",
+        bottom: "100px",
         right: "20px",
         zIndex: "10000",
       }}
@@ -40,7 +40,7 @@ const WhatsAppBtn = () => {
           <span
             style={{ fontFamily: "Montserrat, Sans-serif", color: "white" }}
           >
-            WhatsApp Us
+            E - Verify Portal
           </span>
         }
         arrow
@@ -50,9 +50,9 @@ const WhatsAppBtn = () => {
           color="success"
           aria-label="chat"
           onClick={handleWhatsAppClick}
-          sx={{ backgroundColor: "#25D366" }}
+          sx={{ backgroundColor: "royalblue" }}
         >
-          <WhatsAppIcon
+          <VerifiedUserOutlinedIcon
             color="action"
             style={{ fill: "white", fontSize: "2rem" }}
           />
@@ -62,4 +62,4 @@ const WhatsAppBtn = () => {
   );
 };
 
-export default WhatsAppBtn;
+export default EVerifyBtn;
