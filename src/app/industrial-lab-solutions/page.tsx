@@ -72,12 +72,12 @@ const IndustrialLabSolutions = () => {
               viewport={{ once: true, amount: 0.2 }}
               className={`${styles.sectionTxt} quicksand-text`}
             >
-              We are pleased to introduce ourselves as one of the leading
+              {`We are pleased to introduce ourselves as one of the leading
               Distributors having a wide range of principles to meet each and
               every requirement for clients. Our company deals in various
               product ranges from Lab Instruments, Equipment's/Instruments,
               Laboratory GlassWare, Chromatography, Filtration Products for R &
-              D centers, Pharmaceuticals and many others.
+              D centers, Pharmaceuticals and many others.`}
             </motion.h3>
           </div>
         </section>
