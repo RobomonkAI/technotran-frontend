@@ -97,6 +97,8 @@ const NavBar = () => {
       router.push("/robotics-es-lab");
     } else if (item === "Internships") {
       window.open("https://internships.technotran.in/", "_blank"); // Opens in a new tab
+    } else if (item === "R & D Projects") {
+      router.push("/r&d-projects");
     } else {
       router.push(item.toLowerCase().replace(/\s+/g, "-")); // Ensure the route matches the item
     }
@@ -215,21 +217,6 @@ const NavBar = () => {
               handleNavItemClick={handleNavItemClick}
               activeNavItem={activeNavItem}
             />
-
-            {/* <motion.li
-              variants={containerVariant}
-              initial="hidden"
-              animate="visible"
-            >
-              <h2
-                className={
-                  activeNavItem === "projects" ? styles.activeNavItem : ""
-                }
-                onClick={() => handleNavItemClick("projects")}
-              >
-                Projects
-              </h2>
-            </motion.li> */}
 
             <DropdownMenu
               title="Projects"
