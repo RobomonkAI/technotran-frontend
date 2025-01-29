@@ -11,9 +11,9 @@ const EVerifyBtn = () => {
     setIsClient(true);
   }, []);
 
-  const handleWhatsAppClick = () => {
+  const handleBtnClick = () => {
     if (isClient && typeof window !== "undefined") {
-      window.open("https://wa.me/919000325936", "_blank");
+      window.open("https://e-verify.technotran.in", "_blank");
     }
   };
 
@@ -49,7 +49,7 @@ const EVerifyBtn = () => {
         <Fab
           color="success"
           aria-label="chat"
-          onClick={handleWhatsAppClick}
+          onClick={handleBtnClick}
           sx={{ backgroundColor: "royalblue" }}
         >
           <VerifiedUserOutlinedIcon

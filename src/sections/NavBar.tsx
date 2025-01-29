@@ -68,6 +68,8 @@ const NavBar = () => {
       setActiveNavItem("lab-solutions");
     } else if (path.includes("center-of-excellence")) {
       setActiveNavItem("lab-solutions");
+    } else if (path.includes("industrial-lab-solutions")) {
+      setActiveNavItem("lab-solutions");
     }
   }, [pathname]);
 
