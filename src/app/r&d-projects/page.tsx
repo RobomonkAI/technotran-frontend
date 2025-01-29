@@ -98,7 +98,7 @@ const RnDProjectsPage = () => {
             >
               Electronic Protection Locker system
             </motion.h2>
-            <video
+            {/* <video
               src="/videos/Intelligent-Waste-Disposal-Robot.mp4"
               muted
               controls
@@ -113,7 +113,7 @@ const RnDProjectsPage = () => {
               className={`${styles.subTitle} josefin-sans-text`}
             >
               River Cleaning Robot
-            </motion.h2>
+            </motion.h2> */}
             <video
               src="/videos/Soil-Investigation-Robot.mp4"
               muted
