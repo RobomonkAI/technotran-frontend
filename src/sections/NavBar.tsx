@@ -46,6 +46,10 @@ const NavBar = () => {
       setActiveNavItem("company");
     } else if (path.includes("mou")) {
       setActiveNavItem("company");
+    } else if (path.includes("events")) {
+      setActiveNavItem("company");
+    } else if (path.includes("media&awards")) {
+      setActiveNavItem("company");
     } else if (path.includes("careers")) {
       setActiveNavItem("company");
     } else if (path.includes("contact-us")) {
