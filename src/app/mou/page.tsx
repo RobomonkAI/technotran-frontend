@@ -66,7 +66,7 @@ const MOUPage = () => {
       <div className={styles.mainBody}>
         <section
           id="MOU Landing Img"
-          className={styles.jobOrientedCoursesMainContainer}
+          className={styles.mouMainContainer}
         >
           <Image
             src="/images/mou.png"
@@ -74,7 +74,7 @@ const MOUPage = () => {
             height={700}
             width={1000}
             priority
-            className={styles.jobOrientedCoursesLandingImg}
+            className={styles.mouLandingImg}
           />
         </section>
         <section id="MOU Landing Section">

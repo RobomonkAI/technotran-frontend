@@ -33,6 +33,7 @@
   border-radius: 8px;
   margin-top: 1rem;
   object-fit: fill;
+  margin-bottom: 0.5rem;
 }
 
 .mediaLandingImg {
@@ -153,4 +154,211 @@
 .socialMediaItem iframe,
 .socialMediaItem > div {
   width: 100%;
+}
+
+/* Extra Small Mobile Devices (Portrait) */
+/* iPhone SE, older Android phones */
+@media only screen and (max-width: 320px) {
+  .socialMediaContainer {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: center;
+    justify-content: center;
+    padding: 0.2rem;
+  }
+
+  .socialMediaItem {
+    width: 100%; /* Make embeds fill most of the screen */
+    max-width: 280px;
+    padding: 0;
+    margin: 1rem 0;
+  }
+
+  .sectionOne {
+    padding: 0;
+  }
+
+  .subTitle {
+    font-size: 1.3rem;
+  }
+
+  .sectionTxt {
+    font-size: 0.9rem;
+    max-width: 280px;
+  }
+
+  .mnaLandingImg {
+    height: 200px;
+    width: 280px;
+  }
+
+  .awardsLandingImg {
+    height: 500px;
+    width: 280px;
+  }
+
+  .mediaLandingImg {
+    height: 500px;
+    width: 280px;
+  }
+
+  .mediaImg {
+    height: 220px;
+    width: 280px;
+    object-fit: fill;
+    border-radius: 8px;
+    border: 2px solid #4b0406;
+  }
+
+  .mediaImgOne {
+    height: 220px;
+    width: 280px;
+    object-fit: fill;
+    border-radius: 8px;
+    border: 2px solid #4b0406;
+  }
+
+  .videoPlayer {
+    height: 220px;
+    width: 280px;
+    border-radius: 8px;
+    border: 2px solid #4b0406;
+  }
+}
+
+/* Small Mobile Devices (Portrait) */
+/* iPhone 6/7/8, Galaxy S8 */
+@media only screen and (min-width: 321px) and (max-width: 375px) {
+  .socialMediaContainer {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: center;
+    justify-content: center;
+    padding: 0.2rem;
+  }
+
+  .socialMediaItem {
+    width: 100%; /* Make embeds fill most of the screen */
+    max-width: 370px;
+    padding: 0;
+    margin: 1rem 0;
+  }
+
+  .sectionOne {
+    padding: 0;
+  }
+
+  .subTitle {
+    font-size: 1.3rem;
+  }
+
+  .sectionTxt {
+    font-size: 0.9rem;
+    max-width: 300px;
+  }
+
+  .mnaLandingImg {
+    height: 200px;
+    width: 300px;
+  }
+
+  .awardsLandingImg {
+    height: 500px;
+    width: 340px;
+  }
+
+  .mediaLandingImg {
+    height: 500px;
+    width: 340px;
+  }
+
+  .mediaImg {
+    height: 270px;
+    width: 340px;
+    object-fit: fill;
+    border-radius: 8px;
+    border: 2px solid #4b0406;
+  }
+
+  .mediaImgOne {
+    height: 270px;
+    width: 340px;
+    object-fit: fill;
+    border-radius: 8px;
+    border: 2px solid #4b0406;
+  }
+
+  .videoPlayer {
+    height: 250px;
+    width: 340px;
+    border-radius: 8px;
+    border: 2px solid #4b0406;
+  }
+}
+
+/* Medium Mobile Devices (Portrait) */
+/* iPhone 11 Pro, Google Pixel 2 */
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+  .socialMediaContainer {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: center;
+    justify-content: center;
+    padding: 0.2rem;
+  }
+
+  .socialMediaItem {
+    width: 100%; /* Make embeds fill most of the screen */
+    max-width: 370px;
+    padding: 0;
+    margin: 1rem 0;
+  }
+
+  .sectionOne {
+    padding: 0;
+  }
+
+  .subTitle {
+    font-size: 1.3rem;
+  }
+
+  .sectionTxt {
+    font-size: 0.9rem;
+    max-width: 370px;
+  }
+
+  .mnaLandingImg {
+    height: 250px;
+    width: 350px;
+  }
+
+  .awardsLandingImg {
+    height: 500px;
+    width: 350px;
+  }
+
+  .mediaLandingImg {
+    height: 600px;
+    width: 370px;
+  }
+
+  .mediaImg {
+    height: 300px;
+    width: 350px;
+    object-fit: fill;
+    border-radius: 8px;
+    border: 2px solid #4b0406;
+  }
+
+  .mediaImgOne {
+    height: 300px;
+    width: 350px;
+    object-fit: fill;
+    border-radius: 8px;
+    border: 2px solid #4b0406;
+  }
+
+  .videoPlayer {
+    height: 250px;
+    width: 370px;
+    border-radius: 8px;
+    border: 2px solid #4b0406;
+  }
 }

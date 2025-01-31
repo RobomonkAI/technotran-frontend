@@ -263,11 +263,216 @@
   overflow: hidden;
 }
 
-.bannerOne,
-.bannerTwo {
+.bannerOne {
   object-fit: cover;
   width: 440px;
   height: 270px;
   position: absolute;
   border-radius: 1rem;
+}
+
+/* Extra Small Mobile Devices (Portrait) */
+/* iPhone SE, older Android phones */
+@media only screen and (max-width: 320px) {
+  .aboutUsMainContainer {
+    height: 40vh;
+  }
+
+  .subTitle {
+    font-size: 1.5rem;
+  }
+
+  .sectionOne {
+    padding: 1rem;
+  }
+
+  .sectionTxt {
+    font-size: 0.75rem;
+  }
+
+  .imgOne {
+    height: 220px;
+    width: 300px;
+  }
+
+  .cardTitle {
+    font-size: 1.1rem;
+  }
+
+  .cardDesc {
+    font-size: 0.75rem;
+  }
+
+  .list li {
+    flex: 1 1 100%;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .containerOne {
+    flex-direction: column;
+  }
+
+  .name {
+    font-size: 1.5rem;
+  }
+
+  .role {
+    font-size: 1.1rem;
+  }
+
+  .description {
+    font-size: 0.75rem;
+  }
+
+  .bannerContainer {
+    width: 100%;
+    height: 270px;
+    padding: 0.5rem;
+  }
+
+  .bannerOne {
+    height: 260px;
+    width: 300px;
+  }
+}
+
+/* Small Mobile Devices (Portrait) */
+/* iPhone 6/7/8, Galaxy S8 */
+@media only screen and (min-width: 321px) and (max-width: 375px) {
+  .aboutUsMainContainer {
+    height: 40vh;
+  }
+
+  .subTitle {
+    font-size: 1.7rem;
+  }
+
+  .sectionOne {
+    padding: 2rem;
+  }
+
+  .sectionTxt {
+    font-size: 0.85rem;
+  }
+
+  .imgOne {
+    height: 250px;
+    width: 340px;
+  }
+
+  .cardTitle {
+    font-size: 1.1rem;
+  }
+
+  .cardDesc {
+    font-size: 0.85rem;
+  }
+
+  .list li {
+    flex: 1 1 100%;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .containerOne {
+    flex-direction: column;
+  }
+
+  .name {
+    font-size: 1.7rem;
+  }
+
+  .role {
+    font-size: 1.3rem;
+  }
+
+  .description {
+    font-size: 0.85rem;
+  }
+
+  .bannerContainer {
+    width: 100%;
+    height: 300px;
+    padding: 0.5rem;
+  }
+
+  .bannerOne {
+    width: 350px;
+  }
+}
+
+/* Medium Mobile Devices (Portrait) */
+/* iPhone 11 Pro, Google Pixel 2 */
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+  .aboutUsMainContainer {
+    height: 40vh;
+  }
+
+  .subTitle {
+    font-size: 1.7rem;
+  }
+
+  .sectionOne {
+    padding: 2rem;
+  }
+
+  .sectionTxt {
+    font-size: 0.85rem;
+  }
+
+  .imgOne {
+    height: 270px;
+    width: 370px;
+  }
+
+  .cardTitle {
+    font-size: 1.1rem;
+  }
+
+  .cardDesc {
+    font-size: 0.85rem;
+  }
+
+  .list li {
+    flex: 1 1 100%;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .containerOne {
+    flex-direction: column;
+  }
+
+  .name {
+    font-size: 1.7rem;
+  }
+
+  .role {
+    font-size: 1.3rem;
+  }
+
+  .description {
+    font-size: 0.85rem;
+  }
+
+  .bannerContainer {
+    width: 100%;
+    height: 300px;
+    padding: 0.5rem;
+  }
+
+  .bannerOne {
+    width: 350px;
+  }
+}
+
+/* Tablets (portrait and landscape) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
 }

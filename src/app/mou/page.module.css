@@ -189,13 +189,176 @@
   padding: 0.7rem;
 }
 
-/* Responsive Design */
-@media screen and (max-width: 768px) {
+/* Extra Small Mobile Devices (Portrait) */
+/* iPhone SE, older Android phones */
+@media only screen and (max-width: 320px) {
+  .mouMainContainer {
+    height: 40vh;
+  }
+
   .galleryContainer {
     grid-template-columns: 1fr; /* Stack items vertically on smaller screens */
   }
 
   .galleryItem {
     padding: 0.5rem;
+    width: 250px;
+  }
+
+  .galleryCaption h2 {
+    font-size: 0.75rem;
+  }
+
+  .subTitle {
+    font-size: 1.3rem;
+  }
+
+  .mouTitle {
+    font-size: 1.3rem;
+  }
+
+  .mouDesc {
+    font-size: 0.75rem;
+  }
+
+  .sectionTxt {
+    font-size: 0.75rem;
+  }
+
+  .mouContainer {
+    height: 70vh;
+  }
+
+  .mouSubContainer {
+    flex-direction: column;
+  }
+
+  .mouImgContainer {
+    width: 90%;
+    height: 40%;
+  }
+
+  .mouContentContainer {
+    width: 90%;
+  }
+
+  .galleryCaption {
+    border-radius: 8px;
+  }
+}
+
+/* Small Mobile Devices (Portrait) */
+/* iPhone 6/7/8, Galaxy S8 */
+@media only screen and (min-width: 321px) and (max-width: 375px) {
+  .mouMainContainer {
+    height: 40vh;
+  }
+
+  .galleryContainer {
+    grid-template-columns: 1fr; /* Stack items vertically on smaller screens */
+  }
+
+  .galleryItem {
+    padding: 0.5rem;
+    width: 300px;
+  }
+
+  .galleryCaption h2 {
+    font-size: 0.85rem;
+  }
+
+  .subTitle {
+    font-size: 1.5rem;
+  }
+
+  .mouTitle {
+    font-size: 1.5rem;
+  }
+
+  .mouDesc {
+    font-size: 0.85rem;
+  }
+
+  .sectionTxt {
+    font-size: 0.85rem;
+  }
+
+  .mouContainer {
+    height: 70vh;
+  }
+
+  .mouSubContainer {
+    flex-direction: column;
+  }
+
+  .mouImgContainer {
+    width: 90%;
+    height: 40%;
+  }
+
+  .mouContentContainer {
+    width: 90%;
+  }
+
+  .galleryCaption {
+    border-radius: 8px;
+  }
+}
+
+/* Medium Mobile Devices (Portrait) */
+/* iPhone 11 Pro, Google Pixel 2 */
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+  .mouMainContainer {
+    height: 40vh;
+  }
+
+  .galleryContainer {
+    grid-template-columns: 1fr; /* Stack items vertically on smaller screens */
+  }
+
+  .galleryItem {
+    padding: 0.5rem;
+    width: 350px;
+  }
+
+  .galleryCaption h2 {
+    font-size: 1rem;
+  }
+
+  .subTitle {
+    font-size: 1.7rem;
+  }
+
+  .mouTitle {
+    font-size: 1.7rem;
+  }
+
+  .mouDesc {
+    font-size: 1rem;
+  }
+
+  .sectionTxt {
+    font-size: 1rem;
+  }
+
+  .mouContainer {
+    height: 80vh;
+  }
+
+  .mouSubContainer {
+    flex-direction: column;
+  }
+
+  .mouImgContainer {
+    width: 90%;
+    height: 40%;
+  }
+
+  .mouContentContainer {
+    width: 90%;
+  }
+
+  .galleryCaption {
+    border-radius: 8px;
   }
 }
