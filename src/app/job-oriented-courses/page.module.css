@@ -138,13 +138,98 @@
   text-align: justify;
 }
 
-/* Responsive Design */
-@media screen and (max-width: 768px) {
+/* Extra Small Mobile Devices (Portrait) */
+/* iPhone SE, older Android phones */
+@media only screen and (max-width: 320px) {
+  .jobOrientedCoursesMainContainer {
+    height: 40vh;
+  }
+
   .container {
     padding: 1rem;
   }
 
   .card {
     max-width: 100%;
+  }
+
+  .sectionTxt {
+    font-size: 0.75rem;
+  }
+
+  .subTitle {
+    font-size: 1.1rem;
+  }
+
+  .cardTitle {
+    font-size: 1.1rem;
+  }
+
+  .cardDesc {
+    font-size: 0.75rem;
+  }
+}
+
+/* Small Mobile Devices (Portrait) */
+/* iPhone 6/7/8, Galaxy S8 */
+@media only screen and (min-width: 321px) and (max-width: 375px) {
+  .jobOrientedCoursesMainContainer {
+    height: 40vh;
+  }
+
+  .container {
+    padding: 1rem;
+  }
+
+  .card {
+    max-width: 100%;
+  }
+
+  .sectionTxt {
+    font-size: 0.85rem;
+  }
+
+  .subTitle {
+    font-size: 1.3rem;
+  }
+
+  .cardTitle {
+    font-size: 1.3rem;
+  }
+
+  .cardDesc {
+    font-size: 0.85rem;
+  }
+}
+
+/* Medium Mobile Devices (Portrait) */
+/* iPhone 11 Pro, Google Pixel 2 */
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+  .jobOrientedCoursesMainContainer {
+    height: 40vh;
+  }
+
+  .container {
+    padding: 1rem;
+  }
+
+  .card {
+    max-width: 100%;
+  }
+
+  .sectionTxt {
+    font-size: 1rem;
+  }
+
+  .subTitle {
+    font-size: 1.3rem;
+  }
+
+  .cardTitle {
+    font-size: 1.3rem;
+  }
+
+  .cardDesc {
+    font-size: 1rem;
   }
 }

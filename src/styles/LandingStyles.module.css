@@ -19,7 +19,7 @@
 /* iPhone SE, older Android phones */
 @media only screen and (max-width: 320px) {
   .landingMainContainer {
-    height: 35vh;
+    height: 40vh;
   }
 }
 

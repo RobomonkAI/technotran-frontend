@@ -108,3 +108,80 @@
     #a82b30
   ); /* Reverse gradient */
 }
+
+/* Extra Small Mobile Devices (Portrait) */
+/* iPhone SE, older Android phones */
+@media only screen and (max-width: 320px) {
+  .formContainer {
+    width: 290px;
+    padding: 2rem 0.5rem;
+  }
+
+  .formGroup {
+    flex: 1 1 100%;
+  }
+
+  .formGroup label {
+    font-size: 0.75rem;
+  }
+
+  .formGroup input,
+  .formGroup select,
+  .formGroup textarea {
+    font-size: 0.75rem;
+    width: 270px;
+  }
+
+  .button {
+    font-size: 0.75rem;
+  }
+}
+
+/* Small Mobile Devices (Portrait) */
+/* iPhone 6/7/8, Galaxy S8 */
+@media only screen and (min-width: 321px) and (max-width: 375px) {
+  .formContainer {
+    width: 350px;
+    padding: 2rem 1rem;
+  }
+
+  .formGroup {
+    flex: 1 1 100%;
+  }
+
+  .formGroup label {
+    font-size: 0.85rem;
+  }
+
+  .formGroup input,
+  .formGroup select,
+  .formGroup textarea {
+    font-size: 1rem;
+  }
+
+  .button {
+    font-size: 1rem;
+  }
+}
+
+/* Medium Mobile Devices (Portrait) */
+/* iPhone 11 Pro, Google Pixel 2 */
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+  .formContainer {
+    width: 370px;
+  }
+
+  .formGroup label {
+    font-size: 1rem;
+  }
+
+  .formGroup input,
+  .formGroup select,
+  .formGroup textarea {
+    font-size: 1rem;
+  }
+
+  .button {
+    font-size: 1rem;
+  }
+}
