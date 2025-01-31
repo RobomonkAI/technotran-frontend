@@ -70,3 +70,41 @@
   background-color: #4b0406;
   color: white;
 }
+
+.btnContainer {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 1rem 0;
+  padding: 0.7rem 0.7rem;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  gap: 0.5rem;
+  background: linear-gradient(90deg, #4b0406, #6b0f12, #a82b30);
+  padding: 0.7rem 0.7rem;
+  border-radius: 1rem;
+  border: 0;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  color: white;
+  font-weight: 600;
+  font-family: "Playwrite GB S", cursive;
+  cursor: pointer;
+}
+
+.button:hover {
+  transform: scale(1.1); /* Scale up on hover */
+  background: linear-gradient(
+    120deg,
+    #4b0406,
+    #6b0f12,
+    #a82b30
+  ); /* Reverse gradient */
+}
