@@ -8,7 +8,7 @@ import styles from "./page.module.css";
 import { industrialSolutionsData } from "@/utils/helpers";
 import WhatsAppBtn from "@/components/WhatsAppBtn";
 import PhoneBtn from "@/components/PhoneBtn";
-import FotterMain from "@/sections/FotterMain";
+import FooterMain from "@/sections/FooterMain";
 import EnquiryForm from "@/components/Enquiry";
 import EVerifyBtn from "@/components/EVerifyBtn";
 
@@ -220,7 +220,7 @@ const IndustrialSolutionsPage = () => {
           </div>
         </section>
       </div>
-      <FotterMain />
+      <FooterMain />
       <EVerifyBtn />
       <WhatsAppBtn />
       <PhoneBtn />

@@ -7,7 +7,7 @@ import NavBar from "@/sections/NavBar";
 import { motion } from "framer-motion";
 import WhatsAppBtn from "@/components/WhatsAppBtn";
 import PhoneBtn from "@/components/PhoneBtn";
-import FotterMain from "@/sections/FotterMain";
+import FooterMain from "@/sections/FooterMain";
 import { jobOrientedCoursesData } from "@/utils/helpers";
 import EnquiryForm from "@/components/Enquiry";
 import EVerifyBtn from "@/components/EVerifyBtn";
@@ -123,7 +123,7 @@ const JobOrientedCourcesPage = () => {
           <EnquiryForm />
         </section>
       </div>
-      <FotterMain />
+      <FooterMain />
       <EVerifyBtn />
       <WhatsAppBtn />
       <PhoneBtn />

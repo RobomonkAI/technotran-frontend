@@ -10,7 +10,7 @@ import PhoneBtn from "@/components/PhoneBtn";
 import CustomGoogleMap from "../../components/CumstomGMaps";
 import PhoneIcon from "@mui/icons-material/Phone";
 import EmailIcon from "@mui/icons-material/Email";
-import FotterMain from "@/sections/FotterMain";
+import FooterMain from "@/sections/FooterMain";
 import EVerifyBtn from "@/components/EVerifyBtn";
 
 const ContactUsPage = () => {
@@ -131,7 +131,7 @@ const ContactUsPage = () => {
           </div>
         </motion.section>
       </div>
-      <FotterMain />
+      <FooterMain />
       <EVerifyBtn />
       <WhatsAppBtn />
       <PhoneBtn />

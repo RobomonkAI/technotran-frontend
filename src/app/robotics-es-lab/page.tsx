@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 import EnquiryForm from "@/components/Enquiry";
 import PhoneBtn from "@/components/PhoneBtn";
 import WhatsAppBtn from "@/components/WhatsAppBtn";
-import FotterMain from "@/sections/FotterMain";
+import FooterMain from "@/sections/FooterMain";
 import EVerifyBtn from "@/components/EVerifyBtn";
 
 const RoboticsEsLabPage = () => {
@@ -240,7 +240,7 @@ const RoboticsEsLabPage = () => {
           <EnquiryForm />
         </section>
       </div>
-      <FotterMain />
+      <FooterMain />
       <EVerifyBtn />
       <WhatsAppBtn />
       <PhoneBtn />

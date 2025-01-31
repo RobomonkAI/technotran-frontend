@@ -6,7 +6,7 @@ import React from "react";
 import styles from "./page.module.css";
 import { motion } from "framer-motion";
 import { careersData } from "@/utils/helpers";
-import FotterMain from "@/sections/FotterMain";
+import FooterMain from "@/sections/FooterMain";
 import WhatsAppBtn from "@/components/WhatsAppBtn";
 import PhoneBtn from "@/components/PhoneBtn";
 import EnquiryForm from "@/components/Enquiry";
@@ -135,7 +135,7 @@ const CareersPage = () => {
           <EnquiryForm />
         </section>
       </div>
-      <FotterMain />
+      <FooterMain />
       <EVerifyBtn />
       <WhatsAppBtn />
       <PhoneBtn />

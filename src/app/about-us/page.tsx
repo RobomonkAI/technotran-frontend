@@ -8,7 +8,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { mouData } from "@/utils/helpers";
 import PhoneBtn from "@/components/PhoneBtn";
 import WhatsAppBtn from "@/components/WhatsAppBtn";
-import FotterMain from "@/sections/FotterMain";
+import FooterMain from "@/sections/FooterMain";
 import EVerifyBtn from "@/components/EVerifyBtn";
 
 const AboutUsPage = () => {
@@ -392,7 +392,7 @@ const AboutUsPage = () => {
           </div>
         </section>
       </div>
-      <FotterMain />
+      <FooterMain />
       <EVerifyBtn />
       <WhatsAppBtn />
       <PhoneBtn />

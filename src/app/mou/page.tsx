@@ -6,7 +6,7 @@ import styles from "./page.module.css";
 import NavBar from "@/sections/NavBar";
 import WhatsAppBtn from "@/components/WhatsAppBtn";
 import PhoneBtn from "@/components/PhoneBtn";
-import FotterMain from "@/sections/FotterMain";
+import FooterMain from "@/sections/FooterMain";
 import { motion } from "framer-motion";
 import { mouData } from "@/utils/helpers";
 import EVerifyBtn from "@/components/EVerifyBtn";
@@ -159,7 +159,9 @@ const MOUPage = () => {
               className={styles.mouContentContainer}
               variants={contentVariant}
             >
-              <h2 className={`${styles.mouTitle} josefin-sans-text`}>Commitment</h2>
+              <h2 className={`${styles.mouTitle} josefin-sans-text`}>
+                Commitment
+              </h2>
               <h3 className={`${styles.mouDesc} quicksand-text`}>
                 {`Technotran is committed to upholding the terms of this Memorandum
               of Understanding and working collaboratively with partner
@@ -172,7 +174,7 @@ const MOUPage = () => {
           </div>
         </motion.section>
       </div>
-      <FotterMain />
+      <FooterMain />
       <EVerifyBtn />
       <WhatsAppBtn />
       <PhoneBtn />

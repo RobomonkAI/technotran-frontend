@@ -6,7 +6,7 @@ import NavBar from "@/sections/NavBar";
 import { motion } from "framer-motion";
 import PhoneBtn from "@/components/PhoneBtn";
 import WhatsAppBtn from "@/components/WhatsAppBtn";
-import FotterMain from "@/sections/FotterMain";
+import FooterMain from "@/sections/FooterMain";
 import EVerifyBtn from "@/components/EVerifyBtn";
 
 const RnDProjectsPage = () => {
@@ -122,7 +122,7 @@ const RnDProjectsPage = () => {
           </div>
         </section>
       </div>
-      <FotterMain />
+      <FooterMain />
       <EVerifyBtn />
       <WhatsAppBtn />
       <PhoneBtn />

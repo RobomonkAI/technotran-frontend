@@ -8,7 +8,7 @@ import DesignServices from "@/sections/DesignServices";
 import IndustriesWeServe from "@/sections/IndustriesWeServe";
 import OurValuedClients from "@/sections/OurValuedClients";
 import Testimonials from "@/sections/Testimonials";
-import FotterMain from "@/sections/FotterMain";
+import FooterMain from "@/sections/FooterMain";
 import PhoneBtn from "@/components/PhoneBtn";
 import WhatsAppBtn from "@/components/WhatsAppBtn";
 import EVerifyBtn from "@/components/EVerifyBtn";
@@ -30,7 +30,7 @@ export default function Home() {
       <EVerifyBtn />
       <WhatsAppBtn />
       <PhoneBtn />
-      <FotterMain />
+      <FooterMain />
     </main>
   );
 }

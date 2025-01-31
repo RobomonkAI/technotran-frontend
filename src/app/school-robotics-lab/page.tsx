@@ -7,7 +7,7 @@ import styles from "./page.module.css";
 import { motion } from "framer-motion";
 import { schoolRoboticsLabImgsData } from "@/utils/helpers";
 import EnquiryForm from "@/components/Enquiry";
-import FotterMain from "@/sections/FotterMain";
+import FooterMain from "@/sections/FooterMain";
 import PhoneBtn from "@/components/PhoneBtn";
 import WhatsAppBtn from "@/components/WhatsAppBtn";
 import EVerifyBtn from "@/components/EVerifyBtn";
@@ -221,7 +221,7 @@ const SchoolRoboticsLabPage = () => {
           <EnquiryForm />
         </section>
       </div>
-      <FotterMain />
+      <FooterMain />
       <EVerifyBtn />
       <WhatsAppBtn />
       <PhoneBtn />

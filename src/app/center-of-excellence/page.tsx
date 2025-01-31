@@ -6,7 +6,7 @@ import NavBar from "@/sections/NavBar";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import EnquiryForm from "@/components/Enquiry";
-import FotterMain from "@/sections/FotterMain";
+import FooterMain from "@/sections/FooterMain";
 import WhatsAppBtn from "@/components/WhatsAppBtn";
 import PhoneBtn from "@/components/PhoneBtn";
 import EVerifyBtn from "@/components/EVerifyBtn";
@@ -230,7 +230,7 @@ const CenterOfExcellencePage = () => {
           <EnquiryForm />
         </section>
       </div>
-      <FotterMain />
+      <FooterMain />
       <EVerifyBtn />
       <WhatsAppBtn />
       <PhoneBtn />

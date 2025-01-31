@@ -9,7 +9,7 @@ import { industrialLabSolutions } from "@/utils/helpers";
 import EnquiryForm from "@/components/Enquiry";
 import PhoneBtn from "@/components/PhoneBtn";
 import WhatsAppBtn from "@/components/WhatsAppBtn";
-import FotterMain from "@/sections/FotterMain";
+import FooterMain from "@/sections/FooterMain";
 import EVerifyBtn from "@/components/EVerifyBtn";
 
 const IndustrialLabSolutions = () => {
@@ -186,7 +186,7 @@ const IndustrialLabSolutions = () => {
           </div>
         </section>
       </div>
-      <FotterMain />
+      <FooterMain />
       <EVerifyBtn />
       <WhatsAppBtn />
       <PhoneBtn />

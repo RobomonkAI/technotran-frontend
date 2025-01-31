@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 import EnquiryForm from "@/components/Enquiry";
 import PhoneBtn from "@/components/PhoneBtn";
 import WhatsAppBtn from "@/components/WhatsAppBtn";
-import FotterMain from "@/sections/FotterMain";
+import FotterMain from "@/sections/FooterMain";
 import EVerifyBtn from "@/components/EVerifyBtn";
 
 const ArVrLabPage = () => {

@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 import NavBar from "@/sections/NavBar";
 import Testimonials from "@/sections/Testimonials";
 import styles from "./page.module.css";
-import FotterMain from "@/sections/FotterMain";
+import FooterMain from "@/sections/FooterMain";
 import { workshopsData } from "./utils/helpers";
 import EnquiryForm from "@/components/Enquiry";
 import EVerifyBtn from "@/components/EVerifyBtn";
@@ -144,7 +144,7 @@ const WorkshopsPage = () => {
           <EnquiryForm />
         </section>
       </div>
-      <FotterMain />
+      <FooterMain />
       <EVerifyBtn />
       <WhatsAppBtn />
       <PhoneBtn />
