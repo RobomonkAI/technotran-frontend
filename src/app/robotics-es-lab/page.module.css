@@ -7,7 +7,7 @@
   color: white;
 }
 
-.atalTinkeringLabMainContainer {
+.roboticsEsLabMainContainer {
   height: 85vh;
   width: 100vw;
   background-color: whitesmoke;
@@ -18,7 +18,7 @@
   margin-bottom: 2rem;
 }
 
-.atalTinkeringLabLandingImg {
+.roboticsEsLabLandingImg {
   height: 100%;
   width: 100%;
   object-fit: fill;
@@ -124,4 +124,142 @@
   color: #555555; /* Subtle color for the description */
   line-height: 1.6;
   text-align: justify;
+}
+
+/* Extra Small Mobile Devices (Portrait) */
+/* iPhone SE, older Android phones */
+@media only screen and (max-width: 320px) {
+  .roboticsEsLabMainContainer {
+    height: 40vh;
+  }
+
+  .sectionTxt {
+    font-size: 0.7rem;
+  }
+
+  .subTitle {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+
+  .imgOne,
+  .imgTwo {
+    height: 220px;
+    width: 300px;
+  }
+
+  .cardContainer {
+    flex-direction: column;
+    padding: 0.7rem;
+    gap: 1rem;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cardTitle {
+    font-size: 0.95rem;
+    text-align: center;
+    line-height: 1.6;
+  }
+
+  .cardDesc {
+    font-size: 0.7rem;
+  }
+}
+
+/* Small Mobile Devices (Portrait) */
+/* iPhone 6/7/8, Galaxy S8 */
+@media only screen and (min-width: 321px) and (max-width: 375px) {
+  .roboticsEsLabMainContainer {
+    height: 40vh;
+  }
+
+  .sectionTxt {
+    font-size: 0.8rem;
+  }
+
+  .subTitle {
+    font-size: 1.3rem;
+    line-height: 1.6;
+  }
+
+  .imgOne,
+  .imgTwo {
+    height: 240px;
+    width: 340px;
+  }
+
+  .cardContainer {
+    flex-direction: column;
+    padding: 0.7rem;
+    gap: 1rem;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cardTitle {
+    font-size: 1.1rem;
+    text-align: center;
+    line-height: 1.6;
+  }
+
+  .cardDesc {
+    font-size: 0.8rem;
+  }
+}
+
+/* Medium Mobile Devices (Portrait) */
+/* iPhone 11 Pro, Google Pixel 2 */
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+  .roboticsEsLabMainContainer {
+    height: 40vh;
+  }
+
+  .sectionTxt {
+    font-size: 1rem;
+  }
+
+  .subTitle {
+    font-size: 1.7rem;
+    line-height: 1.6;
+  }
+
+  .imgOne,
+  .imgTwo {
+    height: 270px;
+    width: 370px;
+  }
+
+  .cardContainer {
+    flex-direction: column;
+    padding: 0.7rem;
+    gap: 1rem;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cardTitle {
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 1.6;
+  }
+
+  .cardDesc {
+    font-size: 0.9rem;
+  }
 }

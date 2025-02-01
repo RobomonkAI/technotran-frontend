@@ -28,14 +28,14 @@ const CenterOfExcellencePage = () => {
     <main id="Technotran COE">
       <NavBar />
       <div className={styles.mainBody}>
-        <section id="COE Landing Img" className={styles.coeLabMainContainer}>
+        <section id="COE Landing Img" className={styles.coeMainContainer}>
           <Image
             src="/images/Banner-CoE.png"
             alt="COE Landing Img"
             height={700}
             width={1000}
             priority
-            className={styles.coeLabLandingImg}
+            className={styles.coeLandingImg}
           />
         </section>
         <section id="COE Landing Section">
