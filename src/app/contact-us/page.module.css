@@ -64,40 +64,10 @@
   align-items: center;
   padding: 2rem;
   background-color: #f9f9f9;
+  margin-bottom: 1rem;
 }
 
 .contactContainer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 1rem;
-  max-width: 1200px;
-  width: 100%;
-  min-height: 35vh;
-  margin: 0 auto;
-}
-
-/* Left Section */
-.leftSection {
-  min-height: 700px;
-  width: 47%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  padding: 0.5rem;
-}
-
-.bannerImage {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  border-radius: 8px;
-}
-
-/* Right Section */
-.rightSection {
   min-height: 600px;
   width: 47%;
   height: 100%;
@@ -110,6 +80,13 @@
   justify-content: space-evenly;
   align-items: center;
   align-self: center;
+}
+
+.bannerImage {
+  object-fit: fill;
+  width: 400px;
+  height: 300px;
+  border-radius: 8px;
 }
 
 /* Logo */

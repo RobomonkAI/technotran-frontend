@@ -168,3 +168,79 @@
   background-color: #f9f9f9; /* Soft background */
   padding: 1rem 0;
 }
+
+/* Extra Small Mobile Devices (Portrait) */
+/* iPhone SE, older Android phones */
+@media only screen and (max-width: 320px) {
+  .industrialLabSolMainContainer {
+    height: 40vh;
+  }
+
+  .sectionTxt {
+    font-size: 0.7rem;
+  }
+
+  .subTitle {
+    font-size: 1.3rem;
+  }
+
+  .list li {
+    flex: 1 1 100%;
+    font-size: 0.75rem;
+  }
+
+  .cardTxt {
+    font-size: 0.75rem;
+  }
+}
+
+/* Small Mobile Devices (Portrait) */
+/* iPhone 6/7/8, Galaxy S8 */
+@media only screen and (min-width: 321px) and (max-width: 375px) {
+  .industrialLabSolMainContainer {
+    height: 40vh;
+  }
+
+  .sectionTxt {
+    font-size: 0.8rem;
+  }
+
+  .subTitle {
+    font-size: 1.5rem;
+  }
+
+  .list li {
+    flex: 1 1 100%;
+    font-size: 0.85rem;
+  }
+
+  .cardTxt {
+    font-size: 0.85rem;
+  }
+}
+
+/* Medium Mobile Devices (Portrait) */
+/* iPhone 11 Pro, Google Pixel 2 */
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+  .industrialLabSolMainContainer {
+    height: 40vh;
+  }
+
+  .sectionTxt {
+    font-size: 1rem;
+  }
+
+  .subTitle {
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+
+  .list li {
+    flex: 1 1 100%;
+    font-size: 1rem;
+  }
+
+  .cardTxt {
+    font-size: 0.95rem;
+  }
+}
