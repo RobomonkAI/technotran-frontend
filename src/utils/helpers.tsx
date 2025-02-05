@@ -796,7 +796,7 @@ export const eventsData: EventsDataItem[] = [
   {
     id: 1,
     title: "Workshop on PCB Design & Fabrication",
-    dates: "20th August 2024 to 21st August 2024",
+    dates: "20th Aug 24 - 21st Aug 24",
     location: "CMR College of Engineering & Technology, Hyderabad.",
     imgSrc:
       "https://github.com/CVSCharan/Technotran_Assets/blob/main/VNRVJIET_Workshop-Image.jpg?raw=true",
@@ -804,7 +804,7 @@ export const eventsData: EventsDataItem[] = [
   {
     id: 2,
     title: "Workshop on Internet of Robotics Things (IoRT)",
-    dates: "22nd August 2024 to 24th August 2024",
+    dates: "22nd Aug 24 - 24th Aug 24",
     location: "CMR College of Engineering & Technology, Hyderabad.",
     imgSrc:
       "https://github.com/CVSCharan/Technotran_Assets/blob/main/IORT-Workshop.jpg?raw=true",
@@ -812,7 +812,7 @@ export const eventsData: EventsDataItem[] = [
   {
     id: 3,
     title: "Workshop on Electric Vehicle Design",
-    dates: "23rd August 2024 to 24th August 2024",
+    dates: "23rd Aug 24 - 24th Aug 24",
     location: "Annamacharya University, Rajampet",
     imgSrc:
       "https://github.com/CVSCharan/Technotran_Assets/blob/main/Chadalawada-College-workshop-two.jpg?raw=true",
@@ -820,7 +820,7 @@ export const eventsData: EventsDataItem[] = [
   {
     id: 4,
     title: "Workshop on Electric Vehicle Design",
-    dates: "29th August 2024 to 31st August 2024",
+    dates: "29th Aug 24 - 31st Aug 24",
     location: "Vemu Institute of Technology, Chittoor.",
     imgSrc:
       "https://github.com/CVSCharan/Technotran_Assets/blob/main/Vemu-Auto-bots%20Workshop-two.jpg?raw=true",
@@ -828,7 +828,7 @@ export const eventsData: EventsDataItem[] = [
   {
     id: 5,
     title: "Workshop on Edge AI",
-    dates: "11th September 2024 to 12th September 2024",
+    dates: "11th Sept 24 - 12th Sept 24",
     location: "CMR College of Engineering & Technology, Kandlakoya, Telangana",
     imgSrc:
       "https://github.com/CVSCharan/Technotran_Assets/blob/main/Edge-AI-Workshop.jpg?raw=true",
@@ -836,7 +836,7 @@ export const eventsData: EventsDataItem[] = [
   {
     id: 6,
     title: "Workshop on Auto-bots",
-    dates: "27th September 2024 to 28th September 2024",
+    dates: "27th Sept 24 - 28th Sept 24",
     location: "Vemu Institute of Technology, Chittoor.",
     imgSrc:
       "https://github.com/CVSCharan/Technotran_Assets/blob/main/Vemu_Auto-bots-Workshop-one.jpg?raw=true",
@@ -844,7 +844,7 @@ export const eventsData: EventsDataItem[] = [
   {
     id: 7,
     title: "Workshop on Auto-bots",
-    dates: "23th September 2024 to 28th September 2024",
+    dates: "23th Sept 24 - 28th Sept 24",
     location: "Annamacharya University, Rajampet ",
     imgSrc:
       "https://github.com/CVSCharan/Technotran_Assets/blob/main/Annamacharya-University-workshop.jpg?raw=true",
@@ -852,7 +852,7 @@ export const eventsData: EventsDataItem[] = [
   {
     id: 8,
     title: "Workshop on PCB Design & Fabrication",
-    dates: "18th October 2024 to 19th October 2024",
+    dates: "18th Oct 24 - 19th Oct 24",
     location: "Chadalawada Ramanamma Engineering College, Tirupati.",
     imgSrc:
       "https://github.com/CVSCharan/Technotran_Assets/blob/main/Chadalawada-College-workshop-one.jpg?raw=true",
@@ -860,7 +860,7 @@ export const eventsData: EventsDataItem[] = [
   {
     id: 9,
     title: "Workshop on PCB Design & Fabrication",
-    dates: "4th November 2024 to 7th November 2024",
+    dates: "4th Nov 24 - 7th Nov 24",
     location: "VNRVJIET College of Engineering & Technology, Hyderabad",
     imgSrc:
       "https://github.com/CVSCharan/Technotran_Assets/blob/main/VNRVJIET_Workshop.jpg?raw=true",
