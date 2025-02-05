@@ -1,6 +1,7 @@
 import {
   CareersDataItem,
   DesignServicesDataItem,
+  EventsDataItem,
   FooterMainCarouselDataItem,
   IndustrialLabSolDataItem,
   IndustriesWeServeCarouselDataItem,
@@ -788,5 +789,80 @@ export const industrialLabSolutions: IndustrialLabSolDataItem[] = [
     title: "Laboratory Autoclave",
     imgSrc:
       "https://github.com/CVSCharan/Technotran_Assets/blob/main/laboratory%20Autoclave.png?raw=true",
+  },
+];
+
+export const eventsData: EventsDataItem[] = [
+  {
+    id: 1,
+    title: "Workshop on PCB Design & Fabrication",
+    dates: "20th August 2024 to 21st August 2024",
+    location: "CMR College of Engineering & Technology, Hyderabad.",
+    imgSrc:
+      "https://github.com/CVSCharan/Technotran_Assets/blob/main/VNRVJIET_Workshop-Image.jpg?raw=true",
+  },
+  {
+    id: 2,
+    title: "Workshop on Internet of Robotics Things (IoRT)",
+    dates: "22nd August 2024 to 24th August 2024",
+    location: "CMR College of Engineering & Technology, Hyderabad.",
+    imgSrc:
+      "https://github.com/CVSCharan/Technotran_Assets/blob/main/IORT-Workshop.jpg?raw=true",
+  },
+  {
+    id: 3,
+    title: "Workshop on Electric Vehicle Design",
+    dates: "23rd August 2024 to 24th August 2024",
+    location: "Annamacharya University, Rajampet",
+    imgSrc:
+      "https://github.com/CVSCharan/Technotran_Assets/blob/main/Chadalawada-College-workshop-two.jpg?raw=true",
+  },
+  {
+    id: 4,
+    title: "Workshop on Electric Vehicle Design",
+    dates: "29th August 2024 to 31st August 2024",
+    location: "Vemu Institute of Technology, Chittoor.",
+    imgSrc:
+      "https://github.com/CVSCharan/Technotran_Assets/blob/main/Vemu-Auto-bots%20Workshop-two.jpg?raw=true",
+  },
+  {
+    id: 5,
+    title: "Workshop on Edge AI",
+    dates: "11th September 2024 to 12th September 2024",
+    location: "CMR College of Engineering & Technology, Kandlakoya, Telangana",
+    imgSrc:
+      "https://github.com/CVSCharan/Technotran_Assets/blob/main/Edge-AI-Workshop.jpg?raw=true",
+  },
+  {
+    id: 6,
+    title: "Workshop on Auto-bots",
+    dates: "27th September 2024 to 28th September 2024",
+    location: "Vemu Institute of Technology, Chittoor.",
+    imgSrc:
+      "https://github.com/CVSCharan/Technotran_Assets/blob/main/Vemu_Auto-bots-Workshop-one.jpg?raw=true",
+  },
+  {
+    id: 7,
+    title: "Workshop on Auto-bots",
+    dates: "23th September 2024 to 28th September 2024",
+    location: "Annamacharya University, Rajampet ",
+    imgSrc:
+      "https://github.com/CVSCharan/Technotran_Assets/blob/main/Annamacharya-University-workshop.jpg?raw=true",
+  },
+  {
+    id: 8,
+    title: "Workshop on PCB Design & Fabrication",
+    dates: "18th October 2024 to 19th October 2024",
+    location: "Chadalawada Ramanamma Engineering College, Tirupati.",
+    imgSrc:
+      "https://github.com/CVSCharan/Technotran_Assets/blob/main/Chadalawada-College-workshop-one.jpg?raw=true",
+  },
+  {
+    id: 9,
+    title: "Workshop on PCB Design & Fabrication",
+    dates: "4th November 2024 to 7th November 2024",
+    location: "VNRVJIET College of Engineering & Technology, Hyderabad",
+    imgSrc:
+      "https://github.com/CVSCharan/Technotran_Assets/blob/main/VNRVJIET_Workshop.jpg?raw=true",
   },
 ];

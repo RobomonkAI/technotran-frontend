@@ -74,3 +74,11 @@ export interface IndustrialLabSolDataItem {
   imgSrc: string;
   title: string;
 }
+
+export interface EventsDataItem {
+  id: number;
+  title: string;
+  dates: string;
+  location: string;
+  imgSrc: string;
+}

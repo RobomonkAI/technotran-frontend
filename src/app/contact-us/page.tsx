@@ -76,15 +76,17 @@ const ContactUsPage = () => {
             />
           </div>
         </section>
-        <motion.section
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: false, amount: 0.2 }}
-          variants={cardVariants}
+        <section
           id="Contact Us Content Section"
           className={styles.contactSection}
         >
-          <div className={styles.contactContainer}>
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: false, amount: 0.2 }}
+            variants={cardVariants}
+            className={styles.contactContainer}
+          >
             <Image
               src="/images/Technotran-logo.png"
               alt="Contact Us Logo"
@@ -118,8 +120,8 @@ const ContactUsPage = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </motion.section>
+          </motion.div>
+        </section>
       </div>
       <FooterMain />
       <EVerifyBtn />
