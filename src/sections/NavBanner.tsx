@@ -23,16 +23,6 @@ const NavBanner = () => {
     }
   };
 
-  const handleBtnClick = (item: string) => {
-    if (isClient && typeof window !== "undefined") {
-      if (item === "LMS") {
-        window.open("https://e-verify.technotran.in", "_blank");
-      } else {
-        window.open("https://e-verify.technotran.in", "_blank");
-      }
-    }
-  };
-
   return (
     <section id="navBanner" className={styles.navBannerMainContainer}>
       {/* LMS and Certificate Verification Section */}
