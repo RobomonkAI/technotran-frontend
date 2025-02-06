@@ -26,10 +26,7 @@ const RnDProjectsPage = () => {
     <main id="Technotran R&D Projets">
       <NavBar />
       <div className={styles.mainBody}>
-        <section
-          id="R&D Landing Img"
-          className={styles.rndProjectsMainContainer}
-        >
+        <section id="R&D Landing" className={styles.rndProjectsMainContainer}>
           <div className={styles.sectionOne}>
             <motion.h2
               initial="hidden"

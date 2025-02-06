@@ -47,10 +47,10 @@
   font-size: 0.75rem;
   font-weight: 500;
   transition: color font-size 0.3s ease;
-  letter-spacing: 0.02rem;
+  letter-spacing: 0.03rem;
   text-align: center;
   cursor: pointer;
-  width: 110px;
+  text-decoration: none;
 }
 
 .navBannerBtn:hover {

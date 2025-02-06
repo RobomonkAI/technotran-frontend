@@ -23,14 +23,40 @@ const NavBanner = () => {
     }
   };
 
+  const handleBtnClick = (item: string) => {
+    if (isClient && typeof window !== "undefined") {
+      if (item === "LMS") {
+        window.open("https://e-verify.technotran.in", "_blank");
+      } else {
+        window.open("https://e-verify.technotran.in", "_blank");
+      }
+    }
+  };
+
   return (
     <section id="navBanner" className={styles.navBannerMainContainer}>
       {/* LMS and Certificate Verification Section */}
       <div className={styles.navBannerBtnContainer}>
-        <div className={styles.navBannerBtn}>Events</div>
-        <div className={styles.navBannerBtn}>Media</div>
-        <div className={styles.navBannerBtn}>LMS Portal</div>
-        <div className={styles.navBannerBtn}>E - Verify</div>
+        <a href="/events" className={styles.navBannerBtn}>
+          Events
+        </a>
+        <a href="/media&awards" className={styles.navBannerBtn}>
+          Media
+        </a>
+        <a
+          href="https://lms.technotran.in/login"
+          target="blank"
+          className={styles.navBannerBtn}
+        >
+          LMS Portal
+        </a>
+        <a
+          href="https://e-verify.technotran.in/"
+          target="blank"
+          className={styles.navBannerBtn}
+        >
+          E - Verify
+        </a>
       </div>
 
       {/* Social Media Icons Section */}

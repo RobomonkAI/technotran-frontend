@@ -12,9 +12,13 @@ import {
 } from "@mui/icons-material";
 import FooterMainCarousel from "@/components/FotterMainCarousel";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 const FooterMain = () => {
   const [isClient, setIsClient] = useState(false);
+
+  const [isHomeRoute, setIsHomeRoute] = useState(false);
+  const pathname = usePathname(); // Provides the current route
 
   useEffect(() => {
     setIsClient(true);
@@ -24,14 +28,22 @@ const FooterMain = () => {
     if (isClient && typeof window !== "undefined") window.open(link, "_blank");
   };
 
+  useEffect(() => {
+    // Check if the current route is home
+    setIsHomeRoute(pathname === "/");
+  }, [pathname]);
+
   const quickLinks = [
-    "Home",
-    "About Us",
-    "MOU",
-    "Contact Us",
-    "Shipping, Return, Refund Policy",
-    "Terms And Conditions",
-    "Privacy Policy",
+    { name: "Home", link: "/" },
+    { name: "About Us", link: "/about-us" },
+    { name: "MOU", link: "/mou" },
+    { name: "Contact Us", link: "/contact-us" },
+    {
+      name: "Shipping, Return, Refund Policy",
+      link: "/shipping-policy",
+    },
+    { name: "Terms And Conditions", link: "/terms&conditions" },
+    { name: "Privacy Policy", link: "/privacy-policy" },
   ];
 
   const contactInfo = [
@@ -65,19 +77,22 @@ const FooterMain = () => {
 
   return (
     <footer id="Footer Main" className={styles.footerMainSection}>
-      <div className={styles.footerCarouselSection}>
+      <section className={styles.footerCarouselSection}>
         <FooterMainCarousel />
-      </div>
-      <div className={styles.footerSubSection}>
+      </section>
+      <section className={styles.footerSubSection}>
         {/* Quick Links Section */}
         <div className={styles.quickLinksSection}>
           <h2 className={`${styles.title} josefin-sans-text`}>Quick Links</h2>
           <ul className={styles.quickLinksSubSection}>
             {quickLinks.map((link, index) => (
               <li key={index} className={styles.quickLinksItem}>
-                <h2 className={`${styles.quickLinksTxt} josefin-sans-text`}>
-                  {link}
-                </h2>
+                <a
+                  href={link.link}
+                  className={`${styles.quickLinksTxt} josefin-sans-text`}
+                >
+                  {link.name}
+                </a>
               </li>
             ))}
           </ul>
@@ -145,7 +160,16 @@ const FooterMain = () => {
             />
           </div>
         </div>
-      </div>
+
+        <div className={styles.copyRightsSection}>
+          <h2 className={styles.footerTxt}>
+            © 20xx - 2025 All rights reserved - Technotran Solutions Pvt. Ltd.
+          </h2>
+          {isHomeRoute && (
+            <h3 className={styles.footerSubTxt}>Developed by CVS CHARAN</h3>
+          )}
+        </div>
+      </section>
     </footer>
   );
 };

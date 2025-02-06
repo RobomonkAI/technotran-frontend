@@ -1,0 +1,132 @@
+.mainBody {
+  /* max-width: 80rem; 1280px; */
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: hidden;
+  position: relative;
+  color: white;
+}
+
+.shippingPolicyMainContainer {
+  width: 100vw;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.shippingPolicySubContainer {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 2rem 3rem;
+}
+
+.sectionOne {
+  width: 100%;
+  padding: 3rem;
+  background-color: #f9f9f9; /* Soft background */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sectionTxt {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  letter-spacing: 0.03rem;
+  font-weight: 500;
+  max-width: 80rem;
+  text-align: justify;
+}
+
+.subTitle {
+  font-size: 2rem;
+  color: #4b0406;
+  margin-bottom: 1rem;
+  letter-spacing: 0.04rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+.subHeading {
+  font-size: 1.5rem;
+  color: #4b0406;
+  letter-spacing: 0.04rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Extra Small Mobile Devices (Portrait) */
+/* iPhone SE, older Android phones */
+@media only screen and (max-width: 320px) {
+  .sectionTxt {
+    font-size: 0.75rem;
+  }
+
+  .subTitle {
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+
+  .subHeading {
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+
+  .shippingPolicySubContainer {
+    padding: 2rem 1rem;
+  }
+}
+
+/* Small Mobile Devices (Portrait) */
+/* iPhone 6/7/8, Galaxy S8 */
+@media only screen and (min-width: 321px) and (max-width: 375px) {
+  .sectionTxt {
+    font-size: 0.85rem;
+  }
+
+  .subTitle {
+    font-size: 1.3rem;
+    line-height: 1.5;
+  }
+
+  .subHeading {
+    font-size: 1.3rem;
+    line-height: 1.5;
+  }
+
+  .shippingPolicySubContainer {
+    padding: 2rem 1.2rem;
+  }
+}
+
+/* Medium Mobile Devices (Portrait) */
+/* iPhone 11 Pro, Google Pixel 2 */
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+  .sectionTxt {
+    font-size: 1rem;
+  }
+
+  .subTitle {
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+
+  .subHeading {
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+
+  .shippingPolicySubContainer {
+    padding: 2rem 1.5rem;
+  }
+}
