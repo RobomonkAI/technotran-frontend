@@ -317,6 +317,22 @@
   .followUsSocialMediaIcons:hover {
     font-size: 1.5rem;
   }
+
+  .footerLogo {
+    height: 70px;
+    width: 180px;
+    padding: 0.5rem;
+  }
+
+  .footerTxt {
+    font-size: 0.75rem;
+    max-width: 200px;
+    line-height: 1.7;
+  }
+
+  .footerSubTxt {
+    font-size: 0.65rem;
+  }
 }
 
 /* Small Mobile Devices (Portrait) */
@@ -397,6 +413,22 @@
   .followUsSocialMediaIcons:hover {
     font-size: 1.5rem;
   }
+
+  .footerLogo {
+    height: 70px;
+    width: 180px;
+    padding: 0.5rem;
+  }
+
+  .footerTxt {
+    font-size: 0.85rem;
+    max-width: 270px;
+    line-height: 1.7;
+  }
+
+  .footerSubTxt {
+    font-size: 0.7rem;
+  }
 }
 
 /* Medium Mobile Devices (Portrait) */
@@ -438,6 +470,7 @@
     width: 100%;
     flex-direction: column;
     justify-content: space-evenly;
+    gap: 0.5rem;
   }
 
   .footerSubContainerOne {
@@ -476,5 +509,21 @@
 
   .followUsSocialMediaIcons:hover {
     font-size: 1.5rem;
+  }
+
+  .footerLogo {
+    height: 70px;
+    width: 180px;
+    padding: 0.5rem;
+  }
+
+  .footerTxt {
+    font-size: 0.9rem;
+    max-width: 270px;
+    line-height: 1.7;
+  }
+
+  .footerSubTxt {
+    font-size: 0.7rem;
   }
 }

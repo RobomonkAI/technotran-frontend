@@ -31,7 +31,7 @@ const EVerifyBtn = () => {
       style={{
         position: "fixed",
         bottom: "100px",
-        right: "20px",
+        right: "15px",
         zIndex: "10000",
       }}
     >
@@ -50,11 +50,11 @@ const EVerifyBtn = () => {
           color="success"
           aria-label="chat"
           onClick={handleBtnClick}
-          sx={{ backgroundColor: "royalblue" }}
+          sx={{ backgroundColor: "royalblue", height: "50px", width: "50px" }}
         >
           <VerifiedUserOutlinedIcon
             color="action"
-            style={{ fill: "white", fontSize: "2rem" }}
+            style={{ fill: "white", fontSize: "1.5rem" }}
           />
         </Fab>
       </Tooltip>

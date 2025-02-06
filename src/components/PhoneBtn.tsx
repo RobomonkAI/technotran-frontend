@@ -16,25 +16,21 @@ const PhoneBtn = () => {
       animate="visible"
       variants={variants}
       transition={{ duration: 0.7 }} // Adjust duration as needed
-      style={{
-        position: "fixed",
-        bottom: "20px",
-        right: "20px",
-        zIndex: "10000",
-      }}
       href="tel:+91 9000325936"
     >
       <Fab
         color="success"
         aria-label="chat"
-        style={{
+        sx={{
           position: "fixed",
           bottom: "20px",
-          left: "20px",
+          left: "15px",
           backgroundColor: "#25D366",
+          height: "50px",
+          width: "50px",
         }}
       >
-        <PhoneIcon style={{ fill: "white", fontSize: "2rem" }} />
+        <PhoneIcon style={{ fill: "white", fontSize: "1.5rem" }} />
       </Fab>
     </motion.a>
   );

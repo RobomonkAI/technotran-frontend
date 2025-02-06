@@ -31,7 +31,7 @@ const WhatsAppBtn = () => {
       style={{
         position: "fixed",
         bottom: "20px",
-        right: "20px",
+        right: "15px",
         zIndex: "10000",
       }}
     >
@@ -50,11 +50,11 @@ const WhatsAppBtn = () => {
           color="success"
           aria-label="chat"
           onClick={handleWhatsAppClick}
-          sx={{ backgroundColor: "#25D366" }}
+          sx={{ backgroundColor: "#25D366", height: "50px", width: "50px" }}
         >
           <WhatsAppIcon
             color="action"
-            style={{ fill: "white", fontSize: "2rem" }}
+            style={{ fill: "white", fontSize: "1.5rem" }}
           />
         </Fab>
       </Tooltip>
