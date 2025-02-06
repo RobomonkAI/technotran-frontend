@@ -338,7 +338,7 @@
 /* iPhone 6/7/8, Galaxy S8 */
 @media only screen and (min-width: 321px) and (max-width: 375px) {
   .footerMainSection {
-    height: auto;
+    height: 63rem;
     justify-content: flex-start;
   }
 
@@ -372,17 +372,20 @@
   .footerSubContainer {
     width: 100%;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 0.2rem;
+    padding: 0.5rem;
   }
 
   .footerSubContainerOne {
     width: 100%;
-    padding-left: 2rem;
+    padding-left: 1rem;
   }
 
   .followUsSection {
     width: 100%;
-    padding: 0 auto !important;
+    padding: 0 !important;
+    gap: 1.4rem;
   }
 
   .title {
@@ -434,7 +437,7 @@
 /* iPhone 11 Pro, Google Pixel 2 */
 @media only screen and (min-width: 376px) and (max-width: 425px) {
   .footerMainSection {
-    height: auto;
+    height: 63rem;
     justify-content: flex-start;
   }
 
