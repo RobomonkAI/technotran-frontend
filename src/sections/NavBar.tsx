@@ -121,6 +121,8 @@ const NavBar = () => {
       router.push("/r&d-projects");
     } else if (item === "Media & Awards") {
       router.push("/media&awards");
+    } else if (item === "Academic Projects") {
+      window.open("https://embeddedaiprojects.com/", "_blank"); // Opens in a new tab
     } else {
       router.push(item.toLowerCase().replace(/\s+/g, "-")); // Ensure the route matches the item
     }

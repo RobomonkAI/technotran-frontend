@@ -1,5 +1,6 @@
 /* Basic Reset */
 .navbar {
+  max-height: 100px;
   height: 12vh;
   position: sticky;
   top: 0;
@@ -150,13 +151,12 @@
 /* Responsive Design */
 @media screen and (max-width: 768px) {
   .navbar {
-    height: 10vh;
+    height: 13vh;
   }
 
   .logoImg {
-    height: 60px;
-    width: 200px;
-    align-self: center !important;
+    height: 65px;
+    width: 170px;
   }
 
   .hamburger {
@@ -165,7 +165,7 @@
 
   .navLinks {
     position: absolute;
-    top: 4rem; /* Adjust the top position to ensure it doesn't overlap with the logo */
+    top: 5.5rem; /* Adjust the top position to ensure it doesn't overlap with the logo */
     right: 0;
     background-color: white;
     flex-direction: column;

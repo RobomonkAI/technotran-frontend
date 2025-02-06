@@ -1,4 +1,6 @@
 .navBannerMainContainer {
+  min-height: 30px;
+  max-height: 50px;
   height: 5vh;
   width: 100vw;
   display: flex;
@@ -48,6 +50,11 @@
   letter-spacing: 0.02rem;
   text-align: center;
   cursor: pointer;
+  width: 110px;
+}
+
+.navBannerBtn:hover {
+  border: 2px solid white;
 }
 
 .navBannerIconsContainer {
@@ -62,12 +69,12 @@
 .socialMediaIcons {
   fill: white !important;
   cursor: pointer;
-  font-size: 1.2rem;
+  font-size: 1.7rem;
 }
 
 .socialMediaIcons:hover {
-  fill: royalblue !important;
-  font-size: 1.7rem;
+  fill: #222 !important;
+  font-size: 1.8rem;
 }
 
 /* Extra Small Mobile Devices (Portrait) */
