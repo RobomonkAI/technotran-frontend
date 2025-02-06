@@ -6,7 +6,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 20px;
+  padding-bottom: 2rem;
 }
 
 .footerCarouselSection {
@@ -444,7 +444,7 @@
   }
 
   .carouselContainer {
-    width: 90%;
+    width: 65%;
     height: 150px;
   }
 
@@ -480,7 +480,8 @@
 
   .followUsSection {
     width: 100%;
-    padding: 0 auto !important;
+    padding: 5px !important;
+    gap: 1.4rem;
   }
 
   .title {

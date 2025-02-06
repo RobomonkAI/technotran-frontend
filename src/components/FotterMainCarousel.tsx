@@ -41,7 +41,7 @@ const FooterMainCarousel = () => {
       },
       {
         breakpoint: 480, // Mobile devices
-        settings: { slidesToShow: 3, slidesToScroll: 1 },
+        settings: { slidesToShow: 2, slidesToScroll: 1 },
       },
     ],
   };
