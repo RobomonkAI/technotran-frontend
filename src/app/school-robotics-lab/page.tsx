@@ -43,7 +43,10 @@ const SchoolRoboticsLabPage = () => {
           />
         </section>
         <section id="School Robotics Lab Landing Section">
-          <div className={styles.sectionOne}>
+          <div
+            className={styles.sectionOne}
+            style={{ flexDirection: "column" }}
+          >
             <motion.h2
               initial="hidden"
               whileInView="visible"
@@ -53,31 +56,32 @@ const SchoolRoboticsLabPage = () => {
             >
               School Robotics LAB
             </motion.h2>
-            <motion.h3
-              initial="hidden"
-              whileInView="visible"
-              variants={headingVariants}
-              viewport={{ once: true, amount: 0.2 }}
-              className={`${styles.sectionTxt} quicksand-text`}
-            >
-              Technotran specializes in providing comprehensive robotics lab
-              setup services for schools, ensuring that institutions can offer
-              cutting-edge robotics education to their students. Our services
-              encompass the complete establishment of robotics labs, including
-              the provision of custom-designed robotics kits, training for
-              students, and ongoing support to ensure a seamless learning
-              experience.
-            </motion.h3>
-            <Image
-              src={
-                "https://github.com/CVSCharan/Technotran_Assets/blob/main/school-robotics-lab-img1.png?raw=true"
-              }
-              alt={"School Robotics Img 1"}
-              height={400}
-              width={600}
-              priority
-              className={styles.imgOne}
-            />
+            <div className={styles.textContainer}>
+              <motion.h3
+                initial="hidden"
+                whileInView="visible"
+                variants={headingVariants}
+                viewport={{ once: true, amount: 0.2 }}
+                className={`${styles.sectionTxt} quicksand-text`}
+                style={{ padding: "0 1rem", maxWidth: "50%" }}
+              >
+                Technotran specializes in providing comprehensive robotics lab
+                setup services for schools, ensuring that institutions can offer
+                cutting-edge robotics education to their students. Our services
+                encompass the complete establishment of robotics labs, including
+                the provision of custom-designed robotics kits, training for
+                students, and ongoing support to ensure a seamless learning
+                experience.
+              </motion.h3>
+              <Image
+                src="https://github.com/CVSCharan/Technotran_Assets/blob/main/school-robotics-lab-img1.png?raw=true"
+                alt="School Robotics Img 1"
+                height={400}
+                width={600}
+                priority
+                className={styles.imgOne}
+              />
+            </div>
           </div>
         </section>
         <section
@@ -136,7 +140,7 @@ const SchoolRoboticsLabPage = () => {
               height={400}
               width={600}
               priority
-              className={styles.imgOne}
+              className={styles.imgThree}
             />
             <div className={styles.cardContainer}>
               <div className={styles.card}>

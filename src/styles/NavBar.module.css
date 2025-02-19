@@ -50,13 +50,13 @@
 }
 
 .navLinks li a {
-  font-family: "Montserrat", Sans-serif;
+  font-family: "M PLUS Rounded 1c", serif;
   color: #4b0406;
   text-decoration: none;
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   font-weight: 500;
   transition: color font-size 0.3s ease;
-  letter-spacing: 0.02rem;
+  letter-spacing: 0.03rem;
   text-align: center;
   cursor: pointer;
 }
@@ -68,13 +68,13 @@
 }
 
 .navLinks li h2 {
-  font-family: "Montserrat", Sans-serif;
+  font-family: "M PLUS Rounded 1c", serif;
   color: #4b0406;
   text-decoration: none;
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   font-weight: 500;
   transition: color font-size 0.3s ease;
-  letter-spacing: 0.02rem;
+  letter-spacing: 0.03rem;
   text-align: center;
   cursor: pointer;
 }
@@ -95,13 +95,13 @@
 }
 
 .dropDownTxt {
-  font-family: "Montserrat", Sans-serif;
+  font-family: "M PLUS Rounded 1c", serif;
   color: #4b0406;
   text-decoration: none;
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   font-weight: 500;
   transition: color font-size 0.3s ease;
-  letter-spacing: 0.02rem;
+  letter-spacing: 0.03rem;
   text-align: center;
   cursor: pointer;
   padding: 0.5rem;

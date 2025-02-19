@@ -5,6 +5,9 @@ import styles from "../styles/Enquiry.page.module.css";
 import { motion } from "framer-motion";
 import SendIcon from "@mui/icons-material/Send";
 import PhoneInTalkIcon from "@mui/icons-material/PhoneInTalk";
+import emailjs from "emailjs-com";
+import Snackbar from "@mui/material/Snackbar";
+import Alert from "@mui/material/Alert";
 
 const EnquiryForm = () => {
   const [formData, setFormData] = useState({
@@ -29,6 +32,17 @@ const EnquiryForm = () => {
     }));
   };
 
+  // Snackbar State
+  const [snackbar, setSnackbar] = useState({
+    open: false,
+    message: "",
+    severity: "success", // "success" or "error"
+  });
+
+  const handleSnackbarClose = () => {
+    setSnackbar({ ...snackbar, open: false });
+  };
+
   const headingVariants = {
     hidden: { opacity: 0, y: -20 },
     visible: {
@@ -41,10 +55,82 @@ const EnquiryForm = () => {
     },
   };
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     // Handle form submission logic
     console.log("Form submitted:", formData);
+
+    // Ensure environment variables are defined, otherwise throw an error
+    const service_id = process.env.NEXT_PUBLIC_EMAIL_JS_SERVICE_ID;
+    const template_id = process.env.NEXT_PUBLIC_EMAIL_JS_TEMPLATE_ID;
+    const public_key = process.env.NEXT_PUBLIC_EMAIL_JS_PUBLIC_KEY;
+
+    if (!service_id || !template_id || !public_key) {
+      console.error("Missing EmailJS environment variables.");
+      setSnackbar({
+        open: true,
+        message: "Configuration error. Please try again later.",
+        severity: "error",
+      });
+      return;
+    }
+
+    try {
+      await emailjs
+        .send(
+          service_id, // Service ID
+          template_id, // Template ID
+          {
+            fullName: formData.fullName,
+            college: formData.college,
+            occupation: formData.occupation,
+            city: formData.city,
+            contact: formData.contact,
+            email: formData.email,
+            message: formData.message,
+          },
+          public_key // Public Key
+        )
+        .then(
+          (response) => {
+            console.log(response.text);
+            setSnackbar({
+              open: true,
+              message: "Email sent successfully!",
+              severity: "success",
+            });
+            setFormData({
+              fullName: formData.fullName,
+              college: formData.college,
+              occupation: formData.occupation,
+              city: formData.city,
+              contact: formData.contact,
+              email: formData.email,
+              message: formData.message,
+            });
+          },
+          (error) => {
+            console.log("Error:", error);
+            setSnackbar({
+              open: true,
+              message: "Failed to send email. Please try again.",
+              severity: "error",
+            });
+          }
+        );
+
+      setFormData({
+        fullName: "",
+        college: "",
+        occupation: "",
+        city: "",
+        contact: "",
+        email: "",
+        message: "",
+      });
+    } catch (err) {
+      console.error("EmailJS Error:", err);
+    }
   };
 
   return (
@@ -74,8 +160,8 @@ const EnquiryForm = () => {
           </label>
           <input
             type="text"
-            id="fullName"
-            name="fullName"
+            id="college"
+            name="college"
             value={formData.college}
             onChange={handleInputChange}
             required
@@ -88,8 +174,8 @@ const EnquiryForm = () => {
           </label>
           <input
             type="text"
-            id="fullName"
-            name="fullName"
+            id="occupation"
+            name="occupation"
             value={formData.occupation}
             onChange={handleInputChange}
             required
@@ -185,6 +271,21 @@ const EnquiryForm = () => {
           Email
         </motion.div>
       </div>
+      {/* Snackbar for Notifications */}
+      <Snackbar
+        open={snackbar.open}
+        autoHideDuration={4000}
+        onClose={handleSnackbarClose}
+        anchorOrigin={{ vertical: "bottom", horizontal: "right" }}
+      >
+        <Alert
+          onClose={handleSnackbarClose}
+          severity={snackbar.severity as "success" | "error"}
+          sx={{ width: "100%" }}
+        >
+          {snackbar.message}
+        </Alert>
+      </Snackbar>
     </>
   );
 };

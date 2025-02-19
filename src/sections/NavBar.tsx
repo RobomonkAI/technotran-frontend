@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import MenuIcon from "@mui/icons-material/Menu";
-import NavBanner from "@/sections/NavBanner";
+// import NavBanner from "@/sections/NavBanner";
 import DropdownMenu from "@/components/DropdownMenu";
 import styles from "../styles/NavBar.module.css";
 import { useRouter, usePathname } from "next/navigation";
@@ -141,7 +141,7 @@ const NavBar = () => {
 
   return (
     <>
-      <NavBanner />
+      {/* <NavBanner /> */}
       <nav className={styles.navbar}>
         <div className={styles.navbarSub}>
           <motion.div
