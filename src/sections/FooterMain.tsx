@@ -135,35 +135,36 @@ const FooterMain = () => {
                 ))}
               </div>
             </div>
-          </div>
 
-          {/* Follow Us */}
-          <div className={styles.followUsSection}>
-            <h2 className={`${styles.title} josefin-sans-text`}>Follow Us</h2>
-            <div className={styles.followUsIconsContainer}>
-              {socialLinks.map(({ icon: Icon, color, link }, index) => (
-                <Icon
-                  key={index}
-                  style={{ fill: color, fontSize: "3rem" }}
-                  onClick={() => handleSocialIconsClick(link)}
-                  className={styles.followUsSocialMediaIcons}
-                />
-              ))}
+            {/* Follow Us */}
+            <div className={styles.followUsSection}>
+              <h2 className={`${styles.title} josefin-sans-text`}>Follow Us</h2>
+              <div className={styles.followUsIconsContainer}>
+                {socialLinks.map(({ icon: Icon, color, link }, index) => (
+                  <Icon
+                    key={index}
+                    style={{ fill: color, fontSize: "3rem" }}
+                    onClick={() => handleSocialIconsClick(link)}
+                    className={styles.followUsSocialMediaIcons}
+                  />
+                ))}
+              </div>
             </div>
-            <Image
-              src="/images/Technotran-logo.png"
-              alt="Footer Logo"
-              height={200}
-              width={300}
-              priority
-              className={styles.footerLogo}
-            />
           </div>
         </div>
 
+        <Image
+          src="/images/Technotran-logo.png"
+          alt="Footer Logo"
+          height={200}
+          width={300}
+          priority
+          className={styles.footerLogo}
+        />
+
         <div className={styles.copyRightsSection}>
           <h2 className={styles.footerTxt}>
-            © 20xx - 2025 All rights reserved - Technotran Solutions Pvt. Ltd.
+            © 2016 - 2025 All rights reserved - Technotran Solutions.
           </h2>
           {isHomeRoute && (
             <h3 className={styles.footerSubTxt}>Developed by CVS CHARAN</h3>

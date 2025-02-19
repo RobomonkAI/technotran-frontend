@@ -33,11 +33,11 @@ const FooterMainCarousel = () => {
     responsive: [
       {
         breakpoint: 1200, // Large screens
-        settings: { slidesToShow: 3, slidesToScroll: 1 },
+        settings: { slidesToShow: 4, slidesToScroll: 1 },
       },
       {
         breakpoint: 768, // Tablets
-        settings: { slidesToShow: 3, slidesToScroll: 1 },
+        settings: { slidesToShow: 4, slidesToScroll: 1 },
       },
       {
         breakpoint: 480, // Mobile devices
