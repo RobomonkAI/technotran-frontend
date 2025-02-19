@@ -52,30 +52,33 @@ const ArVrLabPage = () => {
             >
               AR/VR LAB
             </motion.h2>
-            <motion.h3
-              initial="hidden"
-              whileInView="visible"
-              variants={headingVariants}
-              viewport={{ once: true, amount: 0.2 }}
-              className={`${styles.sectionTxt} quicksand-text`}
-            >
-              {`Dive into the next dimension with Technotran's specialized AR & VR
+            <div className={styles.textContainer}>
+              <motion.h3
+                initial="hidden"
+                whileInView="visible"
+                variants={headingVariants}
+                viewport={{ once: true, amount: 0.2 }}
+                className={`${styles.sectionTxt} quicksand-text`}
+                style={{ padding: "0 1rem", maxWidth: "50%" }}
+              >
+                {`Dive into the next dimension with Technotran's specialized AR & VR
               Lab Solutions. As the digital landscape evolves, augmented and
               virtual reality are reshaping how we interact, learn, and
               innovate. Our meticulously designed lab setups are more than just
               spaces; they are gateways to new realities, crafted to catalyze
               creativity and pioneer breakthroughs in the immersive tech domain.`}
-            </motion.h3>
-            <Image
-              src={
-                "https://github.com/CVSCharan/Technotran_Assets/blob/main/ar-vr-img-1.png?raw=true"
-              }
-              alt={"AR/VR Lab Img 1"}
-              height={400}
-              width={600}
-              priority
-              className={styles.imgOne}
-            />
+              </motion.h3>
+              <Image
+                src={
+                  "https://github.com/CVSCharan/Technotran_Assets/blob/main/ar-vr-img-1.png?raw=true"
+                }
+                alt={"AR/VR Lab Img 1"}
+                height={400}
+                width={600}
+                priority
+                className={styles.imgOne}
+              />
+            </div>
           </div>
           <div className={styles.sectionOne}>
             <motion.h2
@@ -87,14 +90,16 @@ const ArVrLabPage = () => {
             >
               What is AR & VR?
             </motion.h2>
-            <motion.h3
-              initial="hidden"
-              whileInView="visible"
-              variants={headingVariants}
-              viewport={{ once: true, amount: 0.2 }}
-              className={`${styles.sectionTxt} quicksand-text`}
-            >
-              {`Augmented Reality (AR) and Virtual Reality (VR) are immersive
+            <div className={styles.textContainer}>
+              <motion.h3
+                initial="hidden"
+                whileInView="visible"
+                variants={headingVariants}
+                viewport={{ once: true, amount: 0.2 }}
+                className={`${styles.sectionTxt} quicksand-text`}
+                style={{ padding: "0 1rem", maxWidth: "50%" }}
+              >
+                {`Augmented Reality (AR) and Virtual Reality (VR) are immersive
               technologies that reshape our perception of the world. AR enhances
               our environment by overlaying digital information onto the real
               world, while VR transports users to entirely virtual spaces,
@@ -103,17 +108,18 @@ const ArVrLabPage = () => {
               education and healthcare, by providing interactive and realistic
               simulations. As tools of innovation, AR and VR continue to create
               new opportunities for learning, exploration, and engagement."`}
-            </motion.h3>
-            <Image
-              src={
-                "https://github.com/CVSCharan/Technotran_Assets/blob/main/ar-vr-img-2.jpg?raw=true"
-              }
-              alt={"AR/VR Lab Img 1"}
-              height={400}
-              width={600}
-              priority
-              className={styles.imgOne}
-            />
+              </motion.h3>
+              <Image
+                src={
+                  "https://github.com/CVSCharan/Technotran_Assets/blob/main/ar-vr-img-2.jpg?raw=true"
+                }
+                alt={"AR/VR Lab Img 1"}
+                height={400}
+                width={600}
+                priority
+                className={styles.imgOne}
+              />
+            </div>
           </div>
         </section>
         <section
@@ -172,7 +178,7 @@ const ArVrLabPage = () => {
               height={400}
               width={600}
               priority
-              className={styles.imgOne}
+              className={styles.imgThree}
             />
             <div className={styles.cardContainer}>
               <div className={styles.card}>

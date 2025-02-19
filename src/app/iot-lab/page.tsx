@@ -52,29 +52,32 @@ const IotLabPage = () => {
             >
               IOT LAB
             </motion.h2>
-            <motion.h3
-              initial="hidden"
-              whileInView="visible"
-              variants={headingVariants}
-              viewport={{ once: true, amount: 0.2 }}
-              className={`${styles.sectionTxt} quicksand-text`}
-            >
-              Step into the interconnected world of the Internet of Things (IoT)
-              with Technotran. Our IoT Lab Solutions are designed to empower
-              businesses, researchers, and enthusiasts to harness the potential
-              of connected devices, driving innovation and efficiency in a
-              hyper-connected era.
-            </motion.h3>
-            <Image
-              src={
-                "https://github.com/CVSCharan/Technotran_Assets/blob/main/IOT-LAB.png?raw=true"
-              }
-              alt={"ATAL Tinkering Lab Img 1"}
-              height={400}
-              width={600}
-              priority
-              className={styles.imgOne}
-            />
+            <div className={styles.textContainer}>
+              <motion.h3
+                initial="hidden"
+                whileInView="visible"
+                variants={headingVariants}
+                viewport={{ once: true, amount: 0.2 }}
+                className={`${styles.sectionTxt} quicksand-text`}
+                style={{ padding: "0 1rem", maxWidth: "50%" }}
+              >
+                Step into the interconnected world of the Internet of Things
+                (IoT) with Technotran. Our IoT Lab Solutions are designed to
+                empower businesses, researchers, and enthusiasts to harness the
+                potential of connected devices, driving innovation and
+                efficiency in a hyper-connected era.
+              </motion.h3>
+              <Image
+                src={
+                  "https://github.com/CVSCharan/Technotran_Assets/blob/main/IOT-LAB.png?raw=true"
+                }
+                alt={"ATAL Tinkering Lab Img 1"}
+                height={400}
+                width={600}
+                priority
+                className={styles.imgOne}
+              />
+            </div>
           </div>
         </section>
         <section id="IOT Lab Content Section" className={styles.contentSection}>
@@ -130,7 +133,7 @@ const IotLabPage = () => {
               height={400}
               width={600}
               priority
-              className={styles.imgOne}
+              className={styles.imgThree}
             />
             <div className={styles.cardContainer}>
               <div className={styles.card}>
@@ -179,57 +182,63 @@ const IotLabPage = () => {
             >
               {`Why Technotran's IoT Hub Stands Out`}
             </motion.h2>
-            <Image
-              src={
-                "https://github.com/CVSCharan/Technotran_Assets/blob/main/IOT-LAB-2.jpg?raw=true"
-              }
-              alt={"IOT Lab Img 2"}
-              height={400}
-              width={600}
-              priority
-              className={styles.imgTwo}
-            />
-            <motion.h3
-              initial="hidden"
-              whileInView="visible"
-              variants={headingVariants}
-              viewport={{ once: true, amount: 0.2 }}
-              className={`${styles.sectionTxt} quicksand-text`}
-            >
-              <strong>Experiential Learning Curve: </strong>Engage with IoT in
-              its raw essence, facilitated by workshops and hands-on modules.
-            </motion.h3>
-            <motion.h3
-              initial="hidden"
-              whileInView="visible"
-              variants={headingVariants}
-              viewport={{ once: true, amount: 0.2 }}
-              className={`${styles.sectionTxt} quicksand-text`}
-            >
-              <strong>Pinnacle of Tech Evolution: </strong>Our labs resonate
-              with the latest technological strides in the IoT domain, ensuring
-              you’re always a step ahead.
-            </motion.h3>
-            <motion.h3
-              initial="hidden"
-              whileInView="visible"
-              variants={headingVariants}
-              viewport={{ once: true, amount: 0.2 }}
-              className={`${styles.sectionTxt} quicksand-text`}
-            >
-              <strong>Synergy Spaces: </strong>Ideate, collaborate, and manifest
-              in environments that breathe creativity and cooperation.
-            </motion.h3>
-            <motion.h3
-              initial="hidden"
-              whileInView="visible"
-              variants={headingVariants}
-              viewport={{ once: true, amount: 0.2 }}
-              className={`${styles.sectionTxt} quicksand-text`}
-            >
-              <strong>Innovation Incubator: </strong>Our labs are more than
-              spaces; they’re cradles for your next big IoT breakthrough.
-            </motion.h3>
+            <div className={styles.textContainer}>
+              <Image
+                src={
+                  "https://github.com/CVSCharan/Technotran_Assets/blob/main/IOT-LAB-2.jpg?raw=true"
+                }
+                alt={"IOT Lab Img 2"}
+                height={400}
+                width={600}
+                priority
+                className={styles.imgTwo}
+              />
+              <div style={{ display: "flex", flexDirection: "column" }}>
+                <motion.h3
+                  initial="hidden"
+                  whileInView="visible"
+                  variants={headingVariants}
+                  viewport={{ once: true, amount: 0.2 }}
+                  className={`${styles.sectionTxt} quicksand-text`}
+                >
+                  <strong>Experiential Learning Curve: </strong>Engage with IoT
+                  in its raw essence, facilitated by workshops and hands-on
+                  modules.
+                </motion.h3>
+                <motion.h3
+                  initial="hidden"
+                  whileInView="visible"
+                  variants={headingVariants}
+                  viewport={{ once: true, amount: 0.2 }}
+                  className={`${styles.sectionTxt} quicksand-text`}
+                >
+                  <strong>Pinnacle of Tech Evolution: </strong>Our labs resonate
+                  with the latest technological strides in the IoT domain,
+                  ensuring you’re always a step ahead.
+                </motion.h3>
+                <motion.h3
+                  initial="hidden"
+                  whileInView="visible"
+                  variants={headingVariants}
+                  viewport={{ once: true, amount: 0.2 }}
+                  className={`${styles.sectionTxt} quicksand-text`}
+                >
+                  <strong>Synergy Spaces: </strong>Ideate, collaborate, and
+                  manifest in environments that breathe creativity and
+                  cooperation.
+                </motion.h3>
+                <motion.h3
+                  initial="hidden"
+                  whileInView="visible"
+                  variants={headingVariants}
+                  viewport={{ once: true, amount: 0.2 }}
+                  className={`${styles.sectionTxt} quicksand-text`}
+                >
+                  <strong>Innovation Incubator: </strong>Our labs are more than
+                  spaces; they’re cradles for your next big IoT breakthrough.
+                </motion.h3>
+              </div>
+            </div>
           </div>
         </section>
         <section

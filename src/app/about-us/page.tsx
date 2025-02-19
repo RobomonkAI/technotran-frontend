@@ -74,14 +74,20 @@ const AboutUsPage = () => {
             >
               About Us
             </motion.h2>
-            <motion.h3
-              initial="hidden"
-              whileInView="visible"
-              variants={headingVariants}
-              viewport={{ once: true, amount: 0.2 }}
-              className={`${styles.sectionTxt} quicksand-text`}
-            >
-              {`Technotran Solutions (ISO 9001:2015 Certified Company) is a
+            <div className={styles.textContainer}>
+              <motion.h3
+                initial="hidden"
+                whileInView="visible"
+                variants={headingVariants}
+                viewport={{ once: true, amount: 0.2 }}
+                className={`${styles.sectionTxt} quicksand-text`}
+                style={{
+                  padding: "0 0.5rem",
+                  maxWidth: "50%",
+                  fontSize: "0.9rem",
+                }}
+              >
+                {`Technotran Solutions (ISO 9001:2015 Certified Company) is a
               pioneering Educational Technology and Innovation Company
               specializing in Embedded Systems, Robotics, 3D Printing, IoT, and
               Artificial Intelligence. Serving schools, colleges, and
@@ -96,17 +102,18 @@ const AboutUsPage = () => {
               sustainable technology solutions in agriculture, healthcare, and
               education. At Technotran, we empower individuals and institutions
               to thrive in the ever-evolving world of technology.`}
-            </motion.h3>
-            <Image
-              src={
-                "https://github.com/CVSCharan/Technotran_Assets/blob/main/About-us.png?raw=true"
-              }
-              alt={"About Us Img 1"}
-              height={400}
-              width={600}
-              priority
-              className={styles.imgOne}
-            />
+              </motion.h3>
+              <Image
+                src={
+                  "https://github.com/CVSCharan/Technotran_Assets/blob/main/About-us.png?raw=true"
+                }
+                alt={"About Us Img 1"}
+                height={400}
+                width={600}
+                priority
+                className={styles.imgOne}
+              />
+            </div>
           </div>
         </section>
         <section id="Technotran About Us Content">
@@ -164,52 +171,54 @@ const AboutUsPage = () => {
             >
               Technotran Triumphs
             </motion.h2>
-            <motion.ul
-              initial="hidden"
-              whileInView="visible"
-              variants={cardVariants}
-              viewport={{ once: false, amount: 0.3 }}
-              className={styles.list}
-            >
-              <li className={`${styles.sectionTxt} quicksand-text`}>
-                ISO Certified: An ISO 9001:2015 Certified Company committed to
-                excellence in education and innovation.
-              </li>
-              <li className={`${styles.sectionTxt} quicksand-text`}>
-                AICTE Approved: Technotran is recognized by AICTE for offering
-                internship programs for UG students.
-              </li>
-              <li className={`${styles.sectionTxt} quicksand-text`}>
-                Workshops Expertise: Successfully conducted 150+ workshops on
-                cutting-edge technologies.
-              </li>
-              <li className={`${styles.sectionTxt} quicksand-text`}>
-                Extensive Training: Trained over 20,000 students across 50+
-                colleges in India.
-              </li>
-              <li className={`${styles.sectionTxt} quicksand-text`}>
-                Research Excellence: Currently engaged in two ongoing research
-                projects.
-              </li>
-              <li className={`${styles.sectionTxt} quicksand-text`}>
-                Industry Recognition: Officially recognized as an Industry by
-                the Ministry of MSME, Government of India.
-              </li>
-              <li className={`${styles.sectionTxt} quicksand-text`}>
-                Robotic Innovations: Began manufacturing our customized robotic
-                kits in 2023, ensuring quality and innovation.
-              </li>
-            </motion.ul>
-            <Image
-              src={
-                "https://github.com/CVSCharan/Technotran_Assets/blob/main/about-Technotran.png?raw=true"
-              }
-              alt={"About Us Img 2"}
-              height={400}
-              width={600}
-              priority
-              className={styles.imgOne}
-            />
+            <div className={styles.textContainer}>
+              <motion.ul
+                initial="hidden"
+                whileInView="visible"
+                variants={cardVariants}
+                viewport={{ once: false, amount: 0.3 }}
+                className={styles.list}
+              >
+                <li className={`${styles.sectionTxt} quicksand-text`}>
+                  🔹 ISO Certified: An ISO 9001:2015 Certified Company committed
+                  to excellence in education and innovation.
+                </li>
+                <li className={`${styles.sectionTxt} quicksand-text`}>
+                  🔹 AICTE Approved: Technotran is recognized by AICTE for
+                  offering internship programs for UG students.
+                </li>
+                <li className={`${styles.sectionTxt} quicksand-text`}>
+                  🔹 Workshops Expertise: Successfully conducted 150+ workshops
+                  on cutting-edge technologies.
+                </li>
+                <li className={`${styles.sectionTxt} quicksand-text`}>
+                  🔹 Extensive Training: Trained over 20,000 students across 50+
+                  colleges in India.
+                </li>
+                <li className={`${styles.sectionTxt} quicksand-text`}>
+                  🔹 Research Excellence: Currently engaged in two ongoing
+                  research projects.
+                </li>
+                <li className={`${styles.sectionTxt} quicksand-text`}>
+                  🔹 Industry Recognition: Officially recognized as an Industry
+                  by the Ministry of MSME, Government of India.
+                </li>
+                <li className={`${styles.sectionTxt} quicksand-text`}>
+                  🔹 Robotic Innovations: Began manufacturing our customized
+                  robotic kits in 2023, ensuring quality and innovation.
+                </li>
+              </motion.ul>
+              <Image
+                src={
+                  "https://github.com/CVSCharan/Technotran_Assets/blob/main/about-Technotran.png?raw=true"
+                }
+                alt={"About Us Img 2"}
+                height={400}
+                width={600}
+                priority
+                className={styles.imgOne}
+              />
+            </div>
           </div>
           <div className={styles.sectionOne}>
             <motion.h2
@@ -293,71 +302,76 @@ const AboutUsPage = () => {
         </section>
         <section id="Techtron About Us Hero Section">
           <div className={styles.container}>
-            <div className={styles.imageWrapper}>
-              <Image
-                src="https://github.com/CVSCharan/Technotran_Assets/blob/main/R.Vikas-Reddy-hero-img.jpg?raw=true"
-                alt="R. Vikas Reddy - Technotran Director"
-                height={400}
-                width={600}
-                priority
-                className={styles.heroImage}
-              />
-            </div>
-            <div className={styles.textWrapper}>
-              <motion.h2
-                initial="hidden"
-                whileInView="visible"
-                variants={headingVariants}
-                viewport={{ once: false, amount: 0.2 }}
-                className={styles.name}
-              >
-                R. Vikas Reddy
-              </motion.h2>
-              <h3 className={styles.role}>Director</h3>
-              <p className={styles.description}>
-                As the founder and managing director of TECHNOTRAN, R. Vikas
-                Reddy brings over a decade of expertise in robotics and embedded
-                systems. With a strong background in electronics circuit design,
-                PCB design, and embedded C programming, he specializes in
-                various microcontrollers and communication protocols. His
-                achievements include conducting numerous workshops, training
-                thousands of students, establishing robotics labs in schools,
-                and collaborating with prestigious engineering colleges.
-                Currently, he is overseeing two research projects aimed at
-                further advancing technology education and innovation.
-              </p>
+            <div className={styles.innerContainer}>
+              <div className={styles.imageWrapper}>
+                <Image
+                  src="https://github.com/CVSCharan/Technotran_Assets/blob/main/R.Vikas-Reddy-hero-img.jpg?raw=true"
+                  alt="R. Vikas Reddy - Technotran Director"
+                  height={400}
+                  width={600}
+                  priority
+                  className={styles.heroImage}
+                />
+              </div>
+              <div className={styles.textWrapper}>
+                <motion.h2
+                  initial="hidden"
+                  whileInView="visible"
+                  variants={headingVariants}
+                  viewport={{ once: false, amount: 0.2 }}
+                  className={styles.name}
+                >
+                  R. Vikas Reddy
+                </motion.h2>
+                <h3 className={styles.role}>Director</h3>
+                <p className={styles.description}>
+                  As the founder and managing director of TECHNOTRAN, R. Vikas
+                  Reddy brings over a decade of expertise in robotics and
+                  embedded systems. With a strong background in electronics
+                  circuit design, PCB design, and embedded C programming, he
+                  specializes in various microcontrollers and communication
+                  protocols. His achievements include conducting numerous
+                  workshops, training thousands of students, establishing
+                  robotics labs in schools, and collaborating with prestigious
+                  engineering colleges. Currently, he is overseeing two research
+                  projects aimed at further advancing technology education and
+                  innovation.
+                </p>
+              </div>
             </div>
           </div>
-          <div className={styles.containerOne}>
-            <div className={styles.imageWrapper}>
-              <Image
-                src="https://github.com/CVSCharan/Technotran_Assets/blob/main/Yashika.K-hero-img.jpeg?raw=true"
-                alt="Yashika K - Technotran Operations Head"
-                height={400}
-                width={600}
-                priority
-                className={styles.heroImage}
-              />
-            </div>
-            <div className={styles.textWrapper}>
-              <motion.h2
-                initial="hidden"
-                whileInView="visible"
-                variants={headingVariants}
-                viewport={{ once: false, amount: 0.2 }}
-                className={styles.name}
-              >
-                Yashika K
-              </motion.h2>
-              <h3 className={styles.role}>Operations Head</h3>
-              <p className={styles.description}>
-                As the Operations Head at TECHNOTRAN, she brings a wealth of
-                experience and expertise to ensure seamless operations and
-                effective coordination within the company. With her strategic
-                planning skills, she oversees logistics and streamlines
-                processes, contributing to TECHNOTRAN’s ongoing success in the
-                industry.
-              </p>
+          <div className={styles.container}>
+            <div className={styles.innerContainerOne}>
+              <div className={styles.imageWrapper}>
+                <Image
+                  src="https://github.com/CVSCharan/Technotran_Assets/blob/main/Yashika.K-hero-img.jpeg?raw=true"
+                  alt="Yashika K - Technotran Operations Head"
+                  height={400}
+                  width={600}
+                  priority
+                  className={styles.heroImage}
+                />
+              </div>
+              <div className={styles.textWrapper}>
+                <motion.h2
+                  initial="hidden"
+                  whileInView="visible"
+                  variants={headingVariants}
+                  viewport={{ once: false, amount: 0.2 }}
+                  className={styles.name}
+                >
+                  Yashika K
+                </motion.h2>
+                <h3 className={styles.role}>Operations Head</h3>
+                <p className={styles.description}>
+                  As the Operations Head at TECHNOTRAN, she brings a wealth of
+                  experience and expertise to ensure seamless operations and
+                  effective coordination within the company. With her strategic
+                  planning skills, she oversees logistics and streamlines
+                  processes, contributing to TECHNOTRAN’s ongoing success in the
+                  industry.
+                </p>
+              </div>
             </div>
           </div>
         </section>

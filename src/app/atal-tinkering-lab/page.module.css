@@ -67,12 +67,17 @@
 }
 
 .imgOne {
-  height: 290px;
-  width: 450px;
-  object-fit: fill;
-  margin-top: 2rem;
-  border: 0;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
   border-radius: 8px;
+}
+
+.imgThree {
+  width: 650px;
+  height: 320px;
+  border-radius: 1rem;
+  object-fit: fill;
 }
 
 .enquiryContainer {
@@ -80,6 +85,14 @@
   width: 100%;
   background-color: #f9f9f9; /* Soft background */
   padding: 1rem 0;
+}
+
+.textContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  max-width: 80rem;
 }
 
 /* Extra Small Mobile Devices (Portrait) */

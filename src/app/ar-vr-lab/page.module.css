@@ -48,8 +48,8 @@
 }
 
 .sectionTxt {
-  font-size: 1.1rem;
-  line-height: 1.7;
+  font-size: 1rem;
+  line-height: 1.6;
   letter-spacing: 0.03rem;
   font-weight: 500;
   max-width: 80rem;
@@ -67,11 +67,9 @@
 }
 
 .imgOne {
-  height: 290px;
-  width: 450px;
-  object-fit: fill;
-  margin-top: 2rem;
-  border: 0;
+  width: 100%;
+  max-width: 330px;
+  height: auto;
   border-radius: 8px;
 }
 
@@ -88,9 +86,10 @@
 
 .cardContainer {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   width: 100%;
+  gap: 2rem;
 }
 
 .card {
@@ -105,7 +104,7 @@
 }
 
 .cardTitle {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: bold;
   color: #333333; /* Dark text for readability */
   margin-bottom: 0.5rem;
@@ -113,7 +112,7 @@
 }
 
 .cardDesc {
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #555555; /* Subtle color for the description */
   line-height: 1.6;
   text-align: justify;
@@ -124,6 +123,14 @@
   width: 100%;
   background-color: #f9f9f9; /* Soft background */
   padding: 1rem 0;
+}
+
+.textContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  max-width: 80rem;
 }
 
 /* Extra Small Mobile Devices (Portrait) */

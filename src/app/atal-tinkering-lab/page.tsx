@@ -52,28 +52,31 @@ const AtalTinkeringLabPage = () => {
             >
               Atal Tinkering Lab (ATL) by Technotran
             </motion.h2>
-            <motion.h3
-              initial="hidden"
-              whileInView="visible"
-              variants={headingVariants}
-              viewport={{ once: true, amount: 0.2 }}
-              className={`${styles.sectionTxt} quicksand-text`}
-            >
-              Technotran proudly presents our Atal Tinkering Lab (ATL)
-              initiative, a This ATL serves as a beacon of innovation, providing
-              young minds with a platform to tinker, innovate, and transform
-              their ideas into reality.
-            </motion.h3>
-            <Image
-              src={
-                "https://github.com/CVSCharan/Technotran_Assets/blob/main/ATAL-Tinkering-Lab-img1.png?raw=true"
-              }
-              alt={"ATAL Tinkering Lab Img 1"}
-              height={400}
-              width={600}
-              priority
-              className={styles.imgOne}
-            />
+            <div className={styles.textContainer}>
+              <motion.h3
+                initial="hidden"
+                whileInView="visible"
+                variants={headingVariants}
+                viewport={{ once: true, amount: 0.2 }}
+                className={`${styles.sectionTxt} quicksand-text`}
+                style={{ padding: "0 1rem", maxWidth: "50%" }}
+              >
+                Technotran proudly presents our Atal Tinkering Lab (ATL)
+                initiative, a This ATL serves as a beacon of innovation,
+                providing young minds with a platform to tinker, innovate, and
+                transform their ideas into reality.
+              </motion.h3>
+              <Image
+                src={
+                  "https://github.com/CVSCharan/Technotran_Assets/blob/main/ATAL-Tinkering-Lab-img1.png?raw=true"
+                }
+                alt={"ATAL Tinkering Lab Img 1"}
+                height={400}
+                width={600}
+                priority
+                className={styles.imgOne}
+              />
+            </div>
           </div>
           <div
             className={styles.sectionOne}

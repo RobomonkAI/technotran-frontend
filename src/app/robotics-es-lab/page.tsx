@@ -52,29 +52,32 @@ const RoboticsEsLabPage = () => {
             >
               Robotics and Embedded system LAB
             </motion.h2>
-            <motion.h3
-              initial="hidden"
-              whileInView="visible"
-              variants={headingVariants}
-              viewport={{ once: true, amount: 0.2 }}
-              className={`${styles.sectionTxt} quicksand-text`}
-            >
-              At Technotran, we believe in the transformative power of hands-on
-              learning. Our Robotics & Embedded Systems Lab, tailored
-              specifically for colleges, is a testament to this belief, offering
-              students a dynamic platform to bridge theoretical knowledge with
-              real-world applications.
-            </motion.h3>
-            <Image
-              src={
-                "https://github.com/CVSCharan/Technotran_Assets/blob/main/Robotics-ES-lab-1.png?raw=true"
-              }
-              alt={"Robotics & ES Lab Img 1"}
-              height={400}
-              width={600}
-              priority
-              className={styles.imgOne}
-            />
+            <div className={styles.textContainer}>
+              <motion.h3
+                initial="hidden"
+                whileInView="visible"
+                variants={headingVariants}
+                viewport={{ once: true, amount: 0.2 }}
+                className={`${styles.sectionTxt} quicksand-text`}
+                style={{ padding: "0 1rem", maxWidth: "50%" }}
+              >
+                At Technotran, we believe in the transformative power of
+                hands-on learning. Our Robotics & Embedded Systems Lab, tailored
+                specifically for colleges, is a testament to this belief,
+                offering students a dynamic platform to bridge theoretical
+                knowledge with real-world applications.
+              </motion.h3>
+              <Image
+                src={
+                  "https://github.com/CVSCharan/Technotran_Assets/blob/main/Robotics-ES-lab-1.png?raw=true"
+                }
+                alt={"Robotics & ES Lab Img 1"}
+                height={400}
+                width={600}
+                priority
+                className={styles.imgOne}
+              />
+            </div>
           </div>
           <motion.h2
             initial="hidden"
@@ -168,60 +171,65 @@ const RoboticsEsLabPage = () => {
             >
               {`Why Technotran's IoT Hub Stands Out`}
             </motion.h2>
-            <Image
-              src={
-                "https://github.com/CVSCharan/Technotran_Assets/blob/main/Robotics-and-ES-Lab-img.png?raw=true"
-              }
-              alt={"IOT Lab Img 2"}
-              height={400}
-              width={600}
-              priority
-              className={styles.imgTwo}
-            />
-            <motion.h3
-              initial="hidden"
-              whileInView="visible"
-              variants={headingVariants}
-              viewport={{ once: true, amount: 0.2 }}
-              className={`${styles.sectionTxt} quicksand-text`}
-            >
-              <strong>Modernized Curriculum: </strong>Integrate cutting-edge
-              robotics and embedded systems projects into academic syllabi,
-              ensuring relevancy and engagement.
-            </motion.h3>
-            <motion.h3
-              initial="hidden"
-              whileInView="visible"
-              variants={headingVariants}
-              viewport={{ once: true, amount: 0.2 }}
-              className={`${styles.sectionTxt} quicksand-text`}
-            >
-              <strong>Empowerment Through Experience: </strong>Equip students
-              with tangible skills, making them attractive prospects for
-              top-tier tech companies and research institutions.
-            </motion.h3>
-            <motion.h3
-              initial="hidden"
-              whileInView="visible"
-              variants={headingVariants}
-              viewport={{ once: true, amount: 0.2 }}
-              className={`${styles.sectionTxt} quicksand-text`}
-            >
-              <strong>Research Excellence: </strong>Provide faculty and students
-              with the tools and environment to undertake groundbreaking
-              research initiatives.
-            </motion.h3>
-            <motion.h3
-              initial="hidden"
-              whileInView="visible"
-              variants={headingVariants}
-              viewport={{ once: true, amount: 0.2 }}
-              className={`${styles.sectionTxt} quicksand-text`}
-            >
-              <strong>Inter-departmental Synergy: </strong>Create opportunities
-              for collaboration between electronics, computer science,
-              mechanical engineering, and design faculties.
-            </motion.h3>
+            <div className={styles.textContainer}>
+              <Image
+                src={
+                  "https://github.com/CVSCharan/Technotran_Assets/blob/main/Robotics-and-ES-Lab-img.png?raw=true"
+                }
+                alt={"IOT Lab Img 2"}
+                height={400}
+                width={600}
+                priority
+                className={styles.imgTwo}
+              />
+              <div style={{ display: "flex", flexDirection: "column" }}>
+                <motion.h3
+                  initial="hidden"
+                  whileInView="visible"
+                  variants={headingVariants}
+                  viewport={{ once: true, amount: 0.2 }}
+                  className={`${styles.sectionTxt} quicksand-text`}
+                >
+                  <strong>Modernized Curriculum: </strong>Integrate cutting-edge
+                  robotics and embedded systems projects into academic syllabi,
+                  ensuring relevancy and engagement.
+                </motion.h3>
+                <motion.h3
+                  initial="hidden"
+                  whileInView="visible"
+                  variants={headingVariants}
+                  viewport={{ once: true, amount: 0.2 }}
+                  className={`${styles.sectionTxt} quicksand-text`}
+                >
+                  <strong>Empowerment Through Experience: </strong>Equip
+                  students with tangible skills, making them attractive
+                  prospects for top-tier tech companies and research
+                  institutions.
+                </motion.h3>
+                <motion.h3
+                  initial="hidden"
+                  whileInView="visible"
+                  variants={headingVariants}
+                  viewport={{ once: true, amount: 0.2 }}
+                  className={`${styles.sectionTxt} quicksand-text`}
+                >
+                  <strong>Research Excellence: </strong>Provide faculty and
+                  students with the tools and environment to undertake
+                  groundbreaking research initiatives.
+                </motion.h3>
+                <motion.h3
+                  initial="hidden"
+                  whileInView="visible"
+                  variants={headingVariants}
+                  viewport={{ once: true, amount: 0.2 }}
+                  className={`${styles.sectionTxt} quicksand-text`}
+                >
+                  <strong>Inter-departmental Synergy: </strong>Create
+                  opportunities for collaboration between electronics, computer
+                  science, mechanical engineering, and design faculties.
+                </motion.h3>
+              </div>
+            </div>
           </div>
         </section>
         <section

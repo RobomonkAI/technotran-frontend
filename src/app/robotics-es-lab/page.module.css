@@ -48,11 +48,11 @@
 }
 
 .sectionTxt {
-  font-size: 1.1rem;
-  line-height: 1.7;
+  font-size: 1rem;
+  line-height: 1.6;
   letter-spacing: 0.03rem;
   font-weight: 500;
-  max-width: 80rem;
+  max-width: 600px;
   text-align: justify;
 }
 
@@ -67,19 +67,16 @@
 }
 
 .imgOne {
-  height: 290px;
-  width: 450px;
-  object-fit: fill;
-  margin-top: 2rem;
-  border: 0;
+  width: 100%;
+  max-width: 300px;
+  height: 220px;
   border-radius: 8px;
 }
 
 .imgTwo {
-  height: 390px;
-  width: 650px;
+  height: 320px;
+  width: 550px;
   object-fit: fill;
-  margin: 1rem;
   border: 0;
   border-radius: 8px;
 }
@@ -91,11 +88,20 @@
   padding: 1rem 0;
 }
 
+.textContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  max-width: 80rem;
+}
+
 .cardContainer {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   width: 100%;
+  gap: 2rem;
 }
 
 .card {
@@ -107,12 +113,12 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: center;
   padding: 1rem;
-  min-height: 250px;
+  min-height: 200px;
   margin-bottom: 1rem;
 }
 
 .cardTitle {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: bold;
   color: #333333; /* Dark text for readability */
   margin-bottom: 0.5rem;
@@ -120,7 +126,7 @@
 }
 
 .cardDesc {
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #555555; /* Subtle color for the description */
   line-height: 1.6;
   text-align: justify;
